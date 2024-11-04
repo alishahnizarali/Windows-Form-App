@@ -1,8 +1,6 @@
-﻿using AiCashGuard.UserControls;
-
-namespace AiCashGuard.Forms.TransactionModule
+﻿namespace AiCashGuard.Forms.TransactionModule
 {
-	partial class CheckTransactionProcess
+	partial class BulkScanScreen
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -30,43 +28,37 @@ namespace AiCashGuard.Forms.TransactionModule
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckTransactionProcess));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BulkScanScreen));
 			this.BackPanel = new System.Windows.Forms.Panel();
-			this.searchPanel = new System.Windows.Forms.Panel();
-			this.searchTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.panel7 = new System.Windows.Forms.Panel();
+			this.transactionBulkScan_row2 = new AiCashGuard.UserControls.Layouts_rows.TransactionBulkScan_row();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.Step_Label = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.Cancel_Transaction = new System.Windows.Forms.Button();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
 			this.transactionProgressBar = new System.Windows.Forms.ProgressBar();
 			this.panel6 = new System.Windows.Forms.Panel();
 			this.roundedPanel4 = new AiCashGuard.UserControls.RoundedPanel();
 			this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.label6 = new System.Windows.Forms.Label();
-			this.roundedPanel3 = new AiCashGuard.UserControls.RoundedPanel();
-			this.Add_Check_Btn = new System.Windows.Forms.Button();
 			this.label9 = new System.Windows.Forms.Label();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.Back_Btn = new System.Windows.Forms.Button();
 			this.Next_Btn = new System.Windows.Forms.Button();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.label1 = new System.Windows.Forms.Label();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.transactionBulkScan_row1 = new AiCashGuard.UserControls.Layouts_rows.TransactionBulkScan_row();
+			this.searchPanel = new System.Windows.Forms.Panel();
+			this.searchTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.BackPanel.SuspendLayout();
-			this.searchPanel.SuspendLayout();
 			this.panel3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.panel7.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.panel6.SuspendLayout();
 			this.roundedPanel4.SuspendLayout();
-			this.roundedPanel3.SuspendLayout();
 			this.panel4.SuspendLayout();
-			this.panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.panel1.SuspendLayout();
+			this.searchPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// BackPanel
@@ -80,63 +72,41 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.BackPanel.Location = new System.Drawing.Point(0, 0);
 			this.BackPanel.Name = "BackPanel";
 			this.BackPanel.Padding = new System.Windows.Forms.Padding(1);
-			this.BackPanel.Size = new System.Drawing.Size(1065, 800);
-			this.BackPanel.TabIndex = 1;
-			// 
-			// searchPanel
-			// 
-			this.searchPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.searchPanel.AutoScroll = true;
-			this.searchPanel.BackColor = System.Drawing.Color.White;
-			this.searchPanel.Controls.Add(this.searchTableLayoutPanel);
-			this.searchPanel.Location = new System.Drawing.Point(224, 67);
-			this.searchPanel.Name = "searchPanel";
-			this.searchPanel.Padding = new System.Windows.Forms.Padding(5);
-			this.searchPanel.Size = new System.Drawing.Size(636, 222);
-			this.searchPanel.TabIndex = 42;
-			this.searchPanel.Visible = false;
-			// 
-			// searchTableLayoutPanel
-			// 
-			this.searchTableLayoutPanel.AutoScroll = true;
-			this.searchTableLayoutPanel.ColumnCount = 1;
-			this.searchTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.searchTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.searchTableLayoutPanel.Location = new System.Drawing.Point(5, 5);
-			this.searchTableLayoutPanel.Name = "searchTableLayoutPanel";
-			this.searchTableLayoutPanel.RowCount = 1;
-			this.searchTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.searchTableLayoutPanel.Size = new System.Drawing.Size(626, 212);
-			this.searchTableLayoutPanel.TabIndex = 0;
+			this.BackPanel.Size = new System.Drawing.Size(1182, 891);
+			this.BackPanel.TabIndex = 2;
 			// 
 			// panel3
 			// 
-			this.panel3.Controls.Add(this.pictureBox1);
+			this.panel3.Controls.Add(this.panel7);
 			this.panel3.Controls.Add(this.panel5);
-			this.panel3.Controls.Add(this.label3);
-			this.panel3.Controls.Add(this.label4);
 			this.panel3.Controls.Add(this.transactionProgressBar);
 			this.panel3.Controls.Add(this.panel6);
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel3.Location = new System.Drawing.Point(1, 1);
 			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(1063, 708);
+			this.panel3.Size = new System.Drawing.Size(1180, 799);
 			this.panel3.TabIndex = 3;
 			this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
 			// 
-			// pictureBox1
+			// panel7
 			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(0, 135);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(1063, 376);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-			this.pictureBox1.TabIndex = 39;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+			this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel7.BackColor = System.Drawing.Color.White;
+			this.panel7.Controls.Add(this.transactionBulkScan_row2);
+			this.panel7.Location = new System.Drawing.Point(174, 241);
+			this.panel7.Name = "panel7";
+			this.panel7.Size = new System.Drawing.Size(856, 512);
+			this.panel7.TabIndex = 39;
+			// 
+			// transactionBulkScan_row2
+			// 
+			this.transactionBulkScan_row2.Dock = System.Windows.Forms.DockStyle.Top;
+			this.transactionBulkScan_row2.Location = new System.Drawing.Point(0, 0);
+			this.transactionBulkScan_row2.Name = "transactionBulkScan_row2";
+			this.transactionBulkScan_row2.Size = new System.Drawing.Size(856, 150);
+			this.transactionBulkScan_row2.TabIndex = 0;
 			// 
 			// panel5
 			// 
@@ -146,7 +116,7 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel5.Location = new System.Drawing.Point(0, 81);
 			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(1063, 54);
+			this.panel5.Size = new System.Drawing.Size(1180, 54);
 			this.panel5.TabIndex = 37;
 			// 
 			// Step_Label
@@ -157,7 +127,7 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.Step_Label.Location = new System.Drawing.Point(0, 23);
 			this.Step_Label.Name = "Step_Label";
 			this.Step_Label.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-			this.Step_Label.Size = new System.Drawing.Size(913, 29);
+			this.Step_Label.Size = new System.Drawing.Size(1030, 29);
 			this.Step_Label.TabIndex = 30;
 			this.Step_Label.Text = "Step # 1 / 3";
 			this.Step_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,7 +139,7 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.label5.Location = new System.Drawing.Point(0, 0);
 			this.label5.Name = "label5";
 			this.label5.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-			this.label5.Size = new System.Drawing.Size(913, 23);
+			this.label5.Size = new System.Drawing.Size(1030, 23);
 			this.label5.TabIndex = 29;
 			this.label5.Text = "Select Check";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -183,57 +153,30 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.Cancel_Transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Cancel_Transaction.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cancel_Transaction.ForeColor = System.Drawing.Color.White;
-			this.Cancel_Transaction.Location = new System.Drawing.Point(913, 0);
+			this.Cancel_Transaction.Location = new System.Drawing.Point(1030, 0);
 			this.Cancel_Transaction.Name = "Cancel_Transaction";
 			this.Cancel_Transaction.Size = new System.Drawing.Size(150, 54);
 			this.Cancel_Transaction.TabIndex = 15;
 			this.Cancel_Transaction.Text = "Cancel Transaction";
 			this.Cancel_Transaction.UseVisualStyleBackColor = false;
-			this.Cancel_Transaction.Click += new System.EventHandler(this.Cancel_Transaction_Click);
-			// 
-			// label3
-			// 
-			this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
-			this.label3.Location = new System.Drawing.Point(0, 511);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(1063, 56);
-			this.label3.TabIndex = 1;
-			this.label3.Text = "Scan or Search Check";
-			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label4
-			// 
-			this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
-			this.label4.Location = new System.Drawing.Point(0, 567);
-			this.label4.Name = "label4";
-			this.label4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 100);
-			this.label4.Size = new System.Drawing.Size(1063, 141);
-			this.label4.TabIndex = 2;
-			this.label4.Text = "You can select check through scanning or from manual searching of Business";
-			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// transactionProgressBar
 			// 
 			this.transactionProgressBar.Dock = System.Windows.Forms.DockStyle.Top;
 			this.transactionProgressBar.Location = new System.Drawing.Point(0, 71);
 			this.transactionProgressBar.Name = "transactionProgressBar";
-			this.transactionProgressBar.Size = new System.Drawing.Size(1063, 10);
+			this.transactionProgressBar.Size = new System.Drawing.Size(1180, 10);
 			this.transactionProgressBar.TabIndex = 37;
 			// 
 			// panel6
 			// 
 			this.panel6.Controls.Add(this.roundedPanel4);
-			this.panel6.Controls.Add(this.roundedPanel3);
 			this.panel6.Controls.Add(this.label9);
 			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel6.Location = new System.Drawing.Point(0, 0);
 			this.panel6.Name = "panel6";
 			this.panel6.Padding = new System.Windows.Forms.Padding(10);
-			this.panel6.Size = new System.Drawing.Size(1063, 71);
+			this.panel6.Size = new System.Drawing.Size(1180, 71);
 			this.panel6.TabIndex = 38;
 			// 
 			// roundedPanel4
@@ -248,7 +191,7 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.roundedPanel4.Location = new System.Drawing.Point(224, 16);
 			this.roundedPanel4.Name = "roundedPanel4";
 			this.roundedPanel4.Padding = new System.Windows.Forms.Padding(10);
-			this.roundedPanel4.Size = new System.Drawing.Size(636, 45);
+			this.roundedPanel4.Size = new System.Drawing.Size(753, 45);
 			this.roundedPanel4.TabIndex = 37;
 			// 
 			// materialSingleLineTextField1
@@ -264,10 +207,9 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.materialSingleLineTextField1.SelectedText = "";
 			this.materialSingleLineTextField1.SelectionLength = 0;
 			this.materialSingleLineTextField1.SelectionStart = 0;
-			this.materialSingleLineTextField1.Size = new System.Drawing.Size(581, 23);
+			this.materialSingleLineTextField1.Size = new System.Drawing.Size(698, 23);
 			this.materialSingleLineTextField1.TabIndex = 1;
 			this.materialSingleLineTextField1.UseSystemPasswordChar = false;
-			this.materialSingleLineTextField1.TextChanged += new System.EventHandler(this.materialSingleLineTextField1_TextChanged);
 			// 
 			// label6
 			// 
@@ -279,37 +221,6 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.label6.TabIndex = 2;
 			this.label6.Text = "  ";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// roundedPanel3
-			// 
-			this.roundedPanel3.Controls.Add(this.Add_Check_Btn);
-			this.roundedPanel3.CornerRadius = 20;
-			this.roundedPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-			this.roundedPanel3.Location = new System.Drawing.Point(928, 10);
-			this.roundedPanel3.Name = "roundedPanel3";
-			this.roundedPanel3.Size = new System.Drawing.Size(125, 51);
-			this.roundedPanel3.TabIndex = 36;
-			// 
-			// Add_Check_Btn
-			// 
-			this.Add_Check_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-			this.Add_Check_Btn.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Add_Check_Btn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
-			this.Add_Check_Btn.FlatAppearance.BorderSize = 0;
-			this.Add_Check_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Add_Check_Btn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Add_Check_Btn.ForeColor = System.Drawing.Color.White;
-			this.Add_Check_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Add_Check_Btn.Image")));
-			this.Add_Check_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.Add_Check_Btn.Location = new System.Drawing.Point(0, 0);
-			this.Add_Check_Btn.Name = "Add_Check_Btn";
-			this.Add_Check_Btn.Padding = new System.Windows.Forms.Padding(10);
-			this.Add_Check_Btn.Size = new System.Drawing.Size(125, 51);
-			this.Add_Check_Btn.TabIndex = 15;
-			this.Add_Check_Btn.Text = "Add New";
-			this.Add_Check_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Add_Check_Btn.UseVisualStyleBackColor = false;
-			this.Add_Check_Btn.Click += new System.EventHandler(this.Add_Check_Btn_Click);
 			// 
 			// label9
 			// 
@@ -328,10 +239,10 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.panel4.Controls.Add(this.Back_Btn);
 			this.panel4.Controls.Add(this.Next_Btn);
 			this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panel4.Location = new System.Drawing.Point(1, 709);
+			this.panel4.Location = new System.Drawing.Point(1, 800);
 			this.panel4.Name = "panel4";
 			this.panel4.Padding = new System.Windows.Forms.Padding(20);
-			this.panel4.Size = new System.Drawing.Size(1063, 90);
+			this.panel4.Size = new System.Drawing.Size(1180, 90);
 			this.panel4.TabIndex = 0;
 			// 
 			// Back_Btn
@@ -353,7 +264,6 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.Back_Btn.Text = "Back";
 			this.Back_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.Back_Btn.UseVisualStyleBackColor = false;
-			this.Back_Btn.Click += new System.EventHandler(this.Back_Btn_Click);
 			// 
 			// Next_Btn
 			// 
@@ -366,7 +276,7 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.Next_Btn.ForeColor = System.Drawing.Color.White;
 			this.Next_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Next_Btn.Image")));
 			this.Next_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Next_Btn.Location = new System.Drawing.Point(949, 20);
+			this.Next_Btn.Location = new System.Drawing.Point(1066, 20);
 			this.Next_Btn.Name = "Next_Btn";
 			this.Next_Btn.Padding = new System.Windows.Forms.Padding(10);
 			this.Next_Btn.Size = new System.Drawing.Size(94, 50);
@@ -375,64 +285,73 @@ namespace AiCashGuard.Forms.TransactionModule
 			this.Next_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.Next_Btn.UseVisualStyleBackColor = false;
 			// 
-			// panel2
+			// panel1
 			// 
-			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-			this.panel2.Controls.Add(this.label1);
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel2.Location = new System.Drawing.Point(0, 0);
-			this.panel2.Name = "panel2";
-			this.panel2.Padding = new System.Windows.Forms.Padding(5);
-			this.panel2.Size = new System.Drawing.Size(1063, 64);
-			this.panel2.TabIndex = 38;
+			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel1.AutoScroll = true;
+			this.panel1.BackColor = System.Drawing.Color.White;
+			this.panel1.Controls.Add(this.transactionBulkScan_row1);
+			this.panel1.Location = new System.Drawing.Point(151, 192);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(746, 414);
+			this.panel1.TabIndex = 39;
 			// 
-			// label1
+			// transactionBulkScan_row1
 			// 
-			this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
-			this.label1.Location = new System.Drawing.Point(5, 5);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(186, 54);
-			this.label1.TabIndex = 38;
-			this.label1.Text = "Transaction Process";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.transactionBulkScan_row1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.transactionBulkScan_row1.Location = new System.Drawing.Point(0, 0);
+			this.transactionBulkScan_row1.Name = "transactionBulkScan_row1";
+			this.transactionBulkScan_row1.Size = new System.Drawing.Size(746, 150);
+			this.transactionBulkScan_row1.TabIndex = 0;
 			// 
-			// pictureBox2
+			// searchPanel
 			// 
-			this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(0, 74);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Padding = new System.Windows.Forms.Padding(0, 100, 0, 0);
-			this.pictureBox2.Size = new System.Drawing.Size(1063, 493);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-			this.pictureBox2.TabIndex = 0;
-			this.pictureBox2.TabStop = false;
-			this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+			this.searchPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.searchPanel.AutoScroll = true;
+			this.searchPanel.BackColor = System.Drawing.Color.White;
+			this.searchPanel.Controls.Add(this.searchTableLayoutPanel);
+			this.searchPanel.Location = new System.Drawing.Point(224, 67);
+			this.searchPanel.Name = "searchPanel";
+			this.searchPanel.Padding = new System.Windows.Forms.Padding(5);
+			this.searchPanel.Size = new System.Drawing.Size(754, 222);
+			this.searchPanel.TabIndex = 43;
+			this.searchPanel.Visible = false;
 			// 
-			// CheckTransactionProcess
+			// searchTableLayoutPanel
+			// 
+			this.searchTableLayoutPanel.AutoScroll = true;
+			this.searchTableLayoutPanel.ColumnCount = 1;
+			this.searchTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.searchTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.searchTableLayoutPanel.Location = new System.Drawing.Point(5, 5);
+			this.searchTableLayoutPanel.Name = "searchTableLayoutPanel";
+			this.searchTableLayoutPanel.RowCount = 1;
+			this.searchTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.searchTableLayoutPanel.Size = new System.Drawing.Size(744, 212);
+			this.searchTableLayoutPanel.TabIndex = 0;
+			this.searchTableLayoutPanel.Visible = false;
+			// 
+			// BulkScanScreen
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1065, 800);
+			this.ClientSize = new System.Drawing.Size(1182, 891);
 			this.Controls.Add(this.BackPanel);
-			this.MinimumSize = new System.Drawing.Size(1000, 800);
-			this.Name = "CheckTransactionProcess";
-			this.Text = "CheckTransactionProcess";
+			this.Name = "BulkScanScreen";
+			this.Text = "BulkScanScreen";
 			this.Controls.SetChildIndex(this.BackPanel, 0);
 			this.BackPanel.ResumeLayout(false);
-			this.searchPanel.ResumeLayout(false);
 			this.panel3.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.panel7.ResumeLayout(false);
 			this.panel5.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
 			this.roundedPanel4.ResumeLayout(false);
-			this.roundedPanel3.ResumeLayout(false);
 			this.panel4.ResumeLayout(false);
-			this.panel2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			this.panel1.ResumeLayout(false);
+			this.searchPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -440,28 +359,24 @@ namespace AiCashGuard.Forms.TransactionModule
 		#endregion
 
 		private System.Windows.Forms.Panel BackPanel;
-		private System.Windows.Forms.Panel panel4;
-		private System.Windows.Forms.Button Back_Btn;
-		private System.Windows.Forms.Button Next_Btn;
-		private System.Windows.Forms.Button Cancel_Transaction;
 		private System.Windows.Forms.Panel panel3;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.PictureBox pictureBox2;
-		private System.Windows.Forms.ProgressBar transactionProgressBar;
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel panel5;
 		private System.Windows.Forms.Label Step_Label;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Button Cancel_Transaction;
+		private System.Windows.Forms.ProgressBar transactionProgressBar;
 		private System.Windows.Forms.Panel panel6;
-		private RoundedPanel roundedPanel3;
-		private System.Windows.Forms.Button Add_Check_Btn;
-		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.PictureBox pictureBox1;
-		private RoundedPanel roundedPanel4;
+		private UserControls.RoundedPanel roundedPanel4;
 		private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
 		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Panel panel4;
+		private System.Windows.Forms.Button Back_Btn;
+		private System.Windows.Forms.Button Next_Btn;
+		private System.Windows.Forms.Panel panel1;
+		private UserControls.Layouts_rows.TransactionBulkScan_row transactionBulkScan_row1;
+		private System.Windows.Forms.Panel panel7;
+		private UserControls.Layouts_rows.TransactionBulkScan_row transactionBulkScan_row2;
 		private System.Windows.Forms.Panel searchPanel;
 		private System.Windows.Forms.TableLayoutPanel searchTableLayoutPanel;
 	}

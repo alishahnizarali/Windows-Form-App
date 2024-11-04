@@ -181,6 +181,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Camera\CameraHandler.cs" />
+    <Compile Include="Forms\AuthModule\CreateUserPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthModule\CreateUserPopup.Designer.cs">
+      <DependentUpon>CreateUserPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TransactionModule\BulkScanScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TransactionModule\BulkScanScreen.Designer.cs">
+      <DependentUpon>BulkScanScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TransactionModule\TransactionFeePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TransactionModule\TransactionFeePopup.Designer.cs">
+      <DependentUpon>TransactionFeePopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logic\Data\CheckAccountData.cs" />
     <Compile Include="Logic\Data\CustomerData.cs" />
     <Compile Include="Logic\Data\DepositData.cs" />
@@ -360,6 +378,12 @@
     <Compile Include="UserControls\Layouts_rows\CustomerList_row_layout.Designer.cs">
       <DependentUpon>CustomerList_row_layout.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Layouts_rows\TransactionBulkScan-row.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Layouts_rows\TransactionBulkScan-row.Designer.cs">
+      <DependentUpon>TransactionBulkScan-row.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Layouts_rows\Transaction_row_layout.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -379,6 +403,9 @@
     <Compile Include="UserControls\Layouts_rows\TransactionRow_Dashboard.Designer.cs">
       <DependentUpon>TransactionRow_Dashboard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AuthModule\CreateUserPopup.resx">
+      <DependentUpon>CreateUserPopup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CheckModule\AddNewCheck.resx">
       <DependentUpon>AddNewCheck.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,6 +448,9 @@
     <EmbeddedResource Include="Forms\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TransactionModule\BulkScanScreen.resx">
+      <DependentUpon>BulkScanScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TransactionModule\CheckTransactionProcess.resx">
       <DependentUpon>CheckTransactionProcess.cs</DependentUpon>
     </EmbeddedResource>
@@ -429,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TransactionModule\TransactionDetail.resx">
       <DependentUpon>TransactionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TransactionModule\TransactionFeePopup.resx">
+      <DependentUpon>TransactionFeePopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TransactionModule\TransactionList.resx">
       <DependentUpon>TransactionList.cs</DependentUpon>
@@ -460,6 +493,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Layouts_rows\CustomerList_row_layout.resx">
       <DependentUpon>CustomerList_row_layout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Layouts_rows\TransactionBulkScan-row.resx">
+      <DependentUpon>TransactionBulkScan-row.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Layouts_rows\TransactionRow_Dashboard.resx">
       <DependentUpon>TransactionRow_Dashboard.cs</DependentUpon>

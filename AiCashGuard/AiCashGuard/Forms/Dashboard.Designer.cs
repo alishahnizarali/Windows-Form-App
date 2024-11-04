@@ -33,23 +33,23 @@ namespace AiCashGuard.Forms
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel7 = new System.Windows.Forms.Panel();
-			this.roundedPanel3 = new RoundedPanel();
+			this.roundedPanel3 = new AiCashGuard.UserControls.RoundedPanel();
 			this.Btn_Start_Transaction = new System.Windows.Forms.Label();
 			this.label31 = new System.Windows.Forms.Label();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.roundedPanel6 = new RoundedPanel();
+			this.roundedPanel6 = new AiCashGuard.UserControls.RoundedPanel();
 			this.TransactionTextBtn = new System.Windows.Forms.Label();
 			this.TransactionImageBtn = new System.Windows.Forms.PictureBox();
-			this.roundedPanel5 = new RoundedPanel();
+			this.roundedPanel5 = new AiCashGuard.UserControls.RoundedPanel();
 			this.CheckTextBtn = new System.Windows.Forms.Label();
 			this.CheckImageBtn = new System.Windows.Forms.PictureBox();
-			this.roundedPanel4 = new RoundedPanel();
+			this.roundedPanel4 = new AiCashGuard.UserControls.RoundedPanel();
 			this.CustomerImageBtn = new System.Windows.Forms.PictureBox();
 			this.CustomerTextBtn = new System.Windows.Forms.Label();
-			this.roundedPanel7 = new RoundedPanel();
+			this.roundedPanel7 = new AiCashGuard.UserControls.RoundedPanel();
 			this.ReportImageBtn = new System.Windows.Forms.PictureBox();
 			this.ReportTextBtn = new System.Windows.Forms.Label();
-			this.roundedPanel8 = new RoundedPanel();
+			this.roundedPanel8 = new AiCashGuard.UserControls.RoundedPanel();
 			this.DepsoitTextBtn = new System.Windows.Forms.Label();
 			this.DepositImageBtn = new System.Windows.Forms.PictureBox();
 			this.dashboardPanel = new System.Windows.Forms.Panel();
@@ -74,7 +74,7 @@ namespace AiCashGuard.Forms
 			this.Context_Menu_Start_Transaction = new MaterialSkin.Controls.MaterialContextMenuStrip();
 			this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.checkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.roundedPanel2 = new RoundedPanel();
+			this.roundedPanel2 = new AiCashGuard.UserControls.RoundedPanel();
 			this.Pic_Box_Customer = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
@@ -117,6 +117,7 @@ namespace AiCashGuard.Forms
 			this.panel1.Padding = new System.Windows.Forms.Padding(5);
 			this.panel1.Size = new System.Drawing.Size(1170, 70);
 			this.panel1.TabIndex = 37;
+			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 			// 
 			// panel7
 			// 
@@ -252,11 +253,11 @@ namespace AiCashGuard.Forms
 			this.CheckTextBtn.TabIndex = 3;
 			this.CheckTextBtn.Text = "Checks";
 			this.CheckTextBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CheckTextBtn.Click += new System.EventHandler(this.CheckTextBtn_Click);
-            // 
-            // CheckImageBtn
-            // 
-            this.CheckImageBtn.Dock = System.Windows.Forms.DockStyle.Top;
+			this.CheckTextBtn.Click += new System.EventHandler(this.CheckTextBtn_Click);
+			// 
+			// CheckImageBtn
+			// 
+			this.CheckImageBtn.Dock = System.Windows.Forms.DockStyle.Top;
 			this.CheckImageBtn.Image = ((System.Drawing.Image)(resources.GetObject("CheckImageBtn.Image")));
 			this.CheckImageBtn.InitialImage = ((System.Drawing.Image)(resources.GetObject("CheckImageBtn.InitialImage")));
 			this.CheckImageBtn.Location = new System.Drawing.Point(0, 0);
@@ -305,12 +306,11 @@ namespace AiCashGuard.Forms
 			this.CustomerTextBtn.TabIndex = 3;
 			this.CustomerTextBtn.Text = "Customers";
 			this.CustomerTextBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CustomerTextBtn.Click += new System.EventHandler(this.CustomerTextBtn_Click);
-
-            // 
-            // roundedPanel7
-            // 
-            this.roundedPanel7.BackColor = System.Drawing.Color.White;
+			this.CustomerTextBtn.Click += new System.EventHandler(this.CustomerTextBtn_Click);
+			// 
+			// roundedPanel7
+			// 
+			this.roundedPanel7.BackColor = System.Drawing.Color.White;
 			this.roundedPanel7.Controls.Add(this.ReportImageBtn);
 			this.roundedPanel7.Controls.Add(this.ReportTextBtn);
 			this.roundedPanel7.CornerRadius = 20;
@@ -345,11 +345,11 @@ namespace AiCashGuard.Forms
 			this.ReportTextBtn.TabIndex = 3;
 			this.ReportTextBtn.Text = "Reports";
 			this.ReportTextBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ReportTextBtn.Click += new System.EventHandler(this.ReportTextBtn_Click);
-            // 
-            // roundedPanel8
-            // 
-            this.roundedPanel8.BackColor = System.Drawing.Color.White;
+			this.ReportTextBtn.Click += new System.EventHandler(this.ReportTextBtn_Click);
+			// 
+			// roundedPanel8
+			// 
+			this.roundedPanel8.BackColor = System.Drawing.Color.White;
 			this.roundedPanel8.Controls.Add(this.DepsoitTextBtn);
 			this.roundedPanel8.Controls.Add(this.DepositImageBtn);
 			this.roundedPanel8.CornerRadius = 20;
@@ -376,7 +376,7 @@ namespace AiCashGuard.Forms
 			// 
 			this.DepositImageBtn.Dock = System.Windows.Forms.DockStyle.Top;
 			this.DepositImageBtn.Image = ((System.Drawing.Image)(resources.GetObject("DepositImageBtn.Image")));
-			this.DepositImageBtn.InitialImage = ((System.Drawing.Image)(resources.GetObject("DepositImageBtn.InitialImage")));
+			this.DepositImageBtn.InitialImage = null;
 			this.DepositImageBtn.Location = new System.Drawing.Point(0, 0);
 			this.DepositImageBtn.Name = "DepositImageBtn";
 			this.DepositImageBtn.Size = new System.Drawing.Size(228, 124);
@@ -425,11 +425,11 @@ namespace AiCashGuard.Forms
 			this.panel14.Name = "panel14";
 			this.panel14.Size = new System.Drawing.Size(231, 631);
 			this.panel14.TabIndex = 2;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.tableLayoutPanel3.ColumnCount = 1;
+			// 
+			// tableLayoutPanel3
+			// 
+			this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+			this.tableLayoutPanel3.ColumnCount = 1;
 			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel3.Controls.Add(this.LiveCustImg3, 0, 2);
 			this.tableLayoutPanel3.Controls.Add(this.LiveCustImg2, 0, 1);
@@ -448,42 +448,39 @@ namespace AiCashGuard.Forms
 			// LiveCustImg3
 			// 
 			this.LiveCustImg3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.LiveCustImg3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
 			this.LiveCustImg3.Location = new System.Drawing.Point(13, 377);
 			this.LiveCustImg3.Name = "LiveCustImg3";
 			this.LiveCustImg3.Size = new System.Drawing.Size(205, 177);
 			this.LiveCustImg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.LiveCustImg3.TabIndex = 3;
 			this.LiveCustImg3.TabStop = false;
-            this.LiveCustImg3.Click += new System.EventHandler(this.LiveCustImg3_Click);
-            // 
-            // LiveCustImg2
-            // 
-            this.LiveCustImg2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.LiveCustImg2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+			this.LiveCustImg3.Click += new System.EventHandler(this.LiveCustImg3_Click);
+			// 
+			// LiveCustImg2
+			// 
+			this.LiveCustImg2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.LiveCustImg2.Location = new System.Drawing.Point(13, 195);
 			this.LiveCustImg2.Name = "LiveCustImg2";
 			this.LiveCustImg2.Size = new System.Drawing.Size(205, 176);
 			this.LiveCustImg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.LiveCustImg2.TabIndex = 2;
 			this.LiveCustImg2.TabStop = false;
-            this.LiveCustImg2.Click += new System.EventHandler(this.LiveCustImg2_Click);
-            // 
-            // LiveCustImg1
-            // 
-            this.LiveCustImg1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.LiveCustImg1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.LiveCustImg2.Click += new System.EventHandler(this.LiveCustImg2_Click);
+			// 
+			// LiveCustImg1
+			// 
+			this.LiveCustImg1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.LiveCustImg1.Location = new System.Drawing.Point(13, 13);
 			this.LiveCustImg1.Name = "LiveCustImg1";
 			this.LiveCustImg1.Size = new System.Drawing.Size(205, 176);
 			this.LiveCustImg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.LiveCustImg1.TabIndex = 1;
 			this.LiveCustImg1.TabStop = false;
-            this.LiveCustImg1.Click += new System.EventHandler(this.LiveCustImg1_Click);
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.label24);
+			this.LiveCustImg1.Click += new System.EventHandler(this.LiveCustImg1_Click);
+			// 
+			// panel16
+			// 
+			this.panel16.Controls.Add(this.label24);
 			this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel16.Location = new System.Drawing.Point(0, 0);
 			this.panel16.Name = "panel16";

@@ -1,4 +1,6 @@
 ﻿using AiCashGuard.Forms;
+using AiCashGuard.Forms.AuthModule;
+using AiCashGuard.Forms.TransactionModule;
 using System;
 using System.Windows.Forms;
 
@@ -11,7 +13,7 @@ namespace AiCashGuard
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Login());
+			Application.Run(new BulkScanScreen());
 		}
 	}
 }

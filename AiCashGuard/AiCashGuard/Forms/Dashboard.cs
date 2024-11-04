@@ -580,5 +580,10 @@ namespace AiCashGuard.Forms
 			//    //Error Dialog
 			//}
 		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
 	}
 }
