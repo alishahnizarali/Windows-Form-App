@@ -187,6 +187,12 @@
     <Compile Include="Forms\AuthModule\CreateUserPopup.Designer.cs">
       <DependentUpon>CreateUserPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CheckModule\CheckDetailBulkPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CheckModule\CheckDetailBulkPopup.Designer.cs">
+      <DependentUpon>CheckDetailBulkPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TransactionModule\BulkScanScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -408,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CheckModule\AddNewCheck.resx">
       <DependentUpon>AddNewCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CheckModule\CheckDetailBulkPopup.resx">
+      <DependentUpon>CheckDetailBulkPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CheckModule\EditCheck.resx">
       <DependentUpon>EditCheck.cs</DependentUpon>
