@@ -193,6 +193,24 @@
     <Compile Include="Forms\CheckModule\CheckDetailBulkPopup.Designer.cs">
       <DependentUpon>CheckDetailBulkPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DepositModule\CreateDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DepositModule\CreateDeposit.Designer.cs">
+      <DependentUpon>CreateDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DepositModule\DepositDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DepositModule\DepositDetail.Designer.cs">
+      <DependentUpon>DepositDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DepositModule\DepositList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DepositModule\DepositList.Designer.cs">
+      <DependentUpon>DepositList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TransactionModule\BulkScanScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -454,6 +472,15 @@
     <EmbeddedResource Include="Forms\AuthModule\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DepositModule\CreateDeposit.resx">
+      <DependentUpon>CreateDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DepositModule\DepositDetail.resx">
+      <DependentUpon>DepositDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DepositModule\DepositList.resx">
+      <DependentUpon>DepositList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
@@ -530,7 +557,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\DepositModule\" />
     <Folder Include="Model\External\" />
     <Folder Include="Model\Scanner\" />
     <Folder Include="TrainModel\" />
