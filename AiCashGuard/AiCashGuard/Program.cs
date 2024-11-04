@@ -13,7 +13,7 @@ namespace AiCashGuard
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new BulkScanScreen());
+			Application.Run(new CustomerTransactionProcess());
 		}
 	}
 }

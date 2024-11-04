@@ -366,5 +366,10 @@ namespace AiCashGuard.Forms.TransactionModule
         {
             isAutoMSR = false;
         }
-    }
+
+		private void Next_Btn_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
