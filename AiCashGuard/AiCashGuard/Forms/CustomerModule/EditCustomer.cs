@@ -2,7 +2,8 @@
 using AiCashGuard.Model.Internal.Customer;
 using AiCashGuard.Processor;
 using AiCashGuard.UserControls;
-using ExcellaSTX.Controller;
+//Moiz-Comment
+//using ExcellaSTX.Controller;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -13,8 +14,9 @@ namespace AiCashGuard.Forms.CustomerModule
 {
     public partial class EditCustomer : MaterialForm
     {
-        private static ScannerController scanner;
-        private static CameraHandler camera;
+		//Moiz-Comment
+		//private static ScannerController scanner;
+		private static CameraHandler camera;
         public int customerId = 0;
         private CustomerDetailModel custDetails;
         public EditCustomer()
@@ -56,29 +58,31 @@ namespace AiCashGuard.Forms.CustomerModule
 
         private async void ID_Image_Front_Click(object sender, EventArgs e)
         {
-            scanner = new ScannerController();
-            var response = await scanner.IDScanOnClick();
-            if (response != null)
-            {
-                byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
-                System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
-                this.ID_Image_Front.Image = Image.FromStream(ms);
-            }
-        }
+			//Moiz-Comment
+			//scanner = new ScannerController();
+			//var response = await scanner.IDScanOnClick();
+			//if (response != null)
+			//{
+			//    byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
+			//    System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
+			//    this.ID_Image_Front.Image = Image.FromStream(ms);
+			//}
+		}
 
-        private async void ID_Image_Back_Click(object sender, EventArgs e)
+		private async void ID_Image_Back_Click(object sender, EventArgs e)
         {
-            scanner = new ScannerController();
-            var response = await scanner.IDScanOnClick();
-            if (response != null)
-            {
-                byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
-                System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
-                this.ID_Image_Back.Image = Image.FromStream(ms);
-            }
-        }
+			//Moiz-Comment
+			//scanner = new ScannerController();
+			//var response = await scanner.IDScanOnClick();
+			//if (response != null)
+			//{
+			//    byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
+			//    System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
+			//    this.ID_Image_Back.Image = Image.FromStream(ms);
+			//}
+		}
 
-        private async void Customer_Face_Image_Click(object sender, EventArgs e)
+		private async void Customer_Face_Image_Click(object sender, EventArgs e)
         {
             camera = new CameraHandler();
             await camera.CaptureFrame(true);

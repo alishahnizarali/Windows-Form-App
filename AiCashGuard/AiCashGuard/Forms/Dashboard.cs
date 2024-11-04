@@ -8,7 +8,7 @@ using AiCashGuard.Model.Internal.Transaction;
 using AiCashGuard.Model.UI;
 using AiCashGuard.Processor;
 using AiCashGuard.UserControls;
-using ExcellaSTX.Controller;
+//using ExcellaSTX.Controller;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,7 @@ namespace AiCashGuard.Forms
 {
     public partial class Dashboard : BaseForm
     {
-        private static ScannerController scanner;
+       // private static ScannerController scanner;
         private static CameraHandler camera;
         Queue<ImageModel> imageList = new Queue<ImageModel>();
         private bool stopCamera = true;
@@ -27,8 +27,9 @@ namespace AiCashGuard.Forms
 
         public Dashboard()
         {
-            scanner = new ScannerController();
-            camera = new CameraHandler();
+            //Moiz-Comment
+            //scanner = new ScannerController();
+            //camera = new CameraHandler();
             InitializeComponent();
             BaseTableLayoutPanel.Controls.Add(this.dashboardPanel, 0, 1); // Row 1 for dashboardPanel
         }
@@ -461,122 +462,123 @@ namespace AiCashGuard.Forms
 
         public async void AutoScanCheck(TransactionProcessModel trans = null)
         {
-            try
-            {
-                bool documentFound = false;
-                scanProcess = true;
-                while (scanProcess)
-                {
-                    var value = await scanner.CheckDeviceStatus();
-                    if (value == "CHECK")
-                    {
-                        //scanProcess = false;
-                        documentFound = true;
-                        break;
-                    }
-                }
+			//Moiz-Comment
+			//try
+			//{
+			//    bool documentFound = false;
+			//    scanProcess = true;
+			//    while (scanProcess)
+			//    {
+			//        var value = await scanner.CheckDeviceStatus();
+			//        if (value == "CHECK")
+			//        {
+			//            //scanProcess = false;
+			//            documentFound = true;
+			//            break;
+			//        }
+			//    }
 
-                if (documentFound && scanProcess)
-                {
-                    var response = await scanner.CheckScanOnClick();
+			//    if (documentFound && scanProcess)
+			//    {
+			//        var response = await scanner.CheckScanOnClick();
 
-                    if (trans == null)
-                        trans = new TransactionProcessModel();
+			//        if (trans == null)
+			//            trans = new TransactionProcessModel();
 
-                    if (response.scanType != null)
-                    {
-                        //From Detail screen where check is already selected
-                        if (trans != null && trans.checkId > 0)
-                        {
-                            trans.step += 1;
-                            trans.checkImage = response.checkFrontImage;
+			//        if (response.scanType != null)
+			//        {
+			//            //From Detail screen where check is already selected
+			//            if (trans != null && trans.checkId > 0)
+			//            {
+			//                trans.step += 1;
+			//                trans.checkImage = response.checkFrontImage;
 
-                            this.Invoke((MethodInvoker)delegate
-                            {
-                                BaseTableLayoutPanel.FindForm().Hide();
-                                CheckDetail checkDetail = new CheckDetail(true, trans);
-                                checkDetail.checkId = trans.checkId;
-                                checkDetail.WindowState = this.WindowState;
-                                checkDetail.Show();
-                            });
-                        }
-                        else if (!string.IsNullOrWhiteSpace(response.accountNumber) && response.accountNumber.All(char.IsDigit) && !string.IsNullOrWhiteSpace(response.routingNumber) && response.routingNumber.All(char.IsDigit))
-                        {
-                            var acc = new CheckAccountProcessor().GetCheckAccountByAccountNumber(response.accountNumber, response.routingNumber);
+			//                this.Invoke((MethodInvoker)delegate
+			//                {
+			//                    BaseTableLayoutPanel.FindForm().Hide();
+			//                    CheckDetail checkDetail = new CheckDetail(true, trans);
+			//                    checkDetail.checkId = trans.checkId;
+			//                    checkDetail.WindowState = this.WindowState;
+			//                    checkDetail.Show();
+			//                });
+			//            }
+			//            else if (!string.IsNullOrWhiteSpace(response.accountNumber) && response.accountNumber.All(char.IsDigit) && !string.IsNullOrWhiteSpace(response.routingNumber) && response.routingNumber.All(char.IsDigit))
+			//            {
+			//                var acc = new CheckAccountProcessor().GetCheckAccountByAccountNumber(response.accountNumber, response.routingNumber);
 
-                            if (acc == 0)
-                            {
-                                this.Invoke((MethodInvoker)delegate
-                                {
-                                    if (string.IsNullOrWhiteSpace(trans.processStartsWith))
-                                    {
-                                        trans.step = 1;
-                                        trans.processStartsWith = "Check";
-                                    }
-                                    trans.checkImage = response.checkFrontImage;
-                                    trans.checkNumber = response.checkNumber;
-                                    trans.accountNumber = response.accountNumber;
-                                    trans.routingNumber = response.routingNumber;
+			//                if (acc == 0)
+			//                {
+			//                    this.Invoke((MethodInvoker)delegate
+			//                    {
+			//                        if (string.IsNullOrWhiteSpace(trans.processStartsWith))
+			//                        {
+			//                            trans.step = 1;
+			//                            trans.processStartsWith = "Check";
+			//                        }
+			//                        trans.checkImage = response.checkFrontImage;
+			//                        trans.checkNumber = response.checkNumber;
+			//                        trans.accountNumber = response.accountNumber;
+			//                        trans.routingNumber = response.routingNumber;
 
-                                    BaseTableLayoutPanel.FindForm().Hide();
-                                    CheckTransactionProcess checktransactionProcess = new CheckTransactionProcess(trans);
-                                    checktransactionProcess.WindowState = this.WindowState;
-                                    checktransactionProcess.Show();
-                                    checktransactionProcess.AddNewTransactionCheck();
-                                });
-                            }
-                            else
-                            {
+			//                        BaseTableLayoutPanel.FindForm().Hide();
+			//                        CheckTransactionProcess checktransactionProcess = new CheckTransactionProcess(trans);
+			//                        checktransactionProcess.WindowState = this.WindowState;
+			//                        checktransactionProcess.Show();
+			//                        checktransactionProcess.AddNewTransactionCheck();
+			//                    });
+			//                }
+			//                else
+			//                {
 
-                                if (string.IsNullOrWhiteSpace(trans.processStartsWith))
-                                {
-                                    trans.step = 2;
-                                    trans.processStartsWith = "Check";
-                                }
-                                else
-                                    trans.step += 1;
-                                trans.checkImage = response.checkFrontImage;
-                                trans.checkNumber = response.checkNumber;
-                                trans.accountNumber = response.accountNumber;
-                                trans.routingNumber = response.routingNumber;
+			//                    if (string.IsNullOrWhiteSpace(trans.processStartsWith))
+			//                    {
+			//                        trans.step = 2;
+			//                        trans.processStartsWith = "Check";
+			//                    }
+			//                    else
+			//                        trans.step += 1;
+			//                    trans.checkImage = response.checkFrontImage;
+			//                    trans.checkNumber = response.checkNumber;
+			//                    trans.accountNumber = response.accountNumber;
+			//                    trans.routingNumber = response.routingNumber;
 
-                                this.Invoke((MethodInvoker)delegate
-                                {
-                                    BaseTableLayoutPanel.FindForm().Hide();
-                                    CheckDetail checkDetail = new CheckDetail(true, trans);
-                                    checkDetail.checkId = acc;
-                                    checkDetail.WindowState = this.WindowState;
-                                    checkDetail.Show();
-                                });
-                            }
-                        }
-                        else
-                        {
-                            if (string.IsNullOrWhiteSpace(trans.processStartsWith))
-                            {
-                                trans.step = 1;
-                                trans.processStartsWith = "Check";
-                            }
-                            trans.checkImage = response.checkFrontImage;
+			//                    this.Invoke((MethodInvoker)delegate
+			//                    {
+			//                        BaseTableLayoutPanel.FindForm().Hide();
+			//                        CheckDetail checkDetail = new CheckDetail(true, trans);
+			//                        checkDetail.checkId = acc;
+			//                        checkDetail.WindowState = this.WindowState;
+			//                        checkDetail.Show();
+			//                    });
+			//                }
+			//            }
+			//            else
+			//            {
+			//                if (string.IsNullOrWhiteSpace(trans.processStartsWith))
+			//                {
+			//                    trans.step = 1;
+			//                    trans.processStartsWith = "Check";
+			//                }
+			//                trans.checkImage = response.checkFrontImage;
 
-                            this.Invoke((MethodInvoker)delegate
-                            {
-                                BaseTableLayoutPanel.FindForm().Hide();
-                                CheckTransactionProcess checktransactionProcess = new CheckTransactionProcess(trans);
-                                checktransactionProcess.WindowState = this.WindowState;
-                                checktransactionProcess.Show();
-                                checktransactionProcess.CheckScanStatus();
-                            });
-                        }
-                    }
-                }
+			//                this.Invoke((MethodInvoker)delegate
+			//                {
+			//                    BaseTableLayoutPanel.FindForm().Hide();
+			//                    CheckTransactionProcess checktransactionProcess = new CheckTransactionProcess(trans);
+			//                    checktransactionProcess.WindowState = this.WindowState;
+			//                    checktransactionProcess.Show();
+			//                    checktransactionProcess.CheckScanStatus();
+			//                });
+			//            }
+			//        }
+			//    }
 
-                
-            }
-            catch (Exception e)
-            {
-                //Error Dialog
-            }
-        }
-    }
+
+			//}
+			//catch (Exception e)
+			//{
+			//    //Error Dialog
+			//}
+		}
+	}
 }

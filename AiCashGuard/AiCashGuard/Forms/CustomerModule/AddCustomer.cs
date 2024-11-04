@@ -3,7 +3,8 @@ using AiCashGuard.Model.Internal.Customer;
 using AiCashGuard.Model.UI;
 using AiCashGuard.Processor;
 using AiCashGuard.UserControls;
-using ExcellaSTX.Controller;
+//Moiz-Comment
+//using ExcellaSTX.Controller;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -15,8 +16,9 @@ namespace AiCashGuard.Forms.CustomerModule
 {
     public partial class AddCustomer : MaterialForm
     {
-        private static ScannerController scanner = new ScannerController();
-        private static CameraHandler camera;
+		//Moiz-Comment
+		//private static ScannerController scanner = new ScannerController();
+		private static CameraHandler camera;
         public int customerId = 0;
         private bool isAutoMSR;
         public AddCustomer(TransProcessAddCustomerModel transProcessAddCustomerModel = null)
@@ -39,32 +41,34 @@ namespace AiCashGuard.Forms.CustomerModule
 
         private async void ID_Image1_Click(object sender, EventArgs e)
         {
-            StopAutoMSRRead();
+			//Moiz-Comment
+			//StopAutoMSRRead();
 
-            var response = await scanner.IDScanOnClick();
-            if (response != null)
-            {
-                byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
-                System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
-                this.ID_Image1.SizeMode = PictureBoxSizeMode.Zoom;
-                this.ID_Image1.Image = Image.FromStream(ms);
-            }
-        }
+			//var response = await scanner.IDScanOnClick();
+			//if (response != null)
+			//{
+			//    byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
+			//    System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
+			//    this.ID_Image1.SizeMode = PictureBoxSizeMode.Zoom;
+			//    this.ID_Image1.Image = Image.FromStream(ms);
+			//}
+		}
 
-        private async void ID_Image2_Click(object sender, EventArgs e)
+		private async void ID_Image2_Click(object sender, EventArgs e)
         {
-            StopAutoMSRRead();
-            var response = await scanner.IDScanOnClick();
-            if (response != null)
-            {
-                byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
-                System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
-                this.ID_Image2.SizeMode = PictureBoxSizeMode.Zoom;
-                this.ID_Image2.Image = Image.FromStream(ms);
-            }
-        }
+			//Moiz-Comment
+			//StopAutoMSRRead();
+			//var response = await scanner.IDScanOnClick();
+			//if (response != null)
+			//{
+			//    byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
+			//    System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
+			//    this.ID_Image2.SizeMode = PictureBoxSizeMode.Zoom;
+			//    this.ID_Image2.Image = Image.FromStream(ms);
+			//}
+		}
 
-        private async void Cust_Image_Click(object sender, EventArgs e)
+		private async void Cust_Image_Click(object sender, EventArgs e)
         {
             camera = new CameraHandler();
             await camera.CaptureFrame(true);
@@ -194,53 +198,53 @@ namespace AiCashGuard.Forms.CustomerModule
 
         public async Task<TransProcessAddCustomerModel> ReadMSRData()
         {
-            isAutoMSR = true;
-            while (isAutoMSR)
-            {
-                var response = await scanner.MSRScanOnClick();
+            //isAutoMSR = true;
+            //while (isAutoMSR)
+            //{
+            //    var response = await scanner.MSRScanOnClick();
 
-                if (response != null)
-                {
-                    if (!string.IsNullOrWhiteSpace(response.firstName))
-                    {
-                        TransProcessAddCustomerModel transProcessAddCustomerModel = new TransProcessAddCustomerModel()
-                        {
-                            firstName = response.firstName,
-                            lastName = response.lastName,
-                            idNumber = response.idNumber.Substring(6),
-                            address = response.address,
-                            city = response.city,
-                            state = response.stateCode,
-                            zipCode = response.zipCode,
-                            dob = response.dateOfBirth.Insert(4, "/").Insert(7, "/"),
-                        };
-                        return transProcessAddCustomerModel;
-                    }
-                    else
-                    {
-                        DialogResult result = CustomMessageBox.Show("Question", "Card has not properly swipped. Click again if you want to swipe again", "Card Swipe Warning !", "Swipe Again", true);
-                        if (result == DialogResult.OK)
-                        {
-                            continue;
-                        }
-                        else
-                            return null;
-                    }
-                }
-                else
-                {
-                    continue;
-                    /*DialogResult result = CustomMessageBox.Show("Question", "Card has not properly swipped. Click again if you want to swipe again", "Card Swipe Warning !", "Swipe Again", true);
-                    if (result == DialogResult.OK)
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        return null;
-                    }*/
-                }
-            }
+            //    if (response != null)
+            //    {
+            //        if (!string.IsNullOrWhiteSpace(response.firstName))
+            //        {
+            //            TransProcessAddCustomerModel transProcessAddCustomerModel = new TransProcessAddCustomerModel()
+            //            {
+            //                firstName = response.firstName,
+            //                lastName = response.lastName,
+            //                idNumber = response.idNumber.Substring(6),
+            //                address = response.address,
+            //                city = response.city,
+            //                state = response.stateCode,
+            //                zipCode = response.zipCode,
+            //                dob = response.dateOfBirth.Insert(4, "/").Insert(7, "/"),
+            //            };
+            //            return transProcessAddCustomerModel;
+            //        }
+            //        else
+            //        {
+            //            DialogResult result = CustomMessageBox.Show("Question", "Card has not properly swipped. Click again if you want to swipe again", "Card Swipe Warning !", "Swipe Again", true);
+            //            if (result == DialogResult.OK)
+            //            {
+            //                continue;
+            //            }
+            //            else
+            //                return null;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        continue;
+            //        /*DialogResult result = CustomMessageBox.Show("Question", "Card has not properly swipped. Click again if you want to swipe again", "Card Swipe Warning !", "Swipe Again", true);
+            //        if (result == DialogResult.OK)
+            //        {
+            //            continue;
+            //        }
+            //        else
+            //        {
+            //            return null;
+            //        }*/
+            //    }
+            //}
 
             return null;
         }

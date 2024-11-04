@@ -4,7 +4,8 @@ using AiCashGuard.Forms.CustomerModule;
 using AiCashGuard.Model.UI;
 using AiCashGuard.UserControls;
 using AiCashGuard.Processor;
-using ExcellaSTX.Controller;
+//Moiz-Comment
+//using ExcellaSTX.Controller;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -16,8 +17,9 @@ namespace AiCashGuard.Forms.TransactionModule
 {
     public partial class CustomerTransactionProcess : BaseForm
     {
-        private static ScannerController scanner;
-        TransactionProcessModel transactionProcessModel;
+		//Moiz-Comment
+		//private static ScannerController scanner;
+		TransactionProcessModel transactionProcessModel;
         private static bool isAutoMSR;
         public CustomerTransactionProcess(TransactionProcessModel tpm = null)
         {
@@ -308,54 +310,54 @@ namespace AiCashGuard.Forms.TransactionModule
 
         public async Task<TransProcessAddCustomerModel> ReadMSRData()
         {
-            scanner = new ScannerController();
-            isAutoMSR = true;
-            while (isAutoMSR)
-            {
-                var response = await scanner.MSRScanOnClick();
+            //scanner = new ScannerController();
+            //isAutoMSR = true;
+            //while (isAutoMSR)
+            //{
+            //    var response = await scanner.MSRScanOnClick();
 
-                if (response != null)
-                {
-                    if (!string.IsNullOrWhiteSpace(response.firstName))
-                    {
-                        TransProcessAddCustomerModel transProcessAddCustomerModel = new TransProcessAddCustomerModel()
-                        {
-                            firstName = response.firstName,
-                            lastName = response.lastName,
-                            idNumber = response.idNumber.Substring(6),
-                            address = response.address,
-                            city = response.city,
-                            state = response.stateCode,
-                            zipCode = response.zipCode,
-                            dob = response.dateOfBirth.Insert(4, "/").Insert(7, "/"),
-                        };
-                        return transProcessAddCustomerModel;
-                    }
-                    else
-                    {
-                        DialogResult result = CustomMessageBox.Show("Question", "Card has not properly swipped. Click again if you want to swipe again", "Card Swipe Warning !", "Swipe Again", true);
-                        if (result == DialogResult.OK)
-                        {
-                            continue;
-                        }
-                        else
-                            return null;
-                    }
-                }
-                else
-                {
-                    continue;
-                    /*DialogResult result = CustomMessageBox.Show("Question", "Card has not properly swipped. Click again if you want to swipe again", "Card Swipe Warning !", "Swipe Again", true);
-                    if (result == DialogResult.OK)
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        return null;
-                    }*/
-                }
-            }
+            //    if (response != null)
+            //    {
+            //        if (!string.IsNullOrWhiteSpace(response.firstName))
+            //        {
+            //            TransProcessAddCustomerModel transProcessAddCustomerModel = new TransProcessAddCustomerModel()
+            //            {
+            //                firstName = response.firstName,
+            //                lastName = response.lastName,
+            //                idNumber = response.idNumber.Substring(6),
+            //                address = response.address,
+            //                city = response.city,
+            //                state = response.stateCode,
+            //                zipCode = response.zipCode,
+            //                dob = response.dateOfBirth.Insert(4, "/").Insert(7, "/"),
+            //            };
+            //            return transProcessAddCustomerModel;
+            //        }
+            //        else
+            //        {
+            //            DialogResult result = CustomMessageBox.Show("Question", "Card has not properly swipped. Click again if you want to swipe again", "Card Swipe Warning !", "Swipe Again", true);
+            //            if (result == DialogResult.OK)
+            //            {
+            //                continue;
+            //            }
+            //            else
+            //                return null;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        continue;
+            //        /*DialogResult result = CustomMessageBox.Show("Question", "Card has not properly swipped. Click again if you want to swipe again", "Card Swipe Warning !", "Swipe Again", true);
+            //        if (result == DialogResult.OK)
+            //        {
+            //            continue;
+            //        }
+            //        else
+            //        {
+            //            return null;
+            //        }*/
+            //    }
+            //}
 
             return null;
         }

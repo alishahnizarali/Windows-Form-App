@@ -1,7 +1,8 @@
 ﻿using AiCashGuard.Model.Internal.Checks;
 using AiCashGuard.Processor;
 using AiCashGuard.UserControls;
-using ExcellaSTX.Controller;
+//Moiz-Comment
+//using ExcellaSTX.Controller;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -11,8 +12,9 @@ namespace AiCashGuard.Forms.CheckModule
 {
 	public partial class EditCheck : Form
 	{
-        private static ScannerController scanner;
-        public int checkId = 0;
+		//Moiz-Comment
+		//private static ScannerController scanner;
+		public int checkId = 0;
         private CheckDetailModel checkDetail;
 
         public EditCheck()
@@ -43,17 +45,18 @@ namespace AiCashGuard.Forms.CheckModule
 
         private async void Check_Image_Click(object sender, EventArgs e)
         {
-            scanner = new ScannerController();
-            var response = await scanner.IDScanOnClick();
-            if (response != null)
-            {
-                byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
-                System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
-                this.Check_Image.Image = Image.FromStream(ms);
-            }
-        }
+			//Moiz-Comment
+			//scanner = new ScannerController();
+			//var response = await scanner.IDScanOnClick();
+			//if (response != null)
+			//{
+			//    byte[] imageBytes = Convert.FromBase64String(response.idFrontImage);
+			//    System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
+			//    this.Check_Image.Image = Image.FromStream(ms);
+			//}
+		}
 
-        private void Check_Image_Cancel_Click(object sender, EventArgs e)
+		private void Check_Image_Cancel_Click(object sender, EventArgs e)
         {
             Check_Image.Image = null;
             Check_Image_Cancel.Visible = false;

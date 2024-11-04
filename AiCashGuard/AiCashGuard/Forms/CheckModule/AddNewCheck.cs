@@ -2,7 +2,8 @@
 using AiCashGuard.Model.UI;
 using AiCashGuard.Processor;
 using AiCashGuard.UserControls;
-using ExcellaSTX.Controller;
+//Moiz-Comment
+//using ExcellaSTX.Controller;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -14,8 +15,9 @@ namespace AiCashGuard.Forms.CheckModule
 {
     public partial class AddNewCheck : MaterialForm
     {
-        private static ScannerController scanner;
-        public int checkId;
+		//Moiz-Comment
+		//private static ScannerController scanner;
+		public int checkId;
         public string checkImage;
         public AddNewCheck(TransProcessAddCheckModel tAddCheck = null)
         {
@@ -35,24 +37,25 @@ namespace AiCashGuard.Forms.CheckModule
 
         private async void Check_Image_Click(object sender, EventArgs e)
         {
-            scanner = new ScannerController();
-            var check = await scanner.CheckScanOnClick();
-            if (check != null)
-            {
-                checkImage = check.checkFrontImage;
-                byte[] imageBytes = Convert.FromBase64String(check.checkFrontImage);
-                System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
-                this.Check_Image.SizeMode = PictureBoxSizeMode.Zoom;
-                this.Check_Image.Image = Image.FromStream(ms);
-                this.Scan_Label.Visible = false;
-                if (check.accountNumber != null && check.accountNumber.All(char.IsDigit) && check.routingNumber != null && check.routingNumber.All(char.IsDigit))
-                {
-                    Account_Number.Text = check.accountNumber;
-                    Transit_Number.Text = check.routingNumber;
-                }
-            }
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
+			//Moiz-Comment
+			//scanner = new ScannerController();
+			//var check = await scanner.CheckScanOnClick();
+			//if (check != null)
+			//{
+			//    checkImage = check.checkFrontImage;
+			//    byte[] imageBytes = Convert.FromBase64String(check.checkFrontImage);
+			//    System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBytes);
+			//    this.Check_Image.SizeMode = PictureBoxSizeMode.Zoom;
+			//    this.Check_Image.Image = Image.FromStream(ms);
+			//    this.Scan_Label.Visible = false;
+			//    if (check.accountNumber != null && check.accountNumber.All(char.IsDigit) && check.routingNumber != null && check.routingNumber.All(char.IsDigit))
+			//    {
+			//        Account_Number.Text = check.accountNumber;
+			//        Transit_Number.Text = check.routingNumber;
+			//    }
+			//}
+		}
+		private void panel1_Paint(object sender, PaintEventArgs e)
         {
         }
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
