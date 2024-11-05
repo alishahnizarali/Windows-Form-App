@@ -38,6 +38,9 @@
 			this.Alert_TextBox = new System.Windows.Forms.TextBox();
 			this.panel8 = new System.Windows.Forms.Panel();
 			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+			this.roundedPanel14 = new AiCashGuard.UserControls.RoundedPanel();
+			this.label38 = new System.Windows.Forms.Label();
+			this.Year_Label = new System.Windows.Forms.Label();
 			this.roundedPanel8 = new AiCashGuard.UserControls.RoundedPanel();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.label21 = new System.Windows.Forms.Label();
@@ -100,15 +103,13 @@
 			this.panel6 = new System.Windows.Forms.Panel();
 			this.Cancel_btn = new System.Windows.Forms.Button();
 			this.Page_Title = new System.Windows.Forms.Label();
-			this.roundedPanel14 = new AiCashGuard.UserControls.RoundedPanel();
-			this.label38 = new System.Windows.Forms.Label();
-			this.Year_Label = new System.Windows.Forms.Label();
 			this.BackPanel.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
 			this.roundedPanel11.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.panel8.SuspendLayout();
 			this.tableLayoutPanel4.SuspendLayout();
+			this.roundedPanel14.SuspendLayout();
 			this.roundedPanel8.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.roundedPanel3.SuspendLayout();
@@ -133,7 +134,6 @@
 			this.panel11.SuspendLayout();
 			this.panel20.SuspendLayout();
 			this.panel6.SuspendLayout();
-			this.roundedPanel14.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// BackPanel
@@ -263,6 +263,42 @@
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.tableLayoutPanel4.Size = new System.Drawing.Size(770, 429);
 			this.tableLayoutPanel4.TabIndex = 3;
+			// 
+			// roundedPanel14
+			// 
+			this.roundedPanel14.BackColor = System.Drawing.Color.White;
+			this.roundedPanel14.Controls.Add(this.label38);
+			this.roundedPanel14.Controls.Add(this.Year_Label);
+			this.roundedPanel14.CornerRadius = 20;
+			this.roundedPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.roundedPanel14.Location = new System.Drawing.Point(259, 289);
+			this.roundedPanel14.Name = "roundedPanel14";
+			this.roundedPanel14.Padding = new System.Windows.Forms.Padding(5);
+			this.roundedPanel14.Size = new System.Drawing.Size(250, 137);
+			this.roundedPanel14.TabIndex = 31;
+			// 
+			// label38
+			// 
+			this.label38.Dock = System.Windows.Forms.DockStyle.Top;
+			this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
+			this.label38.Location = new System.Drawing.Point(5, 5);
+			this.label38.Name = "label38";
+			this.label38.Size = new System.Drawing.Size(240, 17);
+			this.label38.TabIndex = 25;
+			this.label38.Text = "Year";
+			// 
+			// Year_Label
+			// 
+			this.Year_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Year_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Year_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
+			this.Year_Label.Location = new System.Drawing.Point(5, 95);
+			this.Year_Label.Name = "Year_Label";
+			this.Year_Label.Size = new System.Drawing.Size(240, 37);
+			this.Year_Label.TabIndex = 24;
+			this.Year_Label.Text = "10";
+			this.Year_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// roundedPanel8
 			// 
@@ -1070,6 +1106,7 @@
 			// 
 			// panel6
 			// 
+			this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(86)))), ((int)(((byte)(198)))));
 			this.panel6.Controls.Add(this.Cancel_btn);
 			this.panel6.Controls.Add(this.Page_Title);
 			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1100,50 +1137,15 @@
 			// Page_Title
 			// 
 			this.Page_Title.Dock = System.Windows.Forms.DockStyle.Left;
-			this.Page_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Page_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Page_Title.ForeColor = System.Drawing.Color.White;
 			this.Page_Title.Location = new System.Drawing.Point(10, 10);
 			this.Page_Title.Name = "Page_Title";
 			this.Page_Title.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-			this.Page_Title.Size = new System.Drawing.Size(143, 51);
+			this.Page_Title.Size = new System.Drawing.Size(203, 51);
 			this.Page_Title.TabIndex = 29;
 			this.Page_Title.Text = "Check Bulk Detail";
 			this.Page_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// roundedPanel14
-			// 
-			this.roundedPanel14.BackColor = System.Drawing.Color.White;
-			this.roundedPanel14.Controls.Add(this.label38);
-			this.roundedPanel14.Controls.Add(this.Year_Label);
-			this.roundedPanel14.CornerRadius = 20;
-			this.roundedPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel14.Location = new System.Drawing.Point(259, 289);
-			this.roundedPanel14.Name = "roundedPanel14";
-			this.roundedPanel14.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel14.Size = new System.Drawing.Size(250, 137);
-			this.roundedPanel14.TabIndex = 31;
-			// 
-			// label38
-			// 
-			this.label38.Dock = System.Windows.Forms.DockStyle.Top;
-			this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
-			this.label38.Location = new System.Drawing.Point(5, 5);
-			this.label38.Name = "label38";
-			this.label38.Size = new System.Drawing.Size(240, 17);
-			this.label38.TabIndex = 25;
-			this.label38.Text = "Year";
-			// 
-			// Year_Label
-			// 
-			this.Year_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.Year_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Year_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
-			this.Year_Label.Location = new System.Drawing.Point(5, 95);
-			this.Year_Label.Name = "Year_Label";
-			this.Year_Label.Size = new System.Drawing.Size(240, 37);
-			this.Year_Label.TabIndex = 24;
-			this.Year_Label.Text = "10";
-			this.Year_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// CheckDetailBulkPopup
 			// 
@@ -1164,6 +1166,7 @@
 			this.panel3.PerformLayout();
 			this.panel8.ResumeLayout(false);
 			this.tableLayoutPanel4.ResumeLayout(false);
+			this.roundedPanel14.ResumeLayout(false);
 			this.roundedPanel8.ResumeLayout(false);
 			this.roundedPanel8.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1195,7 +1198,6 @@
 			this.panel11.ResumeLayout(false);
 			this.panel20.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
-			this.roundedPanel14.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
