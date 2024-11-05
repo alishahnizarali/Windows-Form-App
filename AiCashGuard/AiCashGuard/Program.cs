@@ -1,4 +1,4 @@
-﻿using AiCashGuard.Forms.TransactionModule;
+﻿using AiCashGuard.Forms.AuthModule;
 using System;
 using System.Windows.Forms;
 
@@ -11,7 +11,7 @@ namespace AiCashGuard
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new TransactionFeePopup());
+			Application.Run(new CreateUserPopup());
 		}
 	}
 }
