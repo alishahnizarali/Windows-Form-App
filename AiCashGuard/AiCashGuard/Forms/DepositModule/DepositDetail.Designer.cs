@@ -83,6 +83,11 @@
 			this.panel4.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.gradientPanel1.SuspendLayout();
+			this.panel10.SuspendLayout();
+			this.Cust_Row_Panel.SuspendLayout();
+			this.panel11.SuspendLayout();
+			this.tableLayoutPanel3.SuspendLayout();
+			this.panel12.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -599,6 +604,11 @@
 			this.panel3.PerformLayout();
 			this.gradientPanel1.ResumeLayout(false);
 			this.gradientPanel1.PerformLayout();
+			this.panel10.ResumeLayout(false);
+			this.Cust_Row_Panel.ResumeLayout(false);
+			this.panel11.ResumeLayout(false);
+			this.tableLayoutPanel3.ResumeLayout(false);
+			this.panel12.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}

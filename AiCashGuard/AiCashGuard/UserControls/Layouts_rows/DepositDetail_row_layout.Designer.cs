@@ -52,6 +52,66 @@
 			this.CheckRow.Size = new System.Drawing.Size(761, 150);
 			this.CheckRow.TabIndex = 4;
 			// 
+			// Check_Business
+			// 
+			this.Check_Business.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Business.Location = new System.Drawing.Point(217, 0);
+			this.Check_Business.Name = "Check_Business";
+			this.Check_Business.Size = new System.Drawing.Size(101, 140);
+			this.Check_Business.TabIndex = 5;
+			this.Check_Business.Text = "Check Name";
+			this.Check_Business.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Address
+			// 
+			this.Check_Address.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Address.Location = new System.Drawing.Point(431, 0);
+			this.Check_Address.Name = "Check_Address";
+			this.Check_Address.Size = new System.Drawing.Size(101, 140);
+			this.Check_Address.TabIndex = 6;
+			this.Check_Address.Text = "Check Number";
+			this.Check_Address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Action
+			// 
+			this.Check_Action.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Action.Location = new System.Drawing.Point(645, 0);
+			this.Check_Action.Name = "Check_Action";
+			this.Check_Action.Size = new System.Drawing.Size(103, 140);
+			this.Check_Action.TabIndex = 4;
+			this.Check_Action.Text = "Status";
+			this.Check_Action.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Phone
+			// 
+			this.Check_Phone.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Phone.Location = new System.Drawing.Point(324, 0);
+			this.Check_Phone.Name = "Check_Phone";
+			this.Check_Phone.Size = new System.Drawing.Size(101, 140);
+			this.Check_Phone.TabIndex = 3;
+			this.Check_Phone.Text = "Check Date";
+			this.Check_Phone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Default
+			// 
+			this.Check_Default.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Default.Location = new System.Drawing.Point(538, 0);
+			this.Check_Default.Name = "Check_Default";
+			this.Check_Default.Size = new System.Drawing.Size(101, 140);
+			this.Check_Default.TabIndex = 2;
+			this.Check_Default.Text = "Check Amount";
+			this.Check_Default.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Transit
+			// 
+			this.Check_Transit.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Transit.Location = new System.Drawing.Point(110, 0);
+			this.Check_Transit.Name = "Check_Transit";
+			this.Check_Transit.Size = new System.Drawing.Size(101, 140);
+			this.Check_Transit.TabIndex = 1;
+			this.Check_Transit.Text = "Transaction ID";
+			this.Check_Transit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
 			// tableLayoutPanel1
 			// 
 			this.tableLayoutPanel1.ColumnCount = 7;
@@ -146,6 +206,7 @@
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(101, 134);
 			this.checkBox1.TabIndex = 7;
+			this.checkBox1.Text = "Select All";
 			this.checkBox1.UseVisualStyleBackColor = true;
 			// 
 			// DepositDetail_row
