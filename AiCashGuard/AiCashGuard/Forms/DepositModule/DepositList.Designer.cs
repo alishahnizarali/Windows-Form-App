@@ -34,14 +34,6 @@
 			this.Cust_Row_Panel = new System.Windows.Forms.Panel();
 			this.CustRowDataPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.panel8 = new System.Windows.Forms.Panel();
-			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-			this.Customer_ID = new System.Windows.Forms.Label();
-			this.Customer_FirstName = new System.Windows.Forms.Label();
-			this.Customer_LastName = new System.Windows.Forms.Label();
-			this.Customer_Phone = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.Customer_Address = new System.Windows.Forms.Label();
-			this.Customer_Flag = new System.Windows.Forms.Label();
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.paginationControl1 = new AiCashGuard.UserControls.PaginationControl();
 			this.panel6 = new System.Windows.Forms.Panel();
@@ -61,11 +53,16 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button8 = new System.Windows.Forms.Button();
+			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+			this.Deposit_ID = new System.Windows.Forms.Label();
+			this.Deposit_Date = new System.Windows.Forms.Label();
+			this.Total_Amount = new System.Windows.Forms.Label();
+			this.Check_Action = new System.Windows.Forms.Label();
+			this.No_of_Checks = new System.Windows.Forms.Label();
 			this.depositListPanel.SuspendLayout();
 			this.CustDataPanel.SuspendLayout();
 			this.Cust_Row_Panel.SuspendLayout();
 			this.panel8.SuspendLayout();
-			this.tableLayoutPanel3.SuspendLayout();
 			this.panel9.SuspendLayout();
 			this.panel6.SuspendLayout();
 			this.panel7.SuspendLayout();
@@ -74,6 +71,7 @@
 			this.panel4.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.roundedPanel2.SuspendLayout();
+			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// depositListPanel
@@ -125,122 +123,13 @@
 			// panel8
 			// 
 			this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-			this.panel8.Controls.Add(this.tableLayoutPanel3);
+			this.panel8.Controls.Add(this.tableLayoutPanel1);
 			this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel8.Location = new System.Drawing.Point(10, 10);
 			this.panel8.Name = "panel8";
 			this.panel8.Padding = new System.Windows.Forms.Padding(5);
 			this.panel8.Size = new System.Drawing.Size(1035, 27);
 			this.panel8.TabIndex = 2;
-			// 
-			// tableLayoutPanel3
-			// 
-			this.tableLayoutPanel3.ColumnCount = 7;
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.Controls.Add(this.Customer_ID, 0, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Customer_FirstName, 1, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Customer_LastName, 2, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Customer_Phone, 3, 0);
-			this.tableLayoutPanel3.Controls.Add(this.label4, 6, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Customer_Address, 4, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Customer_Flag, 5, 0);
-			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel3.Location = new System.Drawing.Point(5, 5);
-			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-			this.tableLayoutPanel3.RowCount = 1;
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel3.Size = new System.Drawing.Size(1025, 17);
-			this.tableLayoutPanel3.TabIndex = 5;
-			// 
-			// Customer_ID
-			// 
-			this.Customer_ID.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Customer_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Customer_ID.ForeColor = System.Drawing.Color.White;
-			this.Customer_ID.Location = new System.Drawing.Point(3, 0);
-			this.Customer_ID.Name = "Customer_ID";
-			this.Customer_ID.Size = new System.Drawing.Size(140, 17);
-			this.Customer_ID.TabIndex = 0;
-			this.Customer_ID.Text = "Customer ID";
-			this.Customer_ID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Customer_FirstName
-			// 
-			this.Customer_FirstName.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Customer_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Customer_FirstName.ForeColor = System.Drawing.Color.White;
-			this.Customer_FirstName.Location = new System.Drawing.Point(149, 0);
-			this.Customer_FirstName.Name = "Customer_FirstName";
-			this.Customer_FirstName.Size = new System.Drawing.Size(140, 17);
-			this.Customer_FirstName.TabIndex = 1;
-			this.Customer_FirstName.Text = "Customer FirstName";
-			this.Customer_FirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Customer_LastName
-			// 
-			this.Customer_LastName.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Customer_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Customer_LastName.ForeColor = System.Drawing.Color.White;
-			this.Customer_LastName.Location = new System.Drawing.Point(295, 0);
-			this.Customer_LastName.Name = "Customer_LastName";
-			this.Customer_LastName.Size = new System.Drawing.Size(140, 17);
-			this.Customer_LastName.TabIndex = 2;
-			this.Customer_LastName.Text = "Customer LastName";
-			this.Customer_LastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Customer_Phone
-			// 
-			this.Customer_Phone.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Customer_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Customer_Phone.ForeColor = System.Drawing.Color.White;
-			this.Customer_Phone.Location = new System.Drawing.Point(441, 0);
-			this.Customer_Phone.Name = "Customer_Phone";
-			this.Customer_Phone.Size = new System.Drawing.Size(140, 17);
-			this.Customer_Phone.TabIndex = 3;
-			this.Customer_Phone.Text = "Phone";
-			this.Customer_Phone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// label4
-			// 
-			this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(879, 0);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(143, 17);
-			this.label4.TabIndex = 4;
-			this.label4.Text = "Action";
-			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Customer_Address
-			// 
-			this.Customer_Address.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Customer_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Customer_Address.ForeColor = System.Drawing.Color.White;
-			this.Customer_Address.Location = new System.Drawing.Point(587, 0);
-			this.Customer_Address.Name = "Customer_Address";
-			this.Customer_Address.Size = new System.Drawing.Size(140, 17);
-			this.Customer_Address.TabIndex = 5;
-			this.Customer_Address.Text = "Address";
-			this.Customer_Address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Customer_Flag
-			// 
-			this.Customer_Flag.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Customer_Flag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Customer_Flag.ForeColor = System.Drawing.Color.White;
-			this.Customer_Flag.Location = new System.Drawing.Point(733, 0);
-			this.Customer_Flag.Name = "Customer_Flag";
-			this.Customer_Flag.Size = new System.Drawing.Size(140, 17);
-			this.Customer_Flag.TabIndex = 6;
-			this.Customer_Flag.Text = "Is Default";
-			this.Customer_Flag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// panel9
 			// 
@@ -476,6 +365,89 @@
 			this.button8.TabIndex = 35;
 			this.button8.UseVisualStyleBackColor = false;
 			// 
+			// tableLayoutPanel1
+			// 
+			this.tableLayoutPanel1.ColumnCount = 5;
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+			this.tableLayoutPanel1.Controls.Add(this.Deposit_ID, 0, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Deposit_Date, 1, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Total_Amount, 3, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Check_Action, 4, 0);
+			this.tableLayoutPanel1.Controls.Add(this.No_of_Checks, 2, 0);
+			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 5);
+			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.tableLayoutPanel1.RowCount = 1;
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(1025, 17);
+			this.tableLayoutPanel1.TabIndex = 6;
+			// 
+			// Deposit_ID
+			// 
+			this.Deposit_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Deposit_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Deposit_ID.ForeColor = System.Drawing.Color.White;
+			this.Deposit_ID.Location = new System.Drawing.Point(3, 0);
+			this.Deposit_ID.Name = "Deposit_ID";
+			this.Deposit_ID.Size = new System.Drawing.Size(199, 17);
+			this.Deposit_ID.TabIndex = 0;
+			this.Deposit_ID.Text = "Deposit ID";
+			this.Deposit_ID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Deposit_Date
+			// 
+			this.Deposit_Date.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Deposit_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Deposit_Date.ForeColor = System.Drawing.Color.White;
+			this.Deposit_Date.Location = new System.Drawing.Point(208, 0);
+			this.Deposit_Date.Name = "Deposit_Date";
+			this.Deposit_Date.Size = new System.Drawing.Size(199, 17);
+			this.Deposit_Date.TabIndex = 1;
+			this.Deposit_Date.Text = "Deposit Date";
+			this.Deposit_Date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Total_Amount
+			// 
+			this.Total_Amount.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Total_Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Total_Amount.ForeColor = System.Drawing.Color.White;
+			this.Total_Amount.Location = new System.Drawing.Point(618, 0);
+			this.Total_Amount.Name = "Total_Amount";
+			this.Total_Amount.Size = new System.Drawing.Size(199, 17);
+			this.Total_Amount.TabIndex = 3;
+			this.Total_Amount.Text = "Total Amount";
+			this.Total_Amount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Action
+			// 
+			this.Check_Action.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Action.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Check_Action.ForeColor = System.Drawing.Color.White;
+			this.Check_Action.Location = new System.Drawing.Point(823, 0);
+			this.Check_Action.Name = "Check_Action";
+			this.Check_Action.Size = new System.Drawing.Size(199, 17);
+			this.Check_Action.TabIndex = 4;
+			this.Check_Action.Text = "Action";
+			this.Check_Action.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// No_of_Checks
+			// 
+			this.No_of_Checks.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.No_of_Checks.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.No_of_Checks.ForeColor = System.Drawing.Color.White;
+			this.No_of_Checks.Location = new System.Drawing.Point(413, 0);
+			this.No_of_Checks.Name = "No_of_Checks";
+			this.No_of_Checks.Size = new System.Drawing.Size(199, 17);
+			this.No_of_Checks.TabIndex = 5;
+			this.No_of_Checks.Text = "No of Checks";
+			this.No_of_Checks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
 			// DepositList
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -490,7 +462,6 @@
 			this.CustDataPanel.ResumeLayout(false);
 			this.Cust_Row_Panel.ResumeLayout(false);
 			this.panel8.ResumeLayout(false);
-			this.tableLayoutPanel3.ResumeLayout(false);
 			this.panel9.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
 			this.panel6.PerformLayout();
@@ -503,6 +474,7 @@
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			this.roundedPanel2.ResumeLayout(false);
+			this.tableLayoutPanel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -514,14 +486,6 @@
 		private System.Windows.Forms.Panel Cust_Row_Panel;
 		private System.Windows.Forms.TableLayoutPanel CustRowDataPanel;
 		private System.Windows.Forms.Panel panel8;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-		private System.Windows.Forms.Label Customer_ID;
-		private System.Windows.Forms.Label Customer_FirstName;
-		private System.Windows.Forms.Label Customer_LastName;
-		private System.Windows.Forms.Label Customer_Phone;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label Customer_Address;
-		private System.Windows.Forms.Label Customer_Flag;
 		private System.Windows.Forms.Panel panel9;
 		private UserControls.PaginationControl paginationControl1;
 		private System.Windows.Forms.Panel panel6;
@@ -541,5 +505,11 @@
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button button8;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+		private System.Windows.Forms.Label Deposit_ID;
+		private System.Windows.Forms.Label Deposit_Date;
+		private System.Windows.Forms.Label Total_Amount;
+		private System.Windows.Forms.Label Check_Action;
+		private System.Windows.Forms.Label No_of_Checks;
 	}
 }

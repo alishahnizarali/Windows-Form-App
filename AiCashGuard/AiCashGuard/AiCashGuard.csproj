@@ -396,11 +396,29 @@
     <Compile Include="UserControls\Layouts_rows\CheckList_row_layout.Designer.cs">
       <DependentUpon>CheckList_row_layout.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Layouts_rows\CreateDeposit_row_layout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Layouts_rows\CreateDeposit_row_layout.Designer.cs">
+      <DependentUpon>CreateDeposit_row_layout.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Layouts_rows\CustomerList_row_layout.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Layouts_rows\CustomerList_row_layout.Designer.cs">
       <DependentUpon>CustomerList_row_layout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Layouts_rows\DepositDetail_row_layout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Layouts_rows\DepositDetail_row_layout.Designer.cs">
+      <DependentUpon>DepositDetail_row_layout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Layouts_rows\DepositList_row_layout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Layouts_rows\DepositList_row_layout.Designer.cs">
+      <DependentUpon>DepositList_row_layout.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Layouts_rows\TransactionBulkScan-row.cs">
       <SubType>UserControl</SubType>
@@ -527,8 +545,17 @@
     <EmbeddedResource Include="UserControls\Layouts_rows\CheckList_row_layout.resx">
       <DependentUpon>CheckList_row_layout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Layouts_rows\CreateDeposit_row_layout.resx">
+      <DependentUpon>CreateDeposit_row_layout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Layouts_rows\CustomerList_row_layout.resx">
       <DependentUpon>CustomerList_row_layout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Layouts_rows\DepositDetail_row_layout.resx">
+      <DependentUpon>DepositDetail_row_layout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Layouts_rows\DepositList_row_layout.resx">
+      <DependentUpon>DepositList_row_layout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Layouts_rows\TransactionBulkScan-row.resx">
       <DependentUpon>TransactionBulkScan-row.cs</DependentUpon>

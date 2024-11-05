@@ -98,14 +98,11 @@
 			this.label23 = new System.Windows.Forms.Label();
 			this.label29 = new System.Windows.Forms.Label();
 			this.panel6 = new System.Windows.Forms.Panel();
-			this.Action_Btn_Panel = new System.Windows.Forms.Panel();
-			this.Security_Check = new System.Windows.Forms.Button();
-			this.Print_Check = new System.Windows.Forms.Button();
-			this.Edit_Check = new System.Windows.Forms.Button();
-			this.Delete_Check = new System.Windows.Forms.Button();
-			this.Start_Transaction = new System.Windows.Forms.Button();
+			this.Cancel_btn = new System.Windows.Forms.Button();
 			this.Page_Title = new System.Windows.Forms.Label();
-			this.Back_Btn = new System.Windows.Forms.Button();
+			this.roundedPanel14 = new AiCashGuard.UserControls.RoundedPanel();
+			this.label38 = new System.Windows.Forms.Label();
+			this.Year_Label = new System.Windows.Forms.Label();
 			this.BackPanel.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
 			this.roundedPanel11.SuspendLayout();
@@ -136,7 +133,7 @@
 			this.panel11.SuspendLayout();
 			this.panel20.SuspendLayout();
 			this.panel6.SuspendLayout();
-			this.Action_Btn_Panel.SuspendLayout();
+			this.roundedPanel14.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// BackPanel
@@ -247,6 +244,7 @@
 			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
 			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
 			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+			this.tableLayoutPanel4.Controls.Add(this.roundedPanel14, 0, 2);
 			this.tableLayoutPanel4.Controls.Add(this.roundedPanel8, 0, 2);
 			this.tableLayoutPanel4.Controls.Add(this.roundedPanel3, 1, 0);
 			this.tableLayoutPanel4.Controls.Add(this.roundedPanel6, 1, 1);
@@ -463,10 +461,10 @@
 			this.roundedPanel4.Controls.Add(this.label10);
 			this.roundedPanel4.CornerRadius = 20;
 			this.roundedPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel4.Location = new System.Drawing.Point(259, 289);
+			this.roundedPanel4.Location = new System.Drawing.Point(515, 289);
 			this.roundedPanel4.Name = "roundedPanel4";
 			this.roundedPanel4.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel4.Size = new System.Drawing.Size(250, 137);
+			this.roundedPanel4.Size = new System.Drawing.Size(252, 137);
 			this.roundedPanel4.TabIndex = 23;
 			// 
 			// label12
@@ -501,7 +499,7 @@
 			this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
 			this.label10.Location = new System.Drawing.Point(5, 114);
 			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(240, 18);
+			this.label10.Size = new System.Drawing.Size(242, 18);
 			this.label10.TabIndex = 27;
 			this.label10.Text = "Updated hour ago";
 			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1072,10 +1070,8 @@
 			// 
 			// panel6
 			// 
-			this.panel6.Controls.Add(this.Action_Btn_Panel);
-			this.panel6.Controls.Add(this.Start_Transaction);
+			this.panel6.Controls.Add(this.Cancel_btn);
 			this.panel6.Controls.Add(this.Page_Title);
-			this.panel6.Controls.Add(this.Back_Btn);
 			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel6.Location = new System.Drawing.Point(0, 0);
 			this.panel6.Name = "panel6";
@@ -1083,104 +1079,29 @@
 			this.panel6.Size = new System.Drawing.Size(1065, 71);
 			this.panel6.TabIndex = 38;
 			// 
-			// Action_Btn_Panel
+			// Cancel_btn
 			// 
-			this.Action_Btn_Panel.Controls.Add(this.Security_Check);
-			this.Action_Btn_Panel.Controls.Add(this.Print_Check);
-			this.Action_Btn_Panel.Controls.Add(this.Edit_Check);
-			this.Action_Btn_Panel.Controls.Add(this.Delete_Check);
-			this.Action_Btn_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-			this.Action_Btn_Panel.Location = new System.Drawing.Point(724, 10);
-			this.Action_Btn_Panel.Name = "Action_Btn_Panel";
-			this.Action_Btn_Panel.Padding = new System.Windows.Forms.Padding(2);
-			this.Action_Btn_Panel.Size = new System.Drawing.Size(131, 51);
-			this.Action_Btn_Panel.TabIndex = 34;
-			// 
-			// Security_Check
-			// 
-			this.Security_Check.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-			this.Security_Check.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Security_Check.BackgroundImage")));
-			this.Security_Check.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.Security_Check.Dock = System.Windows.Forms.DockStyle.Left;
-			this.Security_Check.FlatAppearance.BorderSize = 0;
-			this.Security_Check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Security_Check.Location = new System.Drawing.Point(98, 2);
-			this.Security_Check.Name = "Security_Check";
-			this.Security_Check.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-			this.Security_Check.Size = new System.Drawing.Size(32, 47);
-			this.Security_Check.TabIndex = 33;
-			this.Security_Check.UseVisualStyleBackColor = false;
-			// 
-			// Print_Check
-			// 
-			this.Print_Check.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-			this.Print_Check.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Print_Check.BackgroundImage")));
-			this.Print_Check.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.Print_Check.Dock = System.Windows.Forms.DockStyle.Left;
-			this.Print_Check.FlatAppearance.BorderSize = 0;
-			this.Print_Check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Print_Check.Location = new System.Drawing.Point(66, 2);
-			this.Print_Check.Name = "Print_Check";
-			this.Print_Check.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-			this.Print_Check.Size = new System.Drawing.Size(32, 47);
-			this.Print_Check.TabIndex = 30;
-			this.Print_Check.UseVisualStyleBackColor = false;
-			// 
-			// Edit_Check
-			// 
-			this.Edit_Check.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-			this.Edit_Check.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Edit_Check.BackgroundImage")));
-			this.Edit_Check.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.Edit_Check.Dock = System.Windows.Forms.DockStyle.Left;
-			this.Edit_Check.FlatAppearance.BorderSize = 0;
-			this.Edit_Check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Edit_Check.Location = new System.Drawing.Point(34, 2);
-			this.Edit_Check.Name = "Edit_Check";
-			this.Edit_Check.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-			this.Edit_Check.Size = new System.Drawing.Size(32, 47);
-			this.Edit_Check.TabIndex = 32;
-			this.Edit_Check.UseVisualStyleBackColor = false;
-			// 
-			// Delete_Check
-			// 
-			this.Delete_Check.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-			this.Delete_Check.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete_Check.BackgroundImage")));
-			this.Delete_Check.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.Delete_Check.Dock = System.Windows.Forms.DockStyle.Left;
-			this.Delete_Check.FlatAppearance.BorderSize = 0;
-			this.Delete_Check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Delete_Check.Location = new System.Drawing.Point(2, 2);
-			this.Delete_Check.Name = "Delete_Check";
-			this.Delete_Check.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-			this.Delete_Check.Size = new System.Drawing.Size(32, 47);
-			this.Delete_Check.TabIndex = 31;
-			this.Delete_Check.UseVisualStyleBackColor = false;
-			// 
-			// Start_Transaction
-			// 
-			this.Start_Transaction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-			this.Start_Transaction.Dock = System.Windows.Forms.DockStyle.Right;
-			this.Start_Transaction.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
-			this.Start_Transaction.FlatAppearance.BorderSize = 0;
-			this.Start_Transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Start_Transaction.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Start_Transaction.ForeColor = System.Drawing.Color.White;
-			this.Start_Transaction.Image = ((System.Drawing.Image)(resources.GetObject("Start_Transaction.Image")));
-			this.Start_Transaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.Start_Transaction.Location = new System.Drawing.Point(855, 10);
-			this.Start_Transaction.Name = "Start_Transaction";
-			this.Start_Transaction.Padding = new System.Windows.Forms.Padding(10);
-			this.Start_Transaction.Size = new System.Drawing.Size(200, 51);
-			this.Start_Transaction.TabIndex = 15;
-			this.Start_Transaction.Text = "Start Transaction";
-			this.Start_Transaction.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Start_Transaction.UseVisualStyleBackColor = false;
+			this.Cancel_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
+			this.Cancel_btn.Dock = System.Windows.Forms.DockStyle.Right;
+			this.Cancel_btn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
+			this.Cancel_btn.FlatAppearance.BorderSize = 0;
+			this.Cancel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.Cancel_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Cancel_btn.ForeColor = System.Drawing.Color.White;
+			this.Cancel_btn.Location = new System.Drawing.Point(949, 10);
+			this.Cancel_btn.Name = "Cancel_btn";
+			this.Cancel_btn.Padding = new System.Windows.Forms.Padding(10);
+			this.Cancel_btn.Size = new System.Drawing.Size(106, 51);
+			this.Cancel_btn.TabIndex = 15;
+			this.Cancel_btn.Text = "Cancel";
+			this.Cancel_btn.UseVisualStyleBackColor = false;
+			this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
 			// 
 			// Page_Title
 			// 
 			this.Page_Title.Dock = System.Windows.Forms.DockStyle.Left;
 			this.Page_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Page_Title.Location = new System.Drawing.Point(59, 10);
+			this.Page_Title.Location = new System.Drawing.Point(10, 10);
 			this.Page_Title.Name = "Page_Title";
 			this.Page_Title.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
 			this.Page_Title.Size = new System.Drawing.Size(143, 51);
@@ -1188,21 +1109,41 @@
 			this.Page_Title.Text = "Check Bulk Detail";
 			this.Page_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// Back_Btn
+			// roundedPanel14
 			// 
-			this.Back_Btn.AutoSize = true;
-			this.Back_Btn.BackColor = System.Drawing.Color.Transparent;
-			this.Back_Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Back_Btn.BackgroundImage")));
-			this.Back_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.Back_Btn.Dock = System.Windows.Forms.DockStyle.Left;
-			this.Back_Btn.FlatAppearance.BorderSize = 0;
-			this.Back_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Back_Btn.Location = new System.Drawing.Point(10, 10);
-			this.Back_Btn.Name = "Back_Btn";
-			this.Back_Btn.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
-			this.Back_Btn.Size = new System.Drawing.Size(49, 51);
-			this.Back_Btn.TabIndex = 35;
-			this.Back_Btn.UseVisualStyleBackColor = false;
+			this.roundedPanel14.BackColor = System.Drawing.Color.White;
+			this.roundedPanel14.Controls.Add(this.label38);
+			this.roundedPanel14.Controls.Add(this.Year_Label);
+			this.roundedPanel14.CornerRadius = 20;
+			this.roundedPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.roundedPanel14.Location = new System.Drawing.Point(259, 289);
+			this.roundedPanel14.Name = "roundedPanel14";
+			this.roundedPanel14.Padding = new System.Windows.Forms.Padding(5);
+			this.roundedPanel14.Size = new System.Drawing.Size(250, 137);
+			this.roundedPanel14.TabIndex = 31;
+			// 
+			// label38
+			// 
+			this.label38.Dock = System.Windows.Forms.DockStyle.Top;
+			this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
+			this.label38.Location = new System.Drawing.Point(5, 5);
+			this.label38.Name = "label38";
+			this.label38.Size = new System.Drawing.Size(240, 17);
+			this.label38.TabIndex = 25;
+			this.label38.Text = "Year";
+			// 
+			// Year_Label
+			// 
+			this.Year_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Year_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Year_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
+			this.Year_Label.Location = new System.Drawing.Point(5, 95);
+			this.Year_Label.Name = "Year_Label";
+			this.Year_Label.Size = new System.Drawing.Size(240, 37);
+			this.Year_Label.TabIndex = 24;
+			this.Year_Label.Text = "10";
+			this.Year_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// CheckDetailBulkPopup
 			// 
@@ -1254,8 +1195,7 @@
 			this.panel11.ResumeLayout(false);
 			this.panel20.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
-			this.panel6.PerformLayout();
-			this.Action_Btn_Panel.ResumeLayout(false);
+			this.roundedPanel14.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -1264,14 +1204,8 @@
 
 		private System.Windows.Forms.Panel BackPanel;
 		private System.Windows.Forms.Panel panel6;
-		private System.Windows.Forms.Panel Action_Btn_Panel;
-		private System.Windows.Forms.Button Security_Check;
-		private System.Windows.Forms.Button Print_Check;
-		private System.Windows.Forms.Button Edit_Check;
-		private System.Windows.Forms.Button Delete_Check;
-		private System.Windows.Forms.Button Start_Transaction;
+		private System.Windows.Forms.Button Cancel_btn;
 		private System.Windows.Forms.Label Page_Title;
-		private System.Windows.Forms.Button Back_Btn;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
 		private UserControls.RoundedPanel roundedPanel11;
 		private System.Windows.Forms.Panel panel3;
@@ -1339,5 +1273,8 @@
 		private System.Windows.Forms.Label Check_Cashed;
 		private System.Windows.Forms.Label label20;
 		private System.Windows.Forms.Button button1;
+		private UserControls.RoundedPanel roundedPanel14;
+		private System.Windows.Forms.Label label38;
+		private System.Windows.Forms.Label Year_Label;
 	}
 }
