@@ -30,9 +30,20 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BulkScanScreen));
 			this.BackPanel = new System.Windows.Forms.Panel();
+			this.searchPanel = new System.Windows.Forms.Panel();
+			this.searchTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.panel7 = new System.Windows.Forms.Panel();
-			this.transactionBulkScan_row2 = new AiCashGuard.UserControls.Layouts_rows.TransactionBulkScan_row();
+			this.panel8 = new System.Windows.Forms.Panel();
+			this.BulkRowPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.TransactionRowPanel = new System.Windows.Forms.Panel();
+			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.panel4 = new System.Windows.Forms.Panel();
+			this.Back_Btn = new System.Windows.Forms.Button();
+			this.Next_Btn = new System.Windows.Forms.Button();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.Step_Label = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
@@ -43,22 +54,17 @@
 			this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
-			this.panel4 = new System.Windows.Forms.Panel();
-			this.Back_Btn = new System.Windows.Forms.Button();
-			this.Next_Btn = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.transactionBulkScan_row1 = new AiCashGuard.UserControls.Layouts_rows.TransactionBulkScan_row();
-			this.searchPanel = new System.Windows.Forms.Panel();
-			this.searchTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.BackPanel.SuspendLayout();
+			this.searchPanel.SuspendLayout();
 			this.panel3.SuspendLayout();
-			this.panel7.SuspendLayout();
+			this.panel8.SuspendLayout();
+			this.TransactionRowPanel.SuspendLayout();
+			this.tableLayoutPanel1.SuspendLayout();
+			this.panel4.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.panel6.SuspendLayout();
 			this.roundedPanel4.SuspendLayout();
-			this.panel4.SuspendLayout();
-			this.panel1.SuspendLayout();
-			this.searchPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// BackPanel
@@ -67,7 +73,6 @@
 			this.BackPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
 			this.BackPanel.Controls.Add(this.searchPanel);
 			this.BackPanel.Controls.Add(this.panel3);
-			this.BackPanel.Controls.Add(this.panel4);
 			this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.BackPanel.Location = new System.Drawing.Point(0, 0);
 			this.BackPanel.Name = "BackPanel";
@@ -75,38 +80,192 @@
 			this.BackPanel.Size = new System.Drawing.Size(1182, 891);
 			this.BackPanel.TabIndex = 2;
 			// 
+			// searchPanel
+			// 
+			this.searchPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.searchPanel.AutoScroll = true;
+			this.searchPanel.BackColor = System.Drawing.Color.White;
+			this.searchPanel.Controls.Add(this.searchTableLayoutPanel);
+			this.searchPanel.Location = new System.Drawing.Point(224, 67);
+			this.searchPanel.Name = "searchPanel";
+			this.searchPanel.Padding = new System.Windows.Forms.Padding(5);
+			this.searchPanel.Size = new System.Drawing.Size(754, 222);
+			this.searchPanel.TabIndex = 43;
+			this.searchPanel.Visible = false;
+			// 
+			// searchTableLayoutPanel
+			// 
+			this.searchTableLayoutPanel.AutoScroll = true;
+			this.searchTableLayoutPanel.ColumnCount = 1;
+			this.searchTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.searchTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.searchTableLayoutPanel.Location = new System.Drawing.Point(5, 5);
+			this.searchTableLayoutPanel.Name = "searchTableLayoutPanel";
+			this.searchTableLayoutPanel.RowCount = 1;
+			this.searchTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.searchTableLayoutPanel.Size = new System.Drawing.Size(744, 212);
+			this.searchTableLayoutPanel.TabIndex = 0;
+			this.searchTableLayoutPanel.Visible = false;
+			// 
 			// panel3
 			// 
-			this.panel3.Controls.Add(this.panel7);
+			this.panel3.Controls.Add(this.panel8);
+			this.panel3.Controls.Add(this.panel4);
 			this.panel3.Controls.Add(this.panel5);
 			this.panel3.Controls.Add(this.transactionProgressBar);
 			this.panel3.Controls.Add(this.panel6);
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel3.Location = new System.Drawing.Point(1, 1);
 			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(1180, 799);
+			this.panel3.Size = new System.Drawing.Size(1180, 889);
 			this.panel3.TabIndex = 3;
 			this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
 			// 
-			// panel7
+			// panel8
 			// 
-			this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel7.BackColor = System.Drawing.Color.White;
-			this.panel7.Controls.Add(this.transactionBulkScan_row2);
-			this.panel7.Location = new System.Drawing.Point(174, 241);
-			this.panel7.Name = "panel7";
-			this.panel7.Size = new System.Drawing.Size(856, 512);
-			this.panel7.TabIndex = 39;
+			this.panel8.Controls.Add(this.BulkRowPanel);
+			this.panel8.Controls.Add(this.TransactionRowPanel);
+			this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel8.Location = new System.Drawing.Point(0, 202);
+			this.panel8.Name = "panel8";
+			this.panel8.Padding = new System.Windows.Forms.Padding(20);
+			this.panel8.Size = new System.Drawing.Size(1180, 687);
+			this.panel8.TabIndex = 40;
 			// 
-			// transactionBulkScan_row2
+			// BulkRowPanel
 			// 
-			this.transactionBulkScan_row2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.transactionBulkScan_row2.Location = new System.Drawing.Point(0, 0);
-			this.transactionBulkScan_row2.Name = "transactionBulkScan_row2";
-			this.transactionBulkScan_row2.Size = new System.Drawing.Size(856, 150);
-			this.transactionBulkScan_row2.TabIndex = 0;
+			this.BulkRowPanel.ColumnCount = 1;
+			this.BulkRowPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.BulkRowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.BulkRowPanel.Location = new System.Drawing.Point(20, 54);
+			this.BulkRowPanel.Name = "BulkRowPanel";
+			this.BulkRowPanel.RowCount = 1;
+			this.BulkRowPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.BulkRowPanel.Size = new System.Drawing.Size(1140, 613);
+			this.BulkRowPanel.TabIndex = 41;
+			this.BulkRowPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.BulkRowPanel_Paint_1);
+			// 
+			// TransactionRowPanel
+			// 
+			this.TransactionRowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+			this.TransactionRowPanel.Controls.Add(this.tableLayoutPanel1);
+			this.TransactionRowPanel.Dock = System.Windows.Forms.DockStyle.Top;
+			this.TransactionRowPanel.Location = new System.Drawing.Point(20, 20);
+			this.TransactionRowPanel.Name = "TransactionRowPanel";
+			this.TransactionRowPanel.Padding = new System.Windows.Forms.Padding(5);
+			this.TransactionRowPanel.Size = new System.Drawing.Size(1140, 34);
+			this.TransactionRowPanel.TabIndex = 40;
+			// 
+			// tableLayoutPanel1
+			// 
+			this.tableLayoutPanel1.ColumnCount = 4;
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
+			this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
+			this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
+			this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 5);
+			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.tableLayoutPanel1.RowCount = 1;
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(1130, 24);
+			this.tableLayoutPanel1.TabIndex = 5;
+			// 
+			// label4
+			// 
+			this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label4.Location = new System.Drawing.Point(1020, 0);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(107, 24);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "Action";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label3
+			// 
+			this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label3.Location = new System.Drawing.Point(794, 0);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(220, 24);
+			this.label3.TabIndex = 2;
+			this.label3.Text = "Date";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label2
+			// 
+			this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label2.Location = new System.Drawing.Point(568, 0);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(220, 24);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "Amount";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label1
+			// 
+			this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label1.Location = new System.Drawing.Point(3, 0);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(559, 24);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Check Image";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// panel4
+			// 
+			this.panel4.Controls.Add(this.Back_Btn);
+			this.panel4.Controls.Add(this.Next_Btn);
+			this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel4.Location = new System.Drawing.Point(0, 135);
+			this.panel4.Name = "panel4";
+			this.panel4.Padding = new System.Windows.Forms.Padding(10);
+			this.panel4.Size = new System.Drawing.Size(1180, 67);
+			this.panel4.TabIndex = 0;
+			// 
+			// Back_Btn
+			// 
+			this.Back_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
+			this.Back_Btn.Dock = System.Windows.Forms.DockStyle.Left;
+			this.Back_Btn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
+			this.Back_Btn.FlatAppearance.BorderSize = 0;
+			this.Back_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.Back_Btn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Back_Btn.ForeColor = System.Drawing.Color.White;
+			this.Back_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Back_Btn.Image")));
+			this.Back_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.Back_Btn.Location = new System.Drawing.Point(10, 10);
+			this.Back_Btn.Name = "Back_Btn";
+			this.Back_Btn.Padding = new System.Windows.Forms.Padding(10);
+			this.Back_Btn.Size = new System.Drawing.Size(99, 47);
+			this.Back_Btn.TabIndex = 17;
+			this.Back_Btn.Text = "Back";
+			this.Back_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Back_Btn.UseVisualStyleBackColor = false;
+			// 
+			// Next_Btn
+			// 
+			this.Next_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
+			this.Next_Btn.Dock = System.Windows.Forms.DockStyle.Right;
+			this.Next_Btn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
+			this.Next_Btn.FlatAppearance.BorderSize = 0;
+			this.Next_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.Next_Btn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Next_Btn.ForeColor = System.Drawing.Color.White;
+			this.Next_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Next_Btn.Image")));
+			this.Next_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.Next_Btn.Location = new System.Drawing.Point(1076, 10);
+			this.Next_Btn.Name = "Next_Btn";
+			this.Next_Btn.Padding = new System.Windows.Forms.Padding(10);
+			this.Next_Btn.Size = new System.Drawing.Size(94, 47);
+			this.Next_Btn.TabIndex = 16;
+			this.Next_Btn.Text = "Next";
+			this.Next_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.Next_Btn.UseVisualStyleBackColor = false;
 			// 
 			// panel5
 			// 
@@ -234,57 +393,6 @@
 			this.label9.Text = "Transaction Process";
 			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// panel4
-			// 
-			this.panel4.Controls.Add(this.Back_Btn);
-			this.panel4.Controls.Add(this.Next_Btn);
-			this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panel4.Location = new System.Drawing.Point(1, 800);
-			this.panel4.Name = "panel4";
-			this.panel4.Padding = new System.Windows.Forms.Padding(20);
-			this.panel4.Size = new System.Drawing.Size(1180, 90);
-			this.panel4.TabIndex = 0;
-			// 
-			// Back_Btn
-			// 
-			this.Back_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-			this.Back_Btn.Dock = System.Windows.Forms.DockStyle.Left;
-			this.Back_Btn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
-			this.Back_Btn.FlatAppearance.BorderSize = 0;
-			this.Back_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Back_Btn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Back_Btn.ForeColor = System.Drawing.Color.White;
-			this.Back_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Back_Btn.Image")));
-			this.Back_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.Back_Btn.Location = new System.Drawing.Point(20, 20);
-			this.Back_Btn.Name = "Back_Btn";
-			this.Back_Btn.Padding = new System.Windows.Forms.Padding(10);
-			this.Back_Btn.Size = new System.Drawing.Size(99, 50);
-			this.Back_Btn.TabIndex = 17;
-			this.Back_Btn.Text = "Back";
-			this.Back_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Back_Btn.UseVisualStyleBackColor = false;
-			// 
-			// Next_Btn
-			// 
-			this.Next_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-			this.Next_Btn.Dock = System.Windows.Forms.DockStyle.Right;
-			this.Next_Btn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
-			this.Next_Btn.FlatAppearance.BorderSize = 0;
-			this.Next_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Next_Btn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Next_Btn.ForeColor = System.Drawing.Color.White;
-			this.Next_Btn.Image = ((System.Drawing.Image)(resources.GetObject("Next_Btn.Image")));
-			this.Next_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.Next_Btn.Location = new System.Drawing.Point(1066, 20);
-			this.Next_Btn.Name = "Next_Btn";
-			this.Next_Btn.Padding = new System.Windows.Forms.Padding(10);
-			this.Next_Btn.Size = new System.Drawing.Size(94, 50);
-			this.Next_Btn.TabIndex = 16;
-			this.Next_Btn.Text = "Next";
-			this.Next_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.Next_Btn.UseVisualStyleBackColor = false;
-			// 
 			// panel1
 			// 
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -292,47 +400,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel1.AutoScroll = true;
 			this.panel1.BackColor = System.Drawing.Color.White;
-			this.panel1.Controls.Add(this.transactionBulkScan_row1);
 			this.panel1.Location = new System.Drawing.Point(151, 192);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(746, 414);
 			this.panel1.TabIndex = 39;
-			// 
-			// transactionBulkScan_row1
-			// 
-			this.transactionBulkScan_row1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.transactionBulkScan_row1.Location = new System.Drawing.Point(0, 0);
-			this.transactionBulkScan_row1.Name = "transactionBulkScan_row1";
-			this.transactionBulkScan_row1.Size = new System.Drawing.Size(746, 150);
-			this.transactionBulkScan_row1.TabIndex = 0;
-			// 
-			// searchPanel
-			// 
-			this.searchPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.searchPanel.AutoScroll = true;
-			this.searchPanel.BackColor = System.Drawing.Color.White;
-			this.searchPanel.Controls.Add(this.searchTableLayoutPanel);
-			this.searchPanel.Location = new System.Drawing.Point(224, 67);
-			this.searchPanel.Name = "searchPanel";
-			this.searchPanel.Padding = new System.Windows.Forms.Padding(5);
-			this.searchPanel.Size = new System.Drawing.Size(754, 222);
-			this.searchPanel.TabIndex = 43;
-			this.searchPanel.Visible = false;
-			// 
-			// searchTableLayoutPanel
-			// 
-			this.searchTableLayoutPanel.AutoScroll = true;
-			this.searchTableLayoutPanel.ColumnCount = 1;
-			this.searchTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.searchTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.searchTableLayoutPanel.Location = new System.Drawing.Point(5, 5);
-			this.searchTableLayoutPanel.Name = "searchTableLayoutPanel";
-			this.searchTableLayoutPanel.RowCount = 1;
-			this.searchTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.searchTableLayoutPanel.Size = new System.Drawing.Size(744, 212);
-			this.searchTableLayoutPanel.TabIndex = 0;
-			this.searchTableLayoutPanel.Visible = false;
 			// 
 			// BulkScanScreen
 			// 
@@ -344,14 +415,15 @@
 			this.Text = "BulkScanScreen";
 			this.Controls.SetChildIndex(this.BackPanel, 0);
 			this.BackPanel.ResumeLayout(false);
+			this.searchPanel.ResumeLayout(false);
 			this.panel3.ResumeLayout(false);
-			this.panel7.ResumeLayout(false);
+			this.panel8.ResumeLayout(false);
+			this.TransactionRowPanel.ResumeLayout(false);
+			this.tableLayoutPanel1.ResumeLayout(false);
+			this.panel4.ResumeLayout(false);
 			this.panel5.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
 			this.roundedPanel4.ResumeLayout(false);
-			this.panel4.ResumeLayout(false);
-			this.panel1.ResumeLayout(false);
-			this.searchPanel.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -375,9 +447,15 @@
 		private System.Windows.Forms.Button Next_Btn;
 		private System.Windows.Forms.Panel panel1;
 		private UserControls.Layouts_rows.TransactionBulkScan_row transactionBulkScan_row1;
-		private System.Windows.Forms.Panel panel7;
-		private UserControls.Layouts_rows.TransactionBulkScan_row transactionBulkScan_row2;
 		private System.Windows.Forms.Panel searchPanel;
 		private System.Windows.Forms.TableLayoutPanel searchTableLayoutPanel;
+		private System.Windows.Forms.Panel panel8;
+		private System.Windows.Forms.Panel TransactionRowPanel;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TableLayoutPanel BulkRowPanel;
 	}
 }
