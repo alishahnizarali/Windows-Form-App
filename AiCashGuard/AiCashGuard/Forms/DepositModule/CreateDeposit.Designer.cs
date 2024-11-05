@@ -455,6 +455,7 @@
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "CreateDeposit";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "CreateDeposit";
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);

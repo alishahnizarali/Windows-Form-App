@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.BackPanel = new System.Windows.Forms.Panel();
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.Cust_Row_Panel = new System.Windows.Forms.Panel();
 			this.CustRowDataPanel = new System.Windows.Forms.TableLayoutPanel();
@@ -66,7 +66,7 @@
 			this.gradientPanel1 = new AiCashGuard.UserControls.GradientPanel();
 			this.Btn_Cancel = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.panel1.SuspendLayout();
+			this.BackPanel.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.Cust_Row_Panel.SuspendLayout();
 			this.panel11.SuspendLayout();
@@ -85,17 +85,17 @@
 			this.gradientPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// panel1
+			// BackPanel
 			// 
-			this.panel1.Controls.Add(this.panel10);
-			this.panel1.Controls.Add(this.panel2);
-			this.panel1.Controls.Add(this.panel7);
-			this.panel1.Controls.Add(this.gradientPanel1);
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1065, 800);
-			this.panel1.TabIndex = 1;
+			this.BackPanel.Controls.Add(this.panel10);
+			this.BackPanel.Controls.Add(this.panel2);
+			this.BackPanel.Controls.Add(this.panel7);
+			this.BackPanel.Controls.Add(this.gradientPanel1);
+			this.BackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.BackPanel.Location = new System.Drawing.Point(0, 0);
+			this.BackPanel.Name = "BackPanel";
+			this.BackPanel.Size = new System.Drawing.Size(1065, 800);
+			this.BackPanel.TabIndex = 1;
 			// 
 			// panel10
 			// 
@@ -395,6 +395,7 @@
 			// 
 			// panel7
 			// 
+			this.panel7.AutoScroll = true;
 			this.panel7.Controls.Add(this.tableLayoutPanel2);
 			this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel7.Location = new System.Drawing.Point(0, 67);
@@ -521,6 +522,7 @@
 			// 
 			// gradientPanel1
 			// 
+			this.gradientPanel1.AutoScroll = true;
 			this.gradientPanel1.Controls.Add(this.Btn_Cancel);
 			this.gradientPanel1.Controls.Add(this.label1);
 			this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -569,12 +571,12 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1065, 800);
-			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.BackPanel);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "DepositDetail";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "DepositDetail";
-			this.panel1.ResumeLayout(false);
+			this.BackPanel.ResumeLayout(false);
 			this.panel10.ResumeLayout(false);
 			this.Cust_Row_Panel.ResumeLayout(false);
 			this.panel11.ResumeLayout(false);
@@ -605,7 +607,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel BackPanel;
 		private System.Windows.Forms.Panel panel7;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
 		private System.Windows.Forms.Panel panel5;
@@ -634,10 +636,9 @@
 		private System.Windows.Forms.TableLayoutPanel CustRowDataPanel;
 		private System.Windows.Forms.Panel panel11;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-<<<<<<< HEAD
-=======
+
 		private System.Windows.Forms.Label Select_All;
->>>>>>> 68713106ef69c0e1c03d6a63c841f0b1ca7e27d1
+ // 68713106ef69c0e1c03d6a63c841f0b1ca7e27d1
 		private System.Windows.Forms.Label Transaction_ID;
 		private System.Windows.Forms.Label Check_Name;
 		private System.Windows.Forms.Label Check_Date;
@@ -646,9 +647,8 @@
 		private System.Windows.Forms.Label Check_Amount;
 		private System.Windows.Forms.Panel panel12;
 		private UserControls.PaginationControl paginationControl1;
-<<<<<<< HEAD
+
 		private System.Windows.Forms.CheckBox SelectCheckBox;
-=======
->>>>>>> 68713106ef69c0e1c03d6a63c841f0b1ca7e27d1
+// 68713106ef69c0e1c03d6a63c841f0b1ca7e27d1
 	}
 }

@@ -15,7 +15,7 @@ namespace AiCashGuard
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new DepositDetail());
+			Application.Run(new NewTransactionProcess());
 		}
 	}
 }

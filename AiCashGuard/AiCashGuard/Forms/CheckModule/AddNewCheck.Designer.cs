@@ -116,8 +116,8 @@ namespace AiCashGuard.Forms.CheckModule
 			this.addNewCheckPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.addNewCheckPanel.Location = new System.Drawing.Point(0, 0);
 			this.addNewCheckPanel.Name = "addNewCheckPanel";
-			this.addNewCheckPanel.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-			this.addNewCheckPanel.Size = new System.Drawing.Size(1065, 696);
+			this.addNewCheckPanel.Padding = new System.Windows.Forms.Padding(2);
+			this.addNewCheckPanel.Size = new System.Drawing.Size(1065, 800);
 			this.addNewCheckPanel.TabIndex = 0;
 			// 
 			// panel2
@@ -127,7 +127,7 @@ namespace AiCashGuard.Forms.CheckModule
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel2.Location = new System.Drawing.Point(2, 320);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1061, 374);
+			this.panel2.Size = new System.Drawing.Size(1061, 478);
 			this.panel2.TabIndex = 3;
 			// 
 			// tableLayoutPanel4
@@ -140,7 +140,7 @@ namespace AiCashGuard.Forms.CheckModule
 			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
 			this.tableLayoutPanel4.RowCount = 1;
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel4.Size = new System.Drawing.Size(427, 374);
+			this.tableLayoutPanel4.Size = new System.Drawing.Size(427, 478);
 			this.tableLayoutPanel4.TabIndex = 3;
 			// 
 			// roundedPanel11
@@ -154,8 +154,8 @@ namespace AiCashGuard.Forms.CheckModule
 			this.roundedPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.roundedPanel11.Location = new System.Drawing.Point(3, 3);
 			this.roundedPanel11.Name = "roundedPanel11";
-			this.roundedPanel11.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
-			this.roundedPanel11.Size = new System.Drawing.Size(421, 368);
+			this.roundedPanel11.Padding = new System.Windows.Forms.Padding(10);
+			this.roundedPanel11.Size = new System.Drawing.Size(421, 472);
 			this.roundedPanel11.TabIndex = 0;
 			// 
 			// Btn_Clear
@@ -167,7 +167,7 @@ namespace AiCashGuard.Forms.CheckModule
 			this.Btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Btn_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Btn_Clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-			this.Btn_Clear.Location = new System.Drawing.Point(10, 317);
+			this.Btn_Clear.Location = new System.Drawing.Point(10, 421);
 			this.Btn_Clear.Name = "Btn_Clear";
 			this.Btn_Clear.Size = new System.Drawing.Size(401, 41);
 			this.Btn_Clear.TabIndex = 10;
@@ -181,7 +181,7 @@ namespace AiCashGuard.Forms.CheckModule
 			this.Alert_TextBox.Location = new System.Drawing.Point(10, 32);
 			this.Alert_TextBox.Multiline = true;
 			this.Alert_TextBox.Name = "Alert_TextBox";
-			this.Alert_TextBox.Size = new System.Drawing.Size(401, 326);
+			this.Alert_TextBox.Size = new System.Drawing.Size(401, 430);
 			this.Alert_TextBox.TabIndex = 6;
 			// 
 			// label14
@@ -223,7 +223,7 @@ namespace AiCashGuard.Forms.CheckModule
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
 			this.tableLayoutPanel3.RowCount = 1;
 			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel3.Size = new System.Drawing.Size(615, 374);
+			this.tableLayoutPanel3.Size = new System.Drawing.Size(615, 478);
 			this.tableLayoutPanel3.TabIndex = 4;
 			// 
 			// roundedPanel8
@@ -236,8 +236,8 @@ namespace AiCashGuard.Forms.CheckModule
 			this.roundedPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.roundedPanel8.Location = new System.Drawing.Point(3, 3);
 			this.roundedPanel8.Name = "roundedPanel8";
-			this.roundedPanel8.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
-			this.roundedPanel8.Size = new System.Drawing.Size(609, 368);
+			this.roundedPanel8.Padding = new System.Windows.Forms.Padding(10);
+			this.roundedPanel8.Size = new System.Drawing.Size(609, 472);
 			this.roundedPanel8.TabIndex = 0;
 			// 
 			// roundedPanel10
@@ -250,7 +250,7 @@ namespace AiCashGuard.Forms.CheckModule
 			this.roundedPanel10.Location = new System.Drawing.Point(10, 32);
 			this.roundedPanel10.Margin = new System.Windows.Forms.Padding(0);
 			this.roundedPanel10.Name = "roundedPanel10";
-			this.roundedPanel10.Size = new System.Drawing.Size(589, 326);
+			this.roundedPanel10.Size = new System.Drawing.Size(589, 430);
 			this.roundedPanel10.TabIndex = 4;
 			// 
 			// roundedPanel9
@@ -820,7 +820,7 @@ namespace AiCashGuard.Forms.CheckModule
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1065, 696);
+			this.ClientSize = new System.Drawing.Size(1065, 800);
 			this.Controls.Add(this.addNewCheckPanel);
 			this.Name = "AddNewCheck";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

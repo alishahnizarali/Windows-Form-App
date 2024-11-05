@@ -28,38 +28,90 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.addNewCheckPanel = new System.Windows.Forms.Panel();
+			this.createUserPanel = new System.Windows.Forms.Panel();
+			this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.LblPassword = new System.Windows.Forms.Label();
+			this.LblUserName = new System.Windows.Forms.Label();
 			this.Btn_Save = new System.Windows.Forms.Button();
 			this.Btn_Cancel = new System.Windows.Forms.Button();
-			this.LblUserName = new System.Windows.Forms.Label();
-			this.LblPassword = new System.Windows.Forms.Label();
-			this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-			this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.gradientPanel1 = new AiCashGuard.UserControls.GradientPanel();
 			this.label1 = new System.Windows.Forms.Label();
-			this.addNewCheckPanel.SuspendLayout();
+			this.createUserPanel.SuspendLayout();
 			this.gradientPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// addNewCheckPanel
+			// createUserPanel
 			// 
-			this.addNewCheckPanel.AutoScroll = true;
-			this.addNewCheckPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-			this.addNewCheckPanel.Controls.Add(this.materialSingleLineTextField2);
-			this.addNewCheckPanel.Controls.Add(this.materialSingleLineTextField1);
-			this.addNewCheckPanel.Controls.Add(this.LblPassword);
-			this.addNewCheckPanel.Controls.Add(this.LblUserName);
-			this.addNewCheckPanel.Controls.Add(this.Btn_Save);
-			this.addNewCheckPanel.Controls.Add(this.Btn_Cancel);
-			this.addNewCheckPanel.Controls.Add(this.gradientPanel1);
-			this.addNewCheckPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.addNewCheckPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.addNewCheckPanel.Location = new System.Drawing.Point(0, 0);
-			this.addNewCheckPanel.Name = "addNewCheckPanel";
-			this.addNewCheckPanel.Padding = new System.Windows.Forms.Padding(2);
-			this.addNewCheckPanel.Size = new System.Drawing.Size(1049, 761);
-			this.addNewCheckPanel.TabIndex = 1;
-			this.addNewCheckPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addNewCheckPanel_Paint);
+			this.createUserPanel.AutoScroll = true;
+			this.createUserPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+			this.createUserPanel.Controls.Add(this.materialSingleLineTextField2);
+			this.createUserPanel.Controls.Add(this.materialSingleLineTextField1);
+			this.createUserPanel.Controls.Add(this.LblPassword);
+			this.createUserPanel.Controls.Add(this.LblUserName);
+			this.createUserPanel.Controls.Add(this.Btn_Save);
+			this.createUserPanel.Controls.Add(this.Btn_Cancel);
+			this.createUserPanel.Controls.Add(this.gradientPanel1);
+			this.createUserPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.createUserPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.createUserPanel.Location = new System.Drawing.Point(0, 0);
+			this.createUserPanel.Name = "createUserPanel";
+			this.createUserPanel.Padding = new System.Windows.Forms.Padding(2);
+			this.createUserPanel.Size = new System.Drawing.Size(1065, 800);
+			this.createUserPanel.TabIndex = 1;
+			this.createUserPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addNewCheckPanel_Paint);
+			// 
+			// materialSingleLineTextField2
+			// 
+			this.materialSingleLineTextField2.Depth = 0;
+			this.materialSingleLineTextField2.Hint = "";
+			this.materialSingleLineTextField2.Location = new System.Drawing.Point(518, 332);
+			this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
+			this.materialSingleLineTextField2.PasswordChar = '\0';
+			this.materialSingleLineTextField2.SelectedText = "";
+			this.materialSingleLineTextField2.SelectionLength = 0;
+			this.materialSingleLineTextField2.SelectionStart = 0;
+			this.materialSingleLineTextField2.Size = new System.Drawing.Size(198, 23);
+			this.materialSingleLineTextField2.TabIndex = 8;
+			this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+			// 
+			// materialSingleLineTextField1
+			// 
+			this.materialSingleLineTextField1.Depth = 0;
+			this.materialSingleLineTextField1.Hint = "";
+			this.materialSingleLineTextField1.Location = new System.Drawing.Point(518, 247);
+			this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
+			this.materialSingleLineTextField1.PasswordChar = '\0';
+			this.materialSingleLineTextField1.SelectedText = "";
+			this.materialSingleLineTextField1.SelectionLength = 0;
+			this.materialSingleLineTextField1.SelectionStart = 0;
+			this.materialSingleLineTextField1.Size = new System.Drawing.Size(198, 23);
+			this.materialSingleLineTextField1.TabIndex = 7;
+			this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+			// 
+			// LblPassword
+			// 
+			this.LblPassword.AutoSize = true;
+			this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
+			this.LblPassword.Location = new System.Drawing.Point(414, 335);
+			this.LblPassword.Name = "LblPassword";
+			this.LblPassword.Size = new System.Drawing.Size(102, 24);
+			this.LblPassword.TabIndex = 6;
+			this.LblPassword.Text = "Password :";
+			// 
+			// LblUserName
+			// 
+			this.LblUserName.AutoSize = true;
+			this.LblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
+			this.LblUserName.Location = new System.Drawing.Point(407, 251);
+			this.LblUserName.Name = "LblUserName";
+			this.LblUserName.Size = new System.Drawing.Size(110, 24);
+			this.LblUserName.TabIndex = 5;
+			this.LblUserName.Text = "UserName :";
 			// 
 			// Btn_Save
 			// 
@@ -95,56 +147,6 @@
 			this.Btn_Cancel.UseVisualStyleBackColor = false;
 			this.Btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
 			// 
-			// LblUserName
-			// 
-			this.LblUserName.AutoSize = true;
-			this.LblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.LblUserName.Location = new System.Drawing.Point(407, 251);
-			this.LblUserName.Name = "LblUserName";
-			this.LblUserName.Size = new System.Drawing.Size(110, 24);
-			this.LblUserName.TabIndex = 5;
-			this.LblUserName.Text = "UserName :";
-			// 
-			// LblPassword
-			// 
-			this.LblPassword.AutoSize = true;
-			this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.LblPassword.Location = new System.Drawing.Point(407, 335);
-			this.LblPassword.Name = "LblPassword";
-			this.LblPassword.Size = new System.Drawing.Size(102, 24);
-			this.LblPassword.TabIndex = 6;
-			this.LblPassword.Text = "Password :";
-			// 
-			// materialSingleLineTextField1
-			// 
-			this.materialSingleLineTextField1.Depth = 0;
-			this.materialSingleLineTextField1.Hint = "";
-			this.materialSingleLineTextField1.Location = new System.Drawing.Point(518, 247);
-			this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-			this.materialSingleLineTextField1.PasswordChar = '\0';
-			this.materialSingleLineTextField1.SelectedText = "";
-			this.materialSingleLineTextField1.SelectionLength = 0;
-			this.materialSingleLineTextField1.SelectionStart = 0;
-			this.materialSingleLineTextField1.Size = new System.Drawing.Size(198, 23);
-			this.materialSingleLineTextField1.TabIndex = 7;
-			this.materialSingleLineTextField1.UseSystemPasswordChar = false;
-			// 
-			// materialSingleLineTextField2
-			// 
-			this.materialSingleLineTextField2.Depth = 0;
-			this.materialSingleLineTextField2.Hint = "";
-			this.materialSingleLineTextField2.Location = new System.Drawing.Point(518, 332);
-			this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-			this.materialSingleLineTextField2.PasswordChar = '\0';
-			this.materialSingleLineTextField2.SelectedText = "";
-			this.materialSingleLineTextField2.SelectionLength = 0;
-			this.materialSingleLineTextField2.SelectionStart = 0;
-			this.materialSingleLineTextField2.Size = new System.Drawing.Size(198, 23);
-			this.materialSingleLineTextField2.TabIndex = 8;
-			this.materialSingleLineTextField2.UseSystemPasswordChar = false;
-			// 
 			// gradientPanel1
 			// 
 			this.gradientPanel1.Controls.Add(this.label1);
@@ -153,7 +155,7 @@
 			this.gradientPanel1.Location = new System.Drawing.Point(2, 2);
 			this.gradientPanel1.Name = "gradientPanel1";
 			this.gradientPanel1.RightColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(86)))), ((int)(((byte)(198)))));
-			this.gradientPanel1.Size = new System.Drawing.Size(1045, 67);
+			this.gradientPanel1.Size = new System.Drawing.Size(1061, 67);
 			this.gradientPanel1.TabIndex = 1;
 			// 
 			// label1
@@ -173,14 +175,14 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1049, 761);
-			this.Controls.Add(this.addNewCheckPanel);
+			this.ClientSize = new System.Drawing.Size(1065, 800);
+			this.Controls.Add(this.createUserPanel);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "CreateUserPopup";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "CreateUserPopup";
-			this.addNewCheckPanel.ResumeLayout(false);
-			this.addNewCheckPanel.PerformLayout();
+			this.createUserPanel.ResumeLayout(false);
+			this.createUserPanel.PerformLayout();
 			this.gradientPanel1.ResumeLayout(false);
 			this.gradientPanel1.PerformLayout();
 			this.ResumeLayout(false);
@@ -189,7 +191,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.Panel addNewCheckPanel;
+		private System.Windows.Forms.Panel createUserPanel;
 		private UserControls.GradientPanel gradientPanel1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label LblPassword;

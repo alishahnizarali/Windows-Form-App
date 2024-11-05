@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AiCashGuard.Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace AiCashGuard.Forms.AuthModule
 		public CreateUserPopup()
 		{
 			InitializeComponent();
+			//BaseTableLayoutPanel.Controls.Add(this.createUserPanel, 0, 1); // Row 1 for dashboardPanel
 		}
 
 		private void roundedPanel10_Paint(object sender, PaintEventArgs e)

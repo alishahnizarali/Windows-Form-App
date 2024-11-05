@@ -35,77 +35,86 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-			this.roundedPanel11 = new RoundedPanel();
+			this.roundedPanel11 = new AiCashGuard.UserControls.RoundedPanel();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.panel9 = new System.Windows.Forms.Panel();
-			this.panel13 = new System.Windows.Forms.Panel();
-			this.panel15 = new System.Windows.Forms.Panel();
-			this.panel14 = new System.Windows.Forms.Panel();
-			this.panel7 = new System.Windows.Forms.Panel();
-			this.panel16 = new System.Windows.Forms.Panel();
-			this.panel18 = new System.Windows.Forms.Panel();
-			this.panel11 = new System.Windows.Forms.Panel();
-			this.panel20 = new System.Windows.Forms.Panel();
 			this.label11 = new System.Windows.Forms.Label();
 			this.materialDivider3 = new MaterialSkin.Controls.MaterialDivider();
 			this.Alert_TextBox = new System.Windows.Forms.TextBox();
-			this.roundedPanel2 = new RoundedPanel();
+			this.roundedPanel2 = new AiCashGuard.UserControls.RoundedPanel();
 			this.CustomerIdImgFront = new System.Windows.Forms.PictureBox();
 			this.CustomerIdImgBack = new System.Windows.Forms.PictureBox();
 			this.panel8 = new System.Windows.Forms.Panel();
 			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-			this.roundedPanel14 = new RoundedPanel();
+			this.roundedPanel14 = new AiCashGuard.UserControls.RoundedPanel();
 			this.label38 = new System.Windows.Forms.Label();
 			this.Year_Label = new System.Windows.Forms.Label();
-			this.roundedPanel3 = new RoundedPanel();
+			this.roundedPanel3 = new AiCashGuard.UserControls.RoundedPanel();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.label15 = new System.Windows.Forms.Label();
 			this.Num_Trans_Label = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
-			this.roundedPanel6 = new RoundedPanel();
+			this.roundedPanel6 = new AiCashGuard.UserControls.RoundedPanel();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.label18 = new System.Windows.Forms.Label();
 			this.Num_Return_Clear_Label = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
-			this.roundedPanel4 = new RoundedPanel();
+			this.roundedPanel4 = new AiCashGuard.UserControls.RoundedPanel();
 			this.label12 = new System.Windows.Forms.Label();
 			this.Num_Return_Label = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
-			this.roundedPanel8 = new RoundedPanel();
+			this.roundedPanel8 = new AiCashGuard.UserControls.RoundedPanel();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.label21 = new System.Windows.Forms.Label();
 			this.Num_Check_Cashed_Label = new System.Windows.Forms.Label();
 			this.label20 = new System.Windows.Forms.Label();
-			this.roundedPanel9 = new RoundedPanel();
+			this.roundedPanel9 = new AiCashGuard.UserControls.RoundedPanel();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.label25 = new System.Windows.Forms.Label();
 			this.Last_Cashed_On_Label = new System.Windows.Forms.Label();
 			this.label24 = new System.Windows.Forms.Label();
-			this.roundedPanel10 = new RoundedPanel();
+			this.roundedPanel10 = new AiCashGuard.UserControls.RoundedPanel();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.label28 = new System.Windows.Forms.Label();
 			this.Last_Cash_Label = new System.Windows.Forms.Label();
 			this.label27 = new System.Windows.Forms.Label();
-			this.roundedPanel12 = new RoundedPanel();
+			this.roundedPanel12 = new AiCashGuard.UserControls.RoundedPanel();
 			this.Risk_Factor_Label = new System.Windows.Forms.Label();
 			this.label32 = new System.Windows.Forms.Label();
-			this.roundedPanel13 = new RoundedPanel();
+			this.roundedPanel13 = new AiCashGuard.UserControls.RoundedPanel();
 			this.label35 = new System.Windows.Forms.Label();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.roundedPanel5 = new RoundedPanel();
+			this.roundedPanel5 = new AiCashGuard.UserControls.RoundedPanel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.Customer_Number = new System.Windows.Forms.Label();
 			this.CustomerFace = new System.Windows.Forms.PictureBox();
-			this.roundedPanel7 = new RoundedPanel();
+			this.roundedPanel7 = new AiCashGuard.UserControls.RoundedPanel();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+			this.panel9 = new System.Windows.Forms.Panel();
 			this.Cust_State = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.Cust_City = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.Cust_ZipCode = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+			this.panel13 = new System.Windows.Forms.Panel();
+			this.Cust_City = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+			this.panel15 = new System.Windows.Forms.Panel();
+			this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+			this.Cust_ZipCode = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.panel14 = new System.Windows.Forms.Panel();
+			this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
 			this.Cust_Phone = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.panel7 = new System.Windows.Forms.Panel();
+			this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
 			this.Cust_DOB = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.panel16 = new System.Windows.Forms.Panel();
+			this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
 			this.Cust_FirstName = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.panel18 = new System.Windows.Forms.Panel();
+			this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
 			this.Cust_Address = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.panel20 = new System.Windows.Forms.Panel();
+			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
 			this.Cust_IDNumber = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.panel11 = new System.Windows.Forms.Panel();
+			this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
 			this.Cust_Last_Name = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.label23 = new System.Windows.Forms.Label();
 			this.panel6 = new System.Windows.Forms.Panel();
@@ -117,6 +126,9 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Start_Transaction = new System.Windows.Forms.Button();
 			this.Page_Title = new System.Windows.Forms.Label();
 			this.Back_Btn = new System.Windows.Forms.Button();
+			this.transProcessBtnPanel = new System.Windows.Forms.Panel();
+			this.transBackBtn = new System.Windows.Forms.Button();
+			this.transNextBtn = new System.Windows.Forms.Button();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.checkListPanel = new System.Windows.Forms.Panel();
 			this.checkDataPanel = new System.Windows.Forms.Panel();
@@ -149,39 +161,17 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.button9 = new System.Windows.Forms.Button();
 			this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.roundedPanel1 = new RoundedPanel();
+			this.roundedPanel1 = new AiCashGuard.UserControls.RoundedPanel();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.label9 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.CustomerDetailPanel = new System.Windows.Forms.Panel();
 			this.progressBar1 = new System.Windows.Forms.ProgressBar();
-			this.transProcessBtnPanel = new System.Windows.Forms.Panel();
-			this.transBackBtn = new System.Windows.Forms.Button();
-			this.transNextBtn = new System.Windows.Forms.Button();
-            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialTabControl1.SuspendLayout();
+			this.materialTabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
 			this.roundedPanel11.SuspendLayout();
 			this.panel3.SuspendLayout();
-			this.panel13.SuspendLayout();
-			this.panel9.SuspendLayout();
-			this.panel11.SuspendLayout();
-			this.panel15.SuspendLayout();
-			this.panel14.SuspendLayout();
-			this.panel7.SuspendLayout();
-			this.panel16.SuspendLayout();
-			this.panel18.SuspendLayout();
-			this.panel20.SuspendLayout();
-			this.transProcessBtnPanel.SuspendLayout();
 			this.roundedPanel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.CustomerIdImgFront)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.CustomerIdImgBack)).BeginInit();
@@ -207,8 +197,18 @@ namespace AiCashGuard.Forms.CustomerModule
 			((System.ComponentModel.ISupportInitialize)(this.CustomerFace)).BeginInit();
 			this.roundedPanel7.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
+			this.panel9.SuspendLayout();
+			this.panel13.SuspendLayout();
+			this.panel15.SuspendLayout();
+			this.panel14.SuspendLayout();
+			this.panel7.SuspendLayout();
+			this.panel16.SuspendLayout();
+			this.panel18.SuspendLayout();
+			this.panel20.SuspendLayout();
+			this.panel11.SuspendLayout();
 			this.panel6.SuspendLayout();
 			this.Action_Btn_Panel.SuspendLayout();
+			this.transProcessBtnPanel.SuspendLayout();
 			this.tabPage2.SuspendLayout();
 			this.checkListPanel.SuspendLayout();
 			this.checkDataPanel.SuspendLayout();
@@ -233,7 +233,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
 			this.materialTabSelector1.Depth = 0;
 			this.materialTabSelector1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.materialTabSelector1.Location = new System.Drawing.Point(0, 0);
+			this.materialTabSelector1.Location = new System.Drawing.Point(0, 10);
 			this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialTabSelector1.Name = "materialTabSelector1";
 			this.materialTabSelector1.Size = new System.Drawing.Size(1180, 23);
@@ -247,11 +247,11 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.materialTabControl1.Controls.Add(this.tabPage2);
 			this.materialTabControl1.Depth = 0;
 			this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.materialTabControl1.Location = new System.Drawing.Point(0, 23);
+			this.materialTabControl1.Location = new System.Drawing.Point(0, 33);
 			this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialTabControl1.Name = "materialTabControl1";
 			this.materialTabControl1.SelectedIndex = 0;
-			this.materialTabControl1.Size = new System.Drawing.Size(1180, 866);
+			this.materialTabControl1.Size = new System.Drawing.Size(1180, 856);
 			this.materialTabControl1.TabIndex = 1;
 			this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
 			// 
@@ -266,7 +266,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(10);
-			this.tabPage1.Size = new System.Drawing.Size(1172, 840);
+			this.tabPage1.Size = new System.Drawing.Size(1172, 830);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "Basic Information";
 			this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -287,7 +287,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(10);
 			this.tableLayoutPanel3.RowCount = 1;
 			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel3.Size = new System.Drawing.Size(1152, 455);
+			this.tableLayoutPanel3.Size = new System.Drawing.Size(1135, 455);
 			this.tableLayoutPanel3.TabIndex = 35;
 			// 
 			// roundedPanel11
@@ -297,22 +297,22 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel11.Controls.Add(this.Alert_TextBox);
 			this.roundedPanel11.CornerRadius = 20;
 			this.roundedPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel11.Location = new System.Drawing.Point(866, 13);
+			this.roundedPanel11.Location = new System.Drawing.Point(854, 13);
 			this.roundedPanel11.Name = "roundedPanel11";
 			this.roundedPanel11.Padding = new System.Windows.Forms.Padding(10);
-			this.roundedPanel11.Size = new System.Drawing.Size(273, 429);
+			this.roundedPanel11.Size = new System.Drawing.Size(268, 429);
 			this.roundedPanel11.TabIndex = 1;
-            this.roundedPanel11.Click += new System.EventHandler(this.Alert_TextBox_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label11);
+			this.roundedPanel11.Click += new System.EventHandler(this.Alert_TextBox_Click);
+			// 
+			// panel3
+			// 
+			this.panel3.Controls.Add(this.label11);
 			this.panel3.Controls.Add(this.materialDivider3);
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel3.Location = new System.Drawing.Point(10, 10);
 			this.panel3.Name = "panel3";
 			this.panel3.Padding = new System.Windows.Forms.Padding(10);
-			this.panel3.Size = new System.Drawing.Size(253, 51);
+			this.panel3.Size = new System.Drawing.Size(248, 51);
 			this.panel3.TabIndex = 35;
 			// 
 			// label11
@@ -339,7 +339,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.materialDivider3.Margin = new System.Windows.Forms.Padding(0);
 			this.materialDivider3.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialDivider3.Name = "materialDivider3";
-			this.materialDivider3.Size = new System.Drawing.Size(233, 1);
+			this.materialDivider3.Size = new System.Drawing.Size(228, 1);
 			this.materialDivider3.TabIndex = 2;
 			this.materialDivider3.Text = "materialDivider3";
 			// 
@@ -348,57 +348,57 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Alert_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.Alert_TextBox.Enabled = false;
 			this.Alert_TextBox.Location = new System.Drawing.Point(10, 67);
 			this.Alert_TextBox.Multiline = true;
 			this.Alert_TextBox.Name = "Alert_TextBox";
-			this.Alert_TextBox.Size = new System.Drawing.Size(253, 350);
+			this.Alert_TextBox.Size = new System.Drawing.Size(248, 350);
 			this.Alert_TextBox.TabIndex = 6;
-			this.Alert_TextBox.Enabled = false;
-            // 
-            // roundedPanel2
-            // 
-            this.roundedPanel2.BackColor = System.Drawing.Color.White;
+			// 
+			// roundedPanel2
+			// 
+			this.roundedPanel2.BackColor = System.Drawing.Color.White;
 			this.roundedPanel2.Controls.Add(this.CustomerIdImgFront);
 			this.roundedPanel2.Controls.Add(this.CustomerIdImgBack);
 			this.roundedPanel2.CornerRadius = 20;
 			this.roundedPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel2.Location = new System.Drawing.Point(591, 13);
+			this.roundedPanel2.Location = new System.Drawing.Point(583, 13);
 			this.roundedPanel2.Name = "roundedPanel2";
 			this.roundedPanel2.Padding = new System.Windows.Forms.Padding(10);
-			this.roundedPanel2.Size = new System.Drawing.Size(269, 429);
+			this.roundedPanel2.Size = new System.Drawing.Size(265, 429);
 			this.roundedPanel2.TabIndex = 2;
-            // 
-            // CustomerIdImgFront
-            // 
-            this.CustomerIdImgFront.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.CustomerIdImgFront.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CustomerIdImgFront.Location = new System.Drawing.Point(15, 15);
-            this.CustomerIdImgFront.Margin = new System.Windows.Forms.Padding(0);
-            this.CustomerIdImgFront.Name = "CustomerIdImgFront";
-            this.CustomerIdImgFront.Size = new System.Drawing.Size(369, 200);
-            this.CustomerIdImgFront.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.CustomerIdImgFront.TabIndex = 35;
-            this.CustomerIdImgFront.TabStop = false;
-            // 
-            // CustomerIdImgBack
-            // 
-            this.CustomerIdImgBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.CustomerIdImgBack.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.CustomerIdImgBack.Location = new System.Drawing.Point(15, 344);
-            this.CustomerIdImgBack.Margin = new System.Windows.Forms.Padding(0);
-            this.CustomerIdImgBack.Name = "CustomerIdImgBack";
-            this.CustomerIdImgBack.Size = new System.Drawing.Size(369, 200);
-            this.CustomerIdImgBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.CustomerIdImgBack.TabIndex = 36;
-            this.CustomerIdImgBack.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.tableLayoutPanel4);
+			// 
+			// CustomerIdImgFront
+			// 
+			this.CustomerIdImgFront.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.CustomerIdImgFront.Dock = System.Windows.Forms.DockStyle.Top;
+			this.CustomerIdImgFront.Location = new System.Drawing.Point(10, 10);
+			this.CustomerIdImgFront.Margin = new System.Windows.Forms.Padding(0);
+			this.CustomerIdImgFront.Name = "CustomerIdImgFront";
+			this.CustomerIdImgFront.Size = new System.Drawing.Size(245, 200);
+			this.CustomerIdImgFront.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.CustomerIdImgFront.TabIndex = 35;
+			this.CustomerIdImgFront.TabStop = false;
+			// 
+			// CustomerIdImgBack
+			// 
+			this.CustomerIdImgBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.CustomerIdImgBack.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.CustomerIdImgBack.Location = new System.Drawing.Point(10, 219);
+			this.CustomerIdImgBack.Margin = new System.Windows.Forms.Padding(0);
+			this.CustomerIdImgBack.Name = "CustomerIdImgBack";
+			this.CustomerIdImgBack.Size = new System.Drawing.Size(245, 200);
+			this.CustomerIdImgBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.CustomerIdImgBack.TabIndex = 36;
+			this.CustomerIdImgBack.TabStop = false;
+			// 
+			// panel8
+			// 
+			this.panel8.Controls.Add(this.tableLayoutPanel4);
 			this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel8.Location = new System.Drawing.Point(13, 13);
 			this.panel8.Name = "panel8";
-			this.panel8.Size = new System.Drawing.Size(572, 429);
+			this.panel8.Size = new System.Drawing.Size(564, 429);
 			this.panel8.TabIndex = 3;
 			// 
 			// tableLayoutPanel4
@@ -424,7 +424,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel4.Size = new System.Drawing.Size(572, 429);
+			this.tableLayoutPanel4.Size = new System.Drawing.Size(564, 429);
 			this.tableLayoutPanel4.TabIndex = 3;
 			// 
 			// roundedPanel14
@@ -437,7 +437,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel14.Location = new System.Drawing.Point(3, 289);
 			this.roundedPanel14.Name = "roundedPanel14";
 			this.roundedPanel14.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel14.Size = new System.Drawing.Size(184, 137);
+			this.roundedPanel14.Size = new System.Drawing.Size(181, 137);
 			this.roundedPanel14.TabIndex = 30;
 			// 
 			// label38
@@ -447,7 +447,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
 			this.label38.Location = new System.Drawing.Point(5, 5);
 			this.label38.Name = "label38";
-			this.label38.Size = new System.Drawing.Size(174, 17);
+			this.label38.Size = new System.Drawing.Size(171, 17);
 			this.label38.TabIndex = 25;
 			this.label38.Text = "Year";
 			// 
@@ -458,7 +458,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Year_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
 			this.Year_Label.Location = new System.Drawing.Point(5, 95);
 			this.Year_Label.Name = "Year_Label";
-			this.Year_Label.Size = new System.Drawing.Size(174, 37);
+			this.Year_Label.Size = new System.Drawing.Size(171, 37);
 			this.Year_Label.TabIndex = 24;
 			this.Year_Label.Text = "10";
 			this.Year_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -472,17 +472,17 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel3.Controls.Add(this.label14);
 			this.roundedPanel3.CornerRadius = 20;
 			this.roundedPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel3.Location = new System.Drawing.Point(193, 3);
+			this.roundedPanel3.Location = new System.Drawing.Point(190, 3);
 			this.roundedPanel3.Name = "roundedPanel3";
 			this.roundedPanel3.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel3.Size = new System.Drawing.Size(184, 137);
+			this.roundedPanel3.Size = new System.Drawing.Size(182, 137);
 			this.roundedPanel3.TabIndex = 22;
 			// 
 			// pictureBox6
 			// 
 			this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Right;
 			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-			this.pictureBox6.Location = new System.Drawing.Point(154, 5);
+			this.pictureBox6.Location = new System.Drawing.Point(152, 5);
 			this.pictureBox6.Name = "pictureBox6";
 			this.pictureBox6.Size = new System.Drawing.Size(25, 109);
 			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -521,7 +521,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
 			this.label14.Location = new System.Drawing.Point(5, 114);
 			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(174, 18);
+			this.label14.Size = new System.Drawing.Size(172, 18);
 			this.label14.TabIndex = 27;
 			this.label14.Text = "Updated hour ago";
 			this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -535,17 +535,17 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel6.Controls.Add(this.label17);
 			this.roundedPanel6.CornerRadius = 20;
 			this.roundedPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel6.Location = new System.Drawing.Point(193, 146);
+			this.roundedPanel6.Location = new System.Drawing.Point(190, 146);
 			this.roundedPanel6.Name = "roundedPanel6";
 			this.roundedPanel6.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel6.Size = new System.Drawing.Size(184, 137);
+			this.roundedPanel6.Size = new System.Drawing.Size(182, 137);
 			this.roundedPanel6.TabIndex = 24;
 			// 
 			// pictureBox3
 			// 
 			this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
 			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-			this.pictureBox3.Location = new System.Drawing.Point(154, 5);
+			this.pictureBox3.Location = new System.Drawing.Point(152, 5);
 			this.pictureBox3.Name = "pictureBox3";
 			this.pictureBox3.Size = new System.Drawing.Size(25, 109);
 			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -584,7 +584,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
 			this.label17.Location = new System.Drawing.Point(5, 114);
 			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(174, 18);
+			this.label17.Size = new System.Drawing.Size(172, 18);
 			this.label17.TabIndex = 27;
 			this.label17.Text = "Updated hour ago";
 			this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -597,10 +597,10 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel4.Controls.Add(this.label10);
 			this.roundedPanel4.CornerRadius = 20;
 			this.roundedPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel4.Location = new System.Drawing.Point(193, 289);
+			this.roundedPanel4.Location = new System.Drawing.Point(190, 289);
 			this.roundedPanel4.Name = "roundedPanel4";
 			this.roundedPanel4.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel4.Size = new System.Drawing.Size(184, 137);
+			this.roundedPanel4.Size = new System.Drawing.Size(182, 137);
 			this.roundedPanel4.TabIndex = 23;
 			// 
 			// label12
@@ -635,7 +635,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
 			this.label10.Location = new System.Drawing.Point(5, 114);
 			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(174, 18);
+			this.label10.Size = new System.Drawing.Size(172, 18);
 			this.label10.TabIndex = 27;
 			this.label10.Text = "Updated hour ago";
 			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -649,17 +649,17 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel8.Controls.Add(this.label20);
 			this.roundedPanel8.CornerRadius = 20;
 			this.roundedPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel8.Location = new System.Drawing.Point(383, 289);
+			this.roundedPanel8.Location = new System.Drawing.Point(378, 289);
 			this.roundedPanel8.Name = "roundedPanel8";
 			this.roundedPanel8.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel8.Size = new System.Drawing.Size(186, 137);
+			this.roundedPanel8.Size = new System.Drawing.Size(183, 137);
 			this.roundedPanel8.TabIndex = 25;
 			// 
 			// pictureBox4
 			// 
 			this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
 			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-			this.pictureBox4.Location = new System.Drawing.Point(156, 5);
+			this.pictureBox4.Location = new System.Drawing.Point(153, 5);
 			this.pictureBox4.Name = "pictureBox4";
 			this.pictureBox4.Size = new System.Drawing.Size(25, 109);
 			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -698,7 +698,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
 			this.label20.Location = new System.Drawing.Point(5, 114);
 			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(176, 18);
+			this.label20.Size = new System.Drawing.Size(173, 18);
 			this.label20.TabIndex = 27;
 			this.label20.Text = "Updated hour ago";
 			this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -712,17 +712,17 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel9.Controls.Add(this.label24);
 			this.roundedPanel9.CornerRadius = 20;
 			this.roundedPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel9.Location = new System.Drawing.Point(383, 146);
+			this.roundedPanel9.Location = new System.Drawing.Point(378, 146);
 			this.roundedPanel9.Name = "roundedPanel9";
 			this.roundedPanel9.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel9.Size = new System.Drawing.Size(186, 137);
+			this.roundedPanel9.Size = new System.Drawing.Size(183, 137);
 			this.roundedPanel9.TabIndex = 26;
 			// 
 			// pictureBox5
 			// 
 			this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
 			this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-			this.pictureBox5.Location = new System.Drawing.Point(156, 5);
+			this.pictureBox5.Location = new System.Drawing.Point(153, 5);
 			this.pictureBox5.Name = "pictureBox5";
 			this.pictureBox5.Size = new System.Drawing.Size(25, 109);
 			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -761,7 +761,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
 			this.label24.Location = new System.Drawing.Point(5, 114);
 			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(176, 18);
+			this.label24.Size = new System.Drawing.Size(173, 18);
 			this.label24.TabIndex = 27;
 			this.label24.Text = "Updated hour ago";
 			this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -775,17 +775,17 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel10.Controls.Add(this.label27);
 			this.roundedPanel10.CornerRadius = 20;
 			this.roundedPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel10.Location = new System.Drawing.Point(383, 3);
+			this.roundedPanel10.Location = new System.Drawing.Point(378, 3);
 			this.roundedPanel10.Name = "roundedPanel10";
 			this.roundedPanel10.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel10.Size = new System.Drawing.Size(186, 137);
+			this.roundedPanel10.Size = new System.Drawing.Size(183, 137);
 			this.roundedPanel10.TabIndex = 27;
 			// 
 			// pictureBox7
 			// 
 			this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
 			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-			this.pictureBox7.Location = new System.Drawing.Point(156, 5);
+			this.pictureBox7.Location = new System.Drawing.Point(153, 5);
 			this.pictureBox7.Name = "pictureBox7";
 			this.pictureBox7.Size = new System.Drawing.Size(25, 109);
 			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -800,7 +800,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
 			this.label28.Location = new System.Drawing.Point(5, 5);
 			this.label28.Name = "label28";
-			this.label28.Size = new System.Drawing.Size(79, 13);
+			this.label28.Size = new System.Drawing.Size(43, 13);
 			this.label28.TabIndex = 25;
 			this.label28.Text = "Status";
 			// 
@@ -809,7 +809,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Last_Cash_Label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
 			this.Last_Cash_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Last_Cash_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(167)))));
+			this.Last_Cash_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(167)))));
 			this.Last_Cash_Label.Location = new System.Drawing.Point(8, 47);
 			this.Last_Cash_Label.Name = "Last_Cash_Label";
 			this.Last_Cash_Label.Size = new System.Drawing.Size(130, 48);
@@ -823,7 +823,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
 			this.label27.Location = new System.Drawing.Point(5, 114);
 			this.label27.Name = "label27";
-			this.label27.Size = new System.Drawing.Size(176, 18);
+			this.label27.Size = new System.Drawing.Size(173, 18);
 			this.label27.TabIndex = 27;
 			this.label27.Text = "Updated hour ago";
 			this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -838,7 +838,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel12.Location = new System.Drawing.Point(3, 3);
 			this.roundedPanel12.Name = "roundedPanel12";
 			this.roundedPanel12.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel12.Size = new System.Drawing.Size(184, 137);
+			this.roundedPanel12.Size = new System.Drawing.Size(181, 137);
 			this.roundedPanel12.TabIndex = 28;
 			// 
 			// Risk_Factor_Label
@@ -848,7 +848,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Risk_Factor_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
 			this.Risk_Factor_Label.Location = new System.Drawing.Point(5, 114);
 			this.Risk_Factor_Label.Name = "Risk_Factor_Label";
-			this.Risk_Factor_Label.Size = new System.Drawing.Size(174, 18);
+			this.Risk_Factor_Label.Size = new System.Drawing.Size(171, 18);
 			this.Risk_Factor_Label.TabIndex = 27;
 			this.Risk_Factor_Label.Text = "Low";
 			this.Risk_Factor_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -860,7 +860,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
 			this.label32.Location = new System.Drawing.Point(5, 5);
 			this.label32.Name = "label32";
-			this.label32.Size = new System.Drawing.Size(174, 17);
+			this.label32.Size = new System.Drawing.Size(171, 17);
 			this.label32.TabIndex = 25;
 			this.label32.Text = "Risk Factors";
 			// 
@@ -873,7 +873,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel13.Location = new System.Drawing.Point(3, 146);
 			this.roundedPanel13.Name = "roundedPanel13";
 			this.roundedPanel13.Padding = new System.Windows.Forms.Padding(5);
-			this.roundedPanel13.Size = new System.Drawing.Size(184, 137);
+			this.roundedPanel13.Size = new System.Drawing.Size(181, 137);
 			this.roundedPanel13.TabIndex = 29;
 			// 
 			// label35
@@ -883,7 +883,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(78)))), ((int)(((byte)(97)))));
 			this.label35.Location = new System.Drawing.Point(5, 5);
 			this.label35.Name = "label35";
-			this.label35.Size = new System.Drawing.Size(174, 17);
+			this.label35.Size = new System.Drawing.Size(171, 17);
 			this.label35.TabIndex = 25;
 			this.label35.Text = "AI Score";
 			// 
@@ -901,7 +901,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.tableLayoutPanel1.RowCount = 1;
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 251F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(1152, 251);
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(1135, 251);
 			this.tableLayoutPanel1.TabIndex = 34;
 			// 
 			// roundedPanel5
@@ -915,7 +915,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel5.Location = new System.Drawing.Point(3, 3);
 			this.roundedPanel5.Name = "roundedPanel5";
 			this.roundedPanel5.Padding = new System.Windows.Forms.Padding(10);
-			this.roundedPanel5.Size = new System.Drawing.Size(224, 245);
+			this.roundedPanel5.Size = new System.Drawing.Size(221, 245);
 			this.roundedPanel5.TabIndex = 0;
 			this.roundedPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel5_Paint);
 			// 
@@ -926,7 +926,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.panel4.Location = new System.Drawing.Point(10, 184);
 			this.panel4.Name = "panel4";
 			this.panel4.Padding = new System.Windows.Forms.Padding(10);
-			this.panel4.Size = new System.Drawing.Size(204, 51);
+			this.panel4.Size = new System.Drawing.Size(201, 51);
 			this.panel4.TabIndex = 36;
 			// 
 			// Customer_Number
@@ -938,7 +938,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Customer_Number.Location = new System.Drawing.Point(10, 10);
 			this.Customer_Number.Margin = new System.Windows.Forms.Padding(0);
 			this.Customer_Number.Name = "Customer_Number";
-			this.Customer_Number.Size = new System.Drawing.Size(184, 31);
+			this.Customer_Number.Size = new System.Drawing.Size(181, 31);
 			this.Customer_Number.TabIndex = 5;
 			this.Customer_Number.Text = "Customer #:";
 			this.Customer_Number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -949,7 +949,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.CustomerFace.Location = new System.Drawing.Point(10, 10);
 			this.CustomerFace.Margin = new System.Windows.Forms.Padding(0);
 			this.CustomerFace.Name = "CustomerFace";
-			this.CustomerFace.Size = new System.Drawing.Size(204, 168);
+			this.CustomerFace.Size = new System.Drawing.Size(201, 168);
 			this.CustomerFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
 			this.CustomerFace.TabIndex = 2;
 			this.CustomerFace.TabStop = false;
@@ -961,10 +961,10 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.roundedPanel7.Controls.Add(this.label23);
 			this.roundedPanel7.CornerRadius = 20;
 			this.roundedPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.roundedPanel7.Location = new System.Drawing.Point(233, 3);
+			this.roundedPanel7.Location = new System.Drawing.Point(230, 3);
 			this.roundedPanel7.Name = "roundedPanel7";
 			this.roundedPanel7.Padding = new System.Windows.Forms.Padding(10);
-			this.roundedPanel7.Size = new System.Drawing.Size(685, 245);
+			this.roundedPanel7.Size = new System.Drawing.Size(902, 245);
 			this.roundedPanel7.TabIndex = 3;
 			// 
 			// tableLayoutPanel2
@@ -989,366 +989,423 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-			this.tableLayoutPanel2.Size = new System.Drawing.Size(665, 198);
+			this.tableLayoutPanel2.Size = new System.Drawing.Size(882, 198);
 			this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.Cust_State);
-            this.panel9.Controls.Add(this.materialLabel8);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(305, 173);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(293, 76);
-            this.panel9.TabIndex = 5;
-            // 
-            // Cust_State
-            // 
-            this.Cust_State.Dock = System.Windows.Forms.DockStyle.Bottom;
+			// 
+			// panel9
+			// 
+			this.panel9.Controls.Add(this.Cust_State);
+			this.panel9.Controls.Add(this.materialLabel8);
+			this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel9.Location = new System.Drawing.Point(297, 137);
+			this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel9.Name = "panel9";
+			this.panel9.Size = new System.Drawing.Size(286, 56);
+			this.panel9.TabIndex = 5;
+			// 
+			// Cust_State
+			// 
+			this.Cust_State.Depth = 0;
+			this.Cust_State.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_State.Enabled = false;
 			this.Cust_State.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cust_State.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Cust_State.Location = new System.Drawing.Point(0, 42);
-            this.Cust_State.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_State.Name = "Cust_State";
-            this.Cust_State.Enabled = false;
-            this.Cust_State.Size = new System.Drawing.Size(215, 23);
-            this.Cust_State.TabIndex = 8;
+			this.Cust_State.Hint = "";
+			this.Cust_State.Location = new System.Drawing.Point(0, 33);
+			this.Cust_State.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Cust_State.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_State.Name = "Cust_State";
+			this.Cust_State.PasswordChar = '\0';
+			this.Cust_State.SelectedText = "";
+			this.Cust_State.SelectionLength = 0;
+			this.Cust_State.SelectionStart = 0;
+			this.Cust_State.Size = new System.Drawing.Size(286, 23);
+			this.Cust_State.TabIndex = 8;
 			this.Cust_State.Text = "State";
-            // 
-            // materialLabel8
-            // 
-            this.materialLabel8.Depth = 0;
-            this.materialLabel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(293, 29);
-            this.materialLabel8.TabIndex = 0;
-            this.materialLabel8.Text = "State";
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.Cust_City);
-            this.panel13.Controls.Add(this.materialLabel2);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(4, 173);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(293, 76);
-            this.panel13.TabIndex = 5;
-            // 
-            // Cust_City
-            // 
-            this.Cust_City.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_State.UseSystemPasswordChar = false;
+			// 
+			// materialLabel8
+			// 
+			this.materialLabel8.Depth = 0;
+			this.materialLabel8.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel8.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel8.Name = "materialLabel8";
+			this.materialLabel8.Size = new System.Drawing.Size(286, 29);
+			this.materialLabel8.TabIndex = 0;
+			this.materialLabel8.Text = "State";
+			// 
+			// panel13
+			// 
+			this.panel13.Controls.Add(this.Cust_City);
+			this.panel13.Controls.Add(this.materialLabel2);
+			this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel13.Location = new System.Drawing.Point(4, 137);
+			this.panel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel13.Name = "panel13";
+			this.panel13.Size = new System.Drawing.Size(285, 56);
+			this.panel13.TabIndex = 5;
+			// 
+			// Cust_City
+			// 
+			this.Cust_City.Depth = 0;
+			this.Cust_City.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_City.Enabled = false;
 			this.Cust_City.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cust_City.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.Cust_City.Location = new System.Drawing.Point(0, 42);
-            this.Cust_City.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_City.Name = "Cust_City";
-            this.Cust_City.Enabled = false;
-            this.Cust_City.Size = new System.Drawing.Size(215, 23);
-            this.Cust_City.TabIndex = 2;
+			this.Cust_City.Hint = "";
+			this.Cust_City.Location = new System.Drawing.Point(0, 33);
+			this.Cust_City.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Cust_City.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_City.Name = "Cust_City";
+			this.Cust_City.PasswordChar = '\0';
+			this.Cust_City.SelectedText = "";
+			this.Cust_City.SelectionLength = 0;
+			this.Cust_City.SelectionStart = 0;
+			this.Cust_City.Size = new System.Drawing.Size(285, 23);
+			this.Cust_City.TabIndex = 2;
 			this.Cust_City.Text = "City";
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(293, 29);
-            this.materialLabel2.TabIndex = 0;
-            this.materialLabel2.Text = "City";
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.materialLabel4);
-            this.panel15.Controls.Add(this.Cust_ZipCode);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(606, 173);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(294, 76);
-            this.panel15.TabIndex = 6;
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(294, 29);
-            this.materialLabel4.TabIndex = 0;
-            this.materialLabel4.Text = "Zip Code";
-            // 
-            // Cust_ZipCode
-            // 
-            this.Cust_ZipCode.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Cust_City.UseSystemPasswordChar = false;
+			// 
+			// materialLabel2
+			// 
+			this.materialLabel2.Depth = 0;
+			this.materialLabel2.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel2.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel2.Name = "materialLabel2";
+			this.materialLabel2.Size = new System.Drawing.Size(285, 29);
+			this.materialLabel2.TabIndex = 0;
+			this.materialLabel2.Text = "City";
+			// 
+			// panel15
+			// 
+			this.panel15.Controls.Add(this.materialLabel4);
+			this.panel15.Controls.Add(this.Cust_ZipCode);
+			this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel15.Location = new System.Drawing.Point(591, 137);
+			this.panel15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel15.Name = "panel15";
+			this.panel15.Size = new System.Drawing.Size(287, 56);
+			this.panel15.TabIndex = 6;
+			// 
+			// materialLabel4
+			// 
+			this.materialLabel4.Depth = 0;
+			this.materialLabel4.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel4.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel4.Name = "materialLabel4";
+			this.materialLabel4.Size = new System.Drawing.Size(287, 29);
+			this.materialLabel4.TabIndex = 0;
+			this.materialLabel4.Text = "Zip Code";
+			// 
+			// Cust_ZipCode
+			// 
+			this.Cust_ZipCode.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Cust_ZipCode.Depth = 0;
 			this.Cust_ZipCode.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_ZipCode.Enabled = false;
 			this.Cust_ZipCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cust_ZipCode.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Cust_ZipCode.Location = new System.Drawing.Point(0, 42);
-            this.Cust_ZipCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_ZipCode.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Cust_ZipCode.Enabled = false;
-            this.Cust_ZipCode.Name = "Cust_ZipCode";
-			this.Cust_ZipCode.Size = new System.Drawing.Size(215, 23);
+			this.Cust_ZipCode.Hint = "";
+			this.Cust_ZipCode.Location = new System.Drawing.Point(0, 33);
+			this.Cust_ZipCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Cust_ZipCode.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_ZipCode.Name = "Cust_ZipCode";
+			this.Cust_ZipCode.PasswordChar = '\0';
+			this.Cust_ZipCode.SelectedText = "";
+			this.Cust_ZipCode.SelectionLength = 0;
+			this.Cust_ZipCode.SelectionStart = 0;
+			this.Cust_ZipCode.Size = new System.Drawing.Size(287, 23);
 			this.Cust_ZipCode.TabIndex = 7;
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.materialLabel3);
-            this.panel14.Controls.Add(this.Cust_Phone);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(305, 89);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(293, 74);
-            this.panel14.TabIndex = 5;
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(293, 29);
-            this.materialLabel3.TabIndex = 0;
-            this.materialLabel3.Text = "Phone";
-            // 
-            // Cust_Phone
-            // 
-            this.Cust_Phone.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Cust_ZipCode.UseSystemPasswordChar = false;
+			// 
+			// panel14
+			// 
+			this.panel14.Controls.Add(this.materialLabel3);
+			this.panel14.Controls.Add(this.Cust_Phone);
+			this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel14.Location = new System.Drawing.Point(297, 71);
+			this.panel14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel14.Name = "panel14";
+			this.panel14.Size = new System.Drawing.Size(286, 56);
+			this.panel14.TabIndex = 5;
+			// 
+			// materialLabel3
+			// 
+			this.materialLabel3.Depth = 0;
+			this.materialLabel3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel3.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel3.Name = "materialLabel3";
+			this.materialLabel3.Size = new System.Drawing.Size(286, 29);
+			this.materialLabel3.TabIndex = 0;
+			this.materialLabel3.Text = "Phone";
+			// 
+			// Cust_Phone
+			// 
+			this.Cust_Phone.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Cust_Phone.Depth = 0;
 			this.Cust_Phone.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_Phone.Enabled = false;
 			this.Cust_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cust_Phone.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Cust_Phone.Location = new System.Drawing.Point(0, 42);
-            this.Cust_Phone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_Phone.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Cust_Phone.Enabled = false;
-            this.Cust_Phone.Name = "Cust_Phone";
-			this.Cust_Phone.Size = new System.Drawing.Size(215, 23);
+			this.Cust_Phone.Hint = "";
+			this.Cust_Phone.Location = new System.Drawing.Point(0, 33);
+			this.Cust_Phone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Cust_Phone.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_Phone.Name = "Cust_Phone";
+			this.Cust_Phone.PasswordChar = '\0';
+			this.Cust_Phone.SelectedText = "";
+			this.Cust_Phone.SelectionLength = 0;
+			this.Cust_Phone.SelectionStart = 0;
+			this.Cust_Phone.Size = new System.Drawing.Size(286, 23);
 			this.Cust_Phone.TabIndex = 6;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.materialLabel6);
-            this.panel7.Controls.Add(this.Cust_DOB);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(4, 89);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(293, 74);
-            this.panel7.TabIndex = 5;
-            // 
-            // materialLabel6
-            // 
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-            this.materialLabel6.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(293, 29);
-            this.materialLabel6.TabIndex = 0;
-            this.materialLabel6.Text = "Date of Birth";
-            // 
-            // Cust_DOB
-            // 
-            this.Cust_DOB.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Cust_Phone.UseSystemPasswordChar = false;
+			// 
+			// panel7
+			// 
+			this.panel7.Controls.Add(this.materialLabel6);
+			this.panel7.Controls.Add(this.Cust_DOB);
+			this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel7.Location = new System.Drawing.Point(4, 71);
+			this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel7.Name = "panel7";
+			this.panel7.Size = new System.Drawing.Size(285, 56);
+			this.panel7.TabIndex = 5;
+			// 
+			// materialLabel6
+			// 
+			this.materialLabel6.Depth = 0;
+			this.materialLabel6.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel6.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel6.Name = "materialLabel6";
+			this.materialLabel6.Size = new System.Drawing.Size(285, 29);
+			this.materialLabel6.TabIndex = 0;
+			this.materialLabel6.Text = "Date of Birth";
+			// 
+			// Cust_DOB
+			// 
+			this.Cust_DOB.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Cust_DOB.Depth = 0;
 			this.Cust_DOB.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_DOB.Enabled = false;
 			this.Cust_DOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cust_DOB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.Cust_DOB.Location = new System.Drawing.Point(0, 42);
-            this.Cust_DOB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_DOB.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Cust_DOB.Enabled = false;
-            this.Cust_DOB.Name = "Cust_DOB";
-			this.Cust_DOB.Size = new System.Drawing.Size(217, 23);
+			this.Cust_DOB.Hint = "";
+			this.Cust_DOB.Location = new System.Drawing.Point(0, 33);
+			this.Cust_DOB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Cust_DOB.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_DOB.Name = "Cust_DOB";
+			this.Cust_DOB.PasswordChar = '\0';
+			this.Cust_DOB.SelectedText = "";
+			this.Cust_DOB.SelectionLength = 0;
+			this.Cust_DOB.SelectionStart = 0;
+			this.Cust_DOB.Size = new System.Drawing.Size(285, 23);
 			this.Cust_DOB.TabIndex = 5;
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.materialLabel5);
-            this.panel16.Controls.Add(this.Cust_FirstName);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(305, 5);
-            this.panel16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(293, 74);
-            this.panel16.TabIndex = 5;
-            // 
-            // materialLabel5
-            // 
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(293, 29);
-            this.materialLabel5.TabIndex = 0;
-            this.materialLabel5.Text = "First Name";
-            // 
-            // Cust_FirstName
-            // 
-            this.Cust_FirstName.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Cust_DOB.UseSystemPasswordChar = false;
+			// 
+			// panel16
+			// 
+			this.panel16.Controls.Add(this.materialLabel5);
+			this.panel16.Controls.Add(this.Cust_FirstName);
+			this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel16.Location = new System.Drawing.Point(297, 5);
+			this.panel16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel16.Name = "panel16";
+			this.panel16.Size = new System.Drawing.Size(286, 56);
+			this.panel16.TabIndex = 5;
+			// 
+			// materialLabel5
+			// 
+			this.materialLabel5.Depth = 0;
+			this.materialLabel5.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel5.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel5.Name = "materialLabel5";
+			this.materialLabel5.Size = new System.Drawing.Size(286, 29);
+			this.materialLabel5.TabIndex = 0;
+			this.materialLabel5.Text = "First Name";
+			// 
+			// Cust_FirstName
+			// 
+			this.Cust_FirstName.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Cust_FirstName.Depth = 0;
 			this.Cust_FirstName.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_FirstName.Enabled = false;
 			this.Cust_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cust_FirstName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.Cust_FirstName.Location = new System.Drawing.Point(0, 42);
-            this.Cust_Last_Name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_FirstName.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Cust_FirstName.Enabled = false;
-            this.Cust_FirstName.Name = "Cust_FirstName";
-			this.Cust_FirstName.Size = new System.Drawing.Size(215, 23);
+			this.Cust_FirstName.Hint = "";
+			this.Cust_FirstName.Location = new System.Drawing.Point(0, 33);
+			this.Cust_FirstName.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_FirstName.Name = "Cust_FirstName";
+			this.Cust_FirstName.PasswordChar = '\0';
+			this.Cust_FirstName.SelectedText = "";
+			this.Cust_FirstName.SelectionLength = 0;
+			this.Cust_FirstName.SelectionStart = 0;
+			this.Cust_FirstName.Size = new System.Drawing.Size(286, 23);
 			this.Cust_FirstName.TabIndex = 3;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.materialLabel9);
-            this.panel11.Controls.Add(this.Cust_Last_Name);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(606, 5);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(294, 74);
-            this.panel11.TabIndex = 5;
-            // 
-            // materialLabel9
-            // 
-            this.materialLabel9.Depth = 0;
-            this.materialLabel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(294, 29);
-            this.materialLabel9.TabIndex = 0;
-            this.materialLabel9.Text = "Last Name";
-            // 
-            // Last_Name
-            // 
-            this.Cust_Last_Name.CausesValidation = false;
-            this.Cust_Last_Name.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Cust_Last_Name.Depth = 0;
-            this.Cust_Last_Name.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Cust_Last_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cust_Last_Name.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Cust_Last_Name.Location = new System.Drawing.Point(0, 42);
-            this.Cust_Last_Name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_Last_Name.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Cust_Last_Name.Enabled = false;
-            this.Cust_Last_Name.Name = "Cust_Last_Name";
-            this.Cust_Last_Name.Size = new System.Drawing.Size(215, 23);
-            this.Cust_Last_Name.TabIndex = 0;
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.materialLabel7);
-            this.panel18.Controls.Add(this.Cust_Address);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(606, 89);
-            this.panel18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(294, 74);
-            this.panel18.TabIndex = 5;
-            // 
-            // materialLabel7
-            // 
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(294, 29);
-            this.materialLabel7.TabIndex = 0;
-            this.materialLabel7.Text = "Address";
-            // 
-            // Cust_Address
-            // 
-            this.Cust_Address.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Cust_FirstName.UseSystemPasswordChar = false;
+			// 
+			// panel18
+			// 
+			this.panel18.Controls.Add(this.materialLabel7);
+			this.panel18.Controls.Add(this.Cust_Address);
+			this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel18.Location = new System.Drawing.Point(591, 71);
+			this.panel18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel18.Name = "panel18";
+			this.panel18.Size = new System.Drawing.Size(287, 56);
+			this.panel18.TabIndex = 5;
+			// 
+			// materialLabel7
+			// 
+			this.materialLabel7.Depth = 0;
+			this.materialLabel7.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel7.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel7.Name = "materialLabel7";
+			this.materialLabel7.Size = new System.Drawing.Size(287, 29);
+			this.materialLabel7.TabIndex = 0;
+			this.materialLabel7.Text = "Address";
+			// 
+			// Cust_Address
+			// 
+			this.Cust_Address.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Cust_Address.Depth = 0;
 			this.Cust_Address.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_Address.Enabled = false;
 			this.Cust_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cust_Address.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Cust_Address.Location = new System.Drawing.Point(0, 42);
-            this.Cust_Address.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_Address.Enabled = false;
-            this.Cust_Address.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_Address.Hint = "";
+			this.Cust_Address.Location = new System.Drawing.Point(0, 33);
+			this.Cust_Address.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Cust_Address.MouseState = MaterialSkin.MouseState.HOVER;
 			this.Cust_Address.Name = "Cust_Address";
-			this.Cust_Address.Size = new System.Drawing.Size(217, 23);
+			this.Cust_Address.PasswordChar = '\0';
+			this.Cust_Address.SelectedText = "";
+			this.Cust_Address.SelectionLength = 0;
+			this.Cust_Address.SelectionStart = 0;
+			this.Cust_Address.Size = new System.Drawing.Size(287, 23);
 			this.Cust_Address.TabIndex = 2;
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.materialLabel1);
-            this.panel20.Controls.Add(this.Cust_IDNumber);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(4, 5);
-            this.panel20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(293, 74);
-            this.panel20.TabIndex = 4;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(293, 29);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "ID Number";
-            // 
-            // Cust_IDNumber
-            // 
-            this.Cust_IDNumber.CausesValidation = false;
+			this.Cust_Address.UseSystemPasswordChar = false;
+			// 
+			// panel20
+			// 
+			this.panel20.Controls.Add(this.materialLabel1);
+			this.panel20.Controls.Add(this.Cust_IDNumber);
+			this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel20.Location = new System.Drawing.Point(4, 5);
+			this.panel20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel20.Name = "panel20";
+			this.panel20.Size = new System.Drawing.Size(285, 56);
+			this.panel20.TabIndex = 4;
+			// 
+			// materialLabel1
+			// 
+			this.materialLabel1.Depth = 0;
+			this.materialLabel1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel1.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel1.Name = "materialLabel1";
+			this.materialLabel1.Size = new System.Drawing.Size(285, 29);
+			this.materialLabel1.TabIndex = 0;
+			this.materialLabel1.Text = "ID Number";
+			// 
+			// Cust_IDNumber
+			// 
+			this.Cust_IDNumber.CausesValidation = false;
 			this.Cust_IDNumber.Cursor = System.Windows.Forms.Cursors.Default;
 			this.Cust_IDNumber.Depth = 0;
 			this.Cust_IDNumber.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_IDNumber.Enabled = false;
 			this.Cust_IDNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Cust_IDNumber.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.Cust_IDNumber.Location = new System.Drawing.Point(0, 42);
-            this.Cust_IDNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Cust_IDNumber.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Cust_IDNumber.Enabled = false;
-            this.Cust_IDNumber.Name = "Cust_IDNumber";
-			this.Cust_IDNumber.Size = new System.Drawing.Size(215, 23);
+			this.Cust_IDNumber.Hint = "";
+			this.Cust_IDNumber.Location = new System.Drawing.Point(0, 33);
+			this.Cust_IDNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Cust_IDNumber.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_IDNumber.Name = "Cust_IDNumber";
+			this.Cust_IDNumber.PasswordChar = '\0';
+			this.Cust_IDNumber.SelectedText = "";
+			this.Cust_IDNumber.SelectionLength = 0;
+			this.Cust_IDNumber.SelectionStart = 0;
+			this.Cust_IDNumber.Size = new System.Drawing.Size(285, 23);
 			this.Cust_IDNumber.TabIndex = 0;
+			this.Cust_IDNumber.UseSystemPasswordChar = false;
+			// 
+			// panel11
+			// 
+			this.panel11.Controls.Add(this.materialLabel9);
+			this.panel11.Controls.Add(this.Cust_Last_Name);
+			this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel11.Location = new System.Drawing.Point(591, 5);
+			this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.panel11.Name = "panel11";
+			this.panel11.Size = new System.Drawing.Size(287, 56);
+			this.panel11.TabIndex = 5;
+			// 
+			// materialLabel9
+			// 
+			this.materialLabel9.Depth = 0;
+			this.materialLabel9.Dock = System.Windows.Forms.DockStyle.Top;
+			this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel9.Location = new System.Drawing.Point(0, 0);
+			this.materialLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel9.Name = "materialLabel9";
+			this.materialLabel9.Size = new System.Drawing.Size(287, 29);
+			this.materialLabel9.TabIndex = 0;
+			this.materialLabel9.Text = "Last Name";
+			// 
+			// Cust_Last_Name
+			// 
+			this.Cust_Last_Name.CausesValidation = false;
+			this.Cust_Last_Name.Cursor = System.Windows.Forms.Cursors.Default;
+			this.Cust_Last_Name.Depth = 0;
+			this.Cust_Last_Name.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.Cust_Last_Name.Enabled = false;
+			this.Cust_Last_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Cust_Last_Name.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.Cust_Last_Name.Hint = "";
+			this.Cust_Last_Name.Location = new System.Drawing.Point(0, 33);
+			this.Cust_Last_Name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.Cust_Last_Name.MouseState = MaterialSkin.MouseState.HOVER;
+			this.Cust_Last_Name.Name = "Cust_Last_Name";
+			this.Cust_Last_Name.PasswordChar = '\0';
+			this.Cust_Last_Name.SelectedText = "";
+			this.Cust_Last_Name.SelectionLength = 0;
+			this.Cust_Last_Name.SelectionStart = 0;
+			this.Cust_Last_Name.Size = new System.Drawing.Size(287, 23);
+			this.Cust_Last_Name.TabIndex = 0;
+			this.Cust_Last_Name.UseSystemPasswordChar = false;
 			// 
 			// label23
 			// 
@@ -1359,7 +1416,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.label23.Location = new System.Drawing.Point(10, 10);
 			this.label23.Name = "label23";
 			this.label23.Padding = new System.Windows.Forms.Padding(5, 10, 0, 0);
-			this.label23.Size = new System.Drawing.Size(665, 27);
+			this.label23.Size = new System.Drawing.Size(882, 27);
 			this.label23.TabIndex = 2;
 			this.label23.Text = "Customer Details";
 			this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1374,7 +1431,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.panel6.Location = new System.Drawing.Point(10, 10);
 			this.panel6.Name = "panel6";
 			this.panel6.Padding = new System.Windows.Forms.Padding(10);
-			this.panel6.Size = new System.Drawing.Size(1152, 71);
+			this.panel6.Size = new System.Drawing.Size(1135, 71);
 			this.panel6.TabIndex = 36;
 			this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
 			// 
@@ -1385,7 +1442,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Action_Btn_Panel.Controls.Add(this.Edit_Cust);
 			this.Action_Btn_Panel.Controls.Add(this.Delete_Cust);
 			this.Action_Btn_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-			this.Action_Btn_Panel.Location = new System.Drawing.Point(811, 10);
+			this.Action_Btn_Panel.Location = new System.Drawing.Point(794, 10);
 			this.Action_Btn_Panel.Name = "Action_Btn_Panel";
 			this.Action_Btn_Panel.Padding = new System.Windows.Forms.Padding(2);
 			this.Action_Btn_Panel.Size = new System.Drawing.Size(131, 51);
@@ -1405,11 +1462,11 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Security_Cust.Size = new System.Drawing.Size(32, 47);
 			this.Security_Cust.TabIndex = 33;
 			this.Security_Cust.UseVisualStyleBackColor = false;
-            this.Security_Cust.Click += new System.EventHandler(this.Security_Cust_Click);
-            // 
-            // Print_Cust
-            // 
-            this.Print_Cust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+			this.Security_Cust.Click += new System.EventHandler(this.Security_Cust_Click);
+			// 
+			// Print_Cust
+			// 
+			this.Print_Cust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
 			this.Print_Cust.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Print_Cust.BackgroundImage")));
 			this.Print_Cust.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.Print_Cust.Dock = System.Windows.Forms.DockStyle.Left;
@@ -1421,11 +1478,11 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Print_Cust.Size = new System.Drawing.Size(32, 47);
 			this.Print_Cust.TabIndex = 30;
 			this.Print_Cust.UseVisualStyleBackColor = false;
-            this.Print_Cust.Click += new System.EventHandler(this.Print_Cust_Click);
-            // 
-            // Edit_Cust
-            // 
-            this.Edit_Cust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+			this.Print_Cust.Click += new System.EventHandler(this.Print_Cust_Click);
+			// 
+			// Edit_Cust
+			// 
+			this.Edit_Cust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
 			this.Edit_Cust.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Edit_Cust.BackgroundImage")));
 			this.Edit_Cust.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.Edit_Cust.Dock = System.Windows.Forms.DockStyle.Left;
@@ -1437,12 +1494,11 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Edit_Cust.Size = new System.Drawing.Size(32, 47);
 			this.Edit_Cust.TabIndex = 32;
 			this.Edit_Cust.UseVisualStyleBackColor = false;
-            this.Edit_Cust.Click += new System.EventHandler(this.Edit_Cust_Click);
-
-            // 
-            // Delete_Cust
-            // 
-            this.Delete_Cust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+			this.Edit_Cust.Click += new System.EventHandler(this.Edit_Cust_Click);
+			// 
+			// Delete_Cust
+			// 
+			this.Delete_Cust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
 			this.Delete_Cust.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete_Cust.BackgroundImage")));
 			this.Delete_Cust.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.Delete_Cust.Dock = System.Windows.Forms.DockStyle.Left;
@@ -1454,11 +1510,11 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Delete_Cust.Size = new System.Drawing.Size(32, 47);
 			this.Delete_Cust.TabIndex = 31;
 			this.Delete_Cust.UseVisualStyleBackColor = false;
-            this.Delete_Cust.Click += new System.EventHandler(this.Delete_Cust_Click);
-            // 
-            // Start_Transaction
-            // 
-            this.Start_Transaction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
+			this.Delete_Cust.Click += new System.EventHandler(this.Delete_Cust_Click);
+			// 
+			// Start_Transaction
+			// 
+			this.Start_Transaction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
 			this.Start_Transaction.Dock = System.Windows.Forms.DockStyle.Right;
 			this.Start_Transaction.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
 			this.Start_Transaction.FlatAppearance.BorderSize = 0;
@@ -1467,7 +1523,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Start_Transaction.ForeColor = System.Drawing.Color.White;
 			this.Start_Transaction.Image = ((System.Drawing.Image)(resources.GetObject("Start_Transaction.Image")));
 			this.Start_Transaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.Start_Transaction.Location = new System.Drawing.Point(942, 10);
+			this.Start_Transaction.Location = new System.Drawing.Point(925, 10);
 			this.Start_Transaction.Name = "Start_Transaction";
 			this.Start_Transaction.Padding = new System.Windows.Forms.Padding(10);
 			this.Start_Transaction.Size = new System.Drawing.Size(200, 51);
@@ -1475,11 +1531,11 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Start_Transaction.Text = "Start Transaction";
 			this.Start_Transaction.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.Start_Transaction.UseVisualStyleBackColor = false;
-            this.Start_Transaction.Click += new System.EventHandler(this.Start_Transaction_Click);
-            // 
-            // Page_Title
-            // 
-            this.Page_Title.Dock = System.Windows.Forms.DockStyle.Left;
+			this.Start_Transaction.Click += new System.EventHandler(this.Start_Transaction_Click);
+			// 
+			// Page_Title
+			// 
+			this.Page_Title.Dock = System.Windows.Forms.DockStyle.Left;
 			this.Page_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Page_Title.Location = new System.Drawing.Point(59, 10);
 			this.Page_Title.Name = "Page_Title";
@@ -1505,6 +1561,62 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Back_Btn.TabIndex = 35;
 			this.Back_Btn.UseVisualStyleBackColor = false;
 			this.Back_Btn.Click += new System.EventHandler(this.Back_Btn_Click);
+			// 
+			// transProcessBtnPanel
+			// 
+			this.transProcessBtnPanel.Controls.Add(this.transBackBtn);
+			this.transProcessBtnPanel.Controls.Add(this.transNextBtn);
+			this.transProcessBtnPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.transProcessBtnPanel.Location = new System.Drawing.Point(10, 777);
+			this.transProcessBtnPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.transProcessBtnPanel.Name = "transProcessBtnPanel";
+			this.transProcessBtnPanel.Padding = new System.Windows.Forms.Padding(15);
+			this.transProcessBtnPanel.Size = new System.Drawing.Size(1135, 90);
+			this.transProcessBtnPanel.TabIndex = 37;
+			// 
+			// transBackBtn
+			// 
+			this.transBackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
+			this.transBackBtn.Dock = System.Windows.Forms.DockStyle.Left;
+			this.transBackBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
+			this.transBackBtn.FlatAppearance.BorderSize = 0;
+			this.transBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.transBackBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.transBackBtn.ForeColor = System.Drawing.Color.White;
+			this.transBackBtn.Image = ((System.Drawing.Image)(resources.GetObject("transBackBtn.Image")));
+			this.transBackBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.transBackBtn.Location = new System.Drawing.Point(15, 15);
+			this.transBackBtn.Margin = new System.Windows.Forms.Padding(10);
+			this.transBackBtn.Name = "transBackBtn";
+			this.transBackBtn.Padding = new System.Windows.Forms.Padding(15);
+			this.transBackBtn.Size = new System.Drawing.Size(99, 60);
+			this.transBackBtn.TabIndex = 17;
+			this.transBackBtn.Text = "Back";
+			this.transBackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.transBackBtn.UseVisualStyleBackColor = false;
+			this.transBackBtn.Click += new System.EventHandler(this.TransBackBtn_Click);
+			// 
+			// transNextBtn
+			// 
+			this.transNextBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
+			this.transNextBtn.Dock = System.Windows.Forms.DockStyle.Right;
+			this.transNextBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
+			this.transNextBtn.FlatAppearance.BorderSize = 0;
+			this.transNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.transNextBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.transNextBtn.ForeColor = System.Drawing.Color.White;
+			this.transNextBtn.Image = ((System.Drawing.Image)(resources.GetObject("transNextBtn.Image")));
+			this.transNextBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.transNextBtn.Location = new System.Drawing.Point(1021, 15);
+			this.transNextBtn.Margin = new System.Windows.Forms.Padding(10);
+			this.transNextBtn.Name = "transNextBtn";
+			this.transNextBtn.Padding = new System.Windows.Forms.Padding(15);
+			this.transNextBtn.Size = new System.Drawing.Size(99, 60);
+			this.transNextBtn.TabIndex = 16;
+			this.transNextBtn.Text = "Next";
+			this.transNextBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.transNextBtn.UseVisualStyleBackColor = false;
+			this.transNextBtn.Click += new System.EventHandler(this.TransNextBtn_Click);
 			// 
 			// tabPage2
 			// 
@@ -1630,7 +1742,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Check_Default.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Check_Default.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Check_Default.ForeColor = System.Drawing.Color.White;
-			this.Check_Default.Location = new System.Drawing.Point(319, 0);
+			this.Check_Default.Location = new System.Drawing.Point(793, 0);
 			this.Check_Default.Name = "Check_Default";
 			this.Check_Default.Size = new System.Drawing.Size(152, 17);
 			this.Check_Default.TabIndex = 2;
@@ -1666,7 +1778,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Check_Address.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Check_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Check_Address.ForeColor = System.Drawing.Color.White;
-			this.Check_Address.Location = new System.Drawing.Point(793, 0);
+			this.Check_Address.Location = new System.Drawing.Point(635, 0);
 			this.Check_Address.Name = "Check_Address";
 			this.Check_Address.Size = new System.Drawing.Size(152, 17);
 			this.Check_Address.TabIndex = 6;
@@ -1678,7 +1790,7 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.Check_Name.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Check_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Check_Name.ForeColor = System.Drawing.Color.White;
-			this.Check_Name.Location = new System.Drawing.Point(635, 0);
+			this.Check_Name.Location = new System.Drawing.Point(319, 0);
 			this.Check_Name.Name = "Check_Name";
 			this.Check_Name.Size = new System.Drawing.Size(152, 17);
 			this.Check_Name.TabIndex = 5;
@@ -1704,11 +1816,11 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.PaginationControl.Size = new System.Drawing.Size(328, 37);
 			this.PaginationControl.TabIndex = 1;
 			this.PaginationControl.TotalPages = 0;
-            this.PaginationControl.PageChanged += new System.EventHandler(this.PaginationControl_PageChanged);
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.panel10);
+			this.PaginationControl.PageChanged += new System.EventHandler(this.PaginationControl_PageChanged);
+			// 
+			// panel12
+			// 
+			this.panel12.Controls.Add(this.panel10);
 			this.panel12.Controls.Add(this.AddCheck);
 			this.panel12.Controls.Add(this.label29);
 			this.panel12.Controls.Add(this.button13);
@@ -1991,75 +2103,18 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.CustomerDetailPanel.Name = "CustomerDetailPanel";
 			this.CustomerDetailPanel.Size = new System.Drawing.Size(1180, 889);
 			this.CustomerDetailPanel.TabIndex = 3;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.progressBar1.Location = new System.Drawing.Point(0, 0);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(2687, 10);
-            this.progressBar1.TabIndex = 4;
-            // 
-            // transProcessBtnPanel
-            // 
-            this.transProcessBtnPanel.Controls.Add(this.transBackBtn);
-            this.transProcessBtnPanel.Controls.Add(this.transNextBtn);
-            this.transProcessBtnPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.transProcessBtnPanel.Location = new System.Drawing.Point(15, 1195);
-            this.transProcessBtnPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.transProcessBtnPanel.Name = "transProcessBtnPanel";
-            this.transProcessBtnPanel.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.transProcessBtnPanel.Size = new System.Drawing.Size(1705, 90);
-            this.transProcessBtnPanel.TabIndex = 37;
-            // 
-            // transBackBtn
-            // 
-            this.transBackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-            this.transBackBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.transBackBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
-            this.transBackBtn.FlatAppearance.BorderSize = 0;
-            this.transBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transBackBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transBackBtn.ForeColor = System.Drawing.Color.White;
-            this.transBackBtn.Image = ((System.Drawing.Image)(resources.GetObject("transBackBtn.Image")));
-            this.transBackBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.transBackBtn.Location = new System.Drawing.Point(30, 31);
-            this.transBackBtn.Margin = new System.Windows.Forms.Padding(10);
-            this.transBackBtn.Name = "transBackBtn";
-            this.transBackBtn.Padding = new System.Windows.Forms.Padding(15);
-            this.transBackBtn.Size = new System.Drawing.Size(99, 50);
-            this.transBackBtn.TabIndex = 17;
-            this.transBackBtn.Text = "Back";
-            this.transBackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.transBackBtn.UseVisualStyleBackColor = false;
-            this.transBackBtn.Click += new System.EventHandler(this.TransBackBtn_Click);
-            // 
-            // transNextBtn
-            // 
-            this.transNextBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-            this.transNextBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.transNextBtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
-            this.transNextBtn.FlatAppearance.BorderSize = 0;
-            this.transNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transNextBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transNextBtn.ForeColor = System.Drawing.Color.White;
-            this.transNextBtn.Image = ((System.Drawing.Image)(resources.GetObject("transNextBtn.Image")));
-            this.transNextBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.transNextBtn.Location = new System.Drawing.Point(1534, 31);
-            this.transNextBtn.Margin = new System.Windows.Forms.Padding(10);
-            this.transNextBtn.Name = "transNextBtn";
-            this.transNextBtn.Padding = new System.Windows.Forms.Padding(15);
-            this.transNextBtn.Size = new System.Drawing.Size(99, 50);
-            this.transNextBtn.TabIndex = 16;
-            this.transNextBtn.Text = "Next";
-            this.transNextBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.transNextBtn.UseVisualStyleBackColor = false;
-            this.transNextBtn.Click += new System.EventHandler(this.TransNextBtn_Click);
-            // 
-            // CustomerDetail
-            // 
-            this.Load += new System.EventHandler(this.CheckList_Load);
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			// 
+			// progressBar1
+			// 
+			this.progressBar1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.progressBar1.Location = new System.Drawing.Point(0, 0);
+			this.progressBar1.Name = "progressBar1";
+			this.progressBar1.Size = new System.Drawing.Size(1180, 10);
+			this.progressBar1.TabIndex = 4;
+			// 
+			// CustomerDetail
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1182, 891);
 			this.Controls.Add(this.CustomerDetailPanel);
@@ -2073,32 +2128,14 @@ namespace AiCashGuard.Forms.CustomerModule
 			this.tableLayoutPanel3.ResumeLayout(false);
 			this.roundedPanel11.ResumeLayout(false);
 			this.roundedPanel11.PerformLayout();
-			this.panel11.ResumeLayout(false);
 			this.panel3.ResumeLayout(false);
-			this.panel9.ResumeLayout(false);
-			this.panel13.ResumeLayout(false);
-			this.panel15.ResumeLayout(false);
-			this.panel14.ResumeLayout(false);
-			this.panel7.ResumeLayout(false);
-			this.panel16.ResumeLayout(false);
-			this.panel18.ResumeLayout(false);
-			this.panel20.ResumeLayout(false);
 			this.panel3.PerformLayout();
-			this.panel13.PerformLayout();
-			this.panel15.PerformLayout();
-			this.panel14.PerformLayout();
-			this.panel7.PerformLayout();
-			this.panel11.PerformLayout();
-			this.panel16.PerformLayout();
-			this.panel18.PerformLayout();
-			this.panel20.PerformLayout();
 			this.roundedPanel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.CustomerIdImgFront)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.CustomerIdImgBack)).EndInit();
 			this.panel8.ResumeLayout(false);
 			this.tableLayoutPanel4.ResumeLayout(false);
 			this.roundedPanel14.ResumeLayout(false);
-			this.transProcessBtnPanel.ResumeLayout(false);
 			this.roundedPanel3.ResumeLayout(false);
 			this.roundedPanel3.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -2124,9 +2161,19 @@ namespace AiCashGuard.Forms.CustomerModule
 			((System.ComponentModel.ISupportInitialize)(this.CustomerFace)).EndInit();
 			this.roundedPanel7.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
+			this.panel9.ResumeLayout(false);
+			this.panel13.ResumeLayout(false);
+			this.panel15.ResumeLayout(false);
+			this.panel14.ResumeLayout(false);
+			this.panel7.ResumeLayout(false);
+			this.panel16.ResumeLayout(false);
+			this.panel18.ResumeLayout(false);
+			this.panel20.ResumeLayout(false);
+			this.panel11.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
 			this.panel6.PerformLayout();
 			this.Action_Btn_Panel.ResumeLayout(false);
+			this.transProcessBtnPanel.ResumeLayout(false);
 			this.tabPage2.ResumeLayout(false);
 			this.checkListPanel.ResumeLayout(false);
 			this.checkDataPanel.ResumeLayout(false);
