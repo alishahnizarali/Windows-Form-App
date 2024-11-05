@@ -34,6 +34,7 @@
 			this.CustRowDataPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.panel11 = new System.Windows.Forms.Panel();
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+			this.SelectCheckBox = new System.Windows.Forms.CheckBox();
 			this.Transaction_ID = new System.Windows.Forms.Label();
 			this.Check_Name = new System.Windows.Forms.Label();
 			this.Check_Date = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
 			this.gradientPanel1 = new AiCashGuard.UserControls.GradientPanel();
 			this.Btn_Cancel = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.SelectCheckBox = new System.Windows.Forms.CheckBox();
 			this.panel1.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.Cust_Row_Panel.SuspendLayout();
@@ -83,11 +83,6 @@
 			this.panel4.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.gradientPanel1.SuspendLayout();
-			this.panel10.SuspendLayout();
-			this.Cust_Row_Panel.SuspendLayout();
-			this.panel11.SuspendLayout();
-			this.tableLayoutPanel3.SuspendLayout();
-			this.panel12.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -173,6 +168,20 @@
 			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel3.Size = new System.Drawing.Size(1045, 24);
 			this.tableLayoutPanel3.TabIndex = 5;
+			// 
+			// SelectCheckBox
+			// 
+			this.SelectCheckBox.AutoSize = true;
+			this.SelectCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.SelectCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.SelectCheckBox.ForeColor = System.Drawing.Color.White;
+			this.SelectCheckBox.Location = new System.Drawing.Point(3, 3);
+			this.SelectCheckBox.Name = "SelectCheckBox";
+			this.SelectCheckBox.Size = new System.Drawing.Size(143, 18);
+			this.SelectCheckBox.TabIndex = 8;
+			this.SelectCheckBox.Text = "Select All";
+			this.SelectCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.SelectCheckBox.UseVisualStyleBackColor = true;
 			// 
 			// Transaction_ID
 			// 
@@ -555,20 +564,6 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Deposit Detail";
 			// 
-			// SelectCheckBox
-			// 
-			this.SelectCheckBox.AutoSize = true;
-			this.SelectCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.SelectCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.SelectCheckBox.ForeColor = System.Drawing.Color.White;
-			this.SelectCheckBox.Location = new System.Drawing.Point(3, 3);
-			this.SelectCheckBox.Name = "SelectCheckBox";
-			this.SelectCheckBox.Size = new System.Drawing.Size(143, 18);
-			this.SelectCheckBox.TabIndex = 8;
-			this.SelectCheckBox.Text = "Select All";
-			this.SelectCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.SelectCheckBox.UseVisualStyleBackColor = true;
-			// 
 			// DepositDetail
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -604,11 +599,6 @@
 			this.panel3.PerformLayout();
 			this.gradientPanel1.ResumeLayout(false);
 			this.gradientPanel1.PerformLayout();
-			this.panel10.ResumeLayout(false);
-			this.Cust_Row_Panel.ResumeLayout(false);
-			this.panel11.ResumeLayout(false);
-			this.tableLayoutPanel3.ResumeLayout(false);
-			this.panel12.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -644,6 +634,10 @@
 		private System.Windows.Forms.TableLayoutPanel CustRowDataPanel;
 		private System.Windows.Forms.Panel panel11;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+<<<<<<< HEAD
+=======
+		private System.Windows.Forms.Label Select_All;
+>>>>>>> 68713106ef69c0e1c03d6a63c841f0b1ca7e27d1
 		private System.Windows.Forms.Label Transaction_ID;
 		private System.Windows.Forms.Label Check_Name;
 		private System.Windows.Forms.Label Check_Date;
@@ -652,6 +646,9 @@
 		private System.Windows.Forms.Label Check_Amount;
 		private System.Windows.Forms.Panel panel12;
 		private UserControls.PaginationControl paginationControl1;
+<<<<<<< HEAD
 		private System.Windows.Forms.CheckBox SelectCheckBox;
+=======
+>>>>>>> 68713106ef69c0e1c03d6a63c841f0b1ca7e27d1
 	}
 }

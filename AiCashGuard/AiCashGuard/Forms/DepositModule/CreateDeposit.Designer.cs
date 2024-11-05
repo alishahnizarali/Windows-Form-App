@@ -29,6 +29,20 @@
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.Cust_Row_Panel = new System.Windows.Forms.Panel();
+			this.CustRowDataPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.panel8 = new System.Windows.Forms.Panel();
+			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+			this.Transaction_ID = new System.Windows.Forms.Label();
+			this.Check_Name = new System.Windows.Forms.Label();
+			this.Check_Date = new System.Windows.Forms.Label();
+			this.lblStatus = new System.Windows.Forms.Label();
+			this.Check_Number = new System.Windows.Forms.Label();
+			this.Check_Amount = new System.Windows.Forms.Label();
+			this.SelectCheckBox = new System.Windows.Forms.CheckBox();
+			this.panel9 = new System.Windows.Forms.Panel();
+			this.paginationControl1 = new AiCashGuard.UserControls.PaginationControl();
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
 			this.panel5 = new System.Windows.Forms.Panel();
@@ -44,32 +58,18 @@
 			this.Btn_Cancel = new System.Windows.Forms.Button();
 			this.Btn_Save = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.Cust_Row_Panel = new System.Windows.Forms.Panel();
-			this.CustRowDataPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.panel9 = new System.Windows.Forms.Panel();
-			this.paginationControl1 = new AiCashGuard.UserControls.PaginationControl();
-			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-			this.Check_Amount = new System.Windows.Forms.Label();
-			this.Check_Number = new System.Windows.Forms.Label();
-			this.lblStatus = new System.Windows.Forms.Label();
-			this.Check_Date = new System.Windows.Forms.Label();
-			this.Check_Name = new System.Windows.Forms.Label();
-			this.Transaction_ID = new System.Windows.Forms.Label();
-			this.panel8 = new System.Windows.Forms.Panel();
-			this.SelectCheckBox = new System.Windows.Forms.CheckBox();
 			this.panel1.SuspendLayout();
+			this.panel2.SuspendLayout();
+			this.Cust_Row_Panel.SuspendLayout();
+			this.panel8.SuspendLayout();
+			this.tableLayoutPanel3.SuspendLayout();
+			this.panel9.SuspendLayout();
 			this.panel7.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.panel4.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.gradientPanel1.SuspendLayout();
-			this.panel2.SuspendLayout();
-			this.Cust_Row_Panel.SuspendLayout();
-			this.panel9.SuspendLayout();
-			this.tableLayoutPanel3.SuspendLayout();
-			this.panel8.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -82,6 +82,184 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1065, 800);
 			this.panel1.TabIndex = 0;
+			// 
+			// panel2
+			// 
+			this.panel2.AutoScroll = true;
+			this.panel2.Controls.Add(this.Cust_Row_Panel);
+			this.panel2.Controls.Add(this.panel8);
+			this.panel2.Controls.Add(this.panel9);
+			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel2.Location = new System.Drawing.Point(0, 118);
+			this.panel2.Name = "panel2";
+			this.panel2.Padding = new System.Windows.Forms.Padding(5);
+			this.panel2.Size = new System.Drawing.Size(1065, 682);
+			this.panel2.TabIndex = 40;
+			// 
+			// Cust_Row_Panel
+			// 
+			this.Cust_Row_Panel.Controls.Add(this.CustRowDataPanel);
+			this.Cust_Row_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Cust_Row_Panel.Location = new System.Drawing.Point(5, 40);
+			this.Cust_Row_Panel.Name = "Cust_Row_Panel";
+			this.Cust_Row_Panel.Padding = new System.Windows.Forms.Padding(5);
+			this.Cust_Row_Panel.Size = new System.Drawing.Size(1055, 590);
+			this.Cust_Row_Panel.TabIndex = 6;
+			// 
+			// CustRowDataPanel
+			// 
+			this.CustRowDataPanel.AutoScroll = true;
+			this.CustRowDataPanel.ColumnCount = 1;
+			this.CustRowDataPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.CustRowDataPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CustRowDataPanel.Location = new System.Drawing.Point(5, 5);
+			this.CustRowDataPanel.Name = "CustRowDataPanel";
+			this.CustRowDataPanel.RowCount = 1;
+			this.CustRowDataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.CustRowDataPanel.Size = new System.Drawing.Size(1045, 580);
+			this.CustRowDataPanel.TabIndex = 0;
+			// 
+			// panel8
+			// 
+			this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+			this.panel8.Controls.Add(this.tableLayoutPanel3);
+			this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel8.Location = new System.Drawing.Point(5, 5);
+			this.panel8.Name = "panel8";
+			this.panel8.Padding = new System.Windows.Forms.Padding(5);
+			this.panel8.Size = new System.Drawing.Size(1055, 35);
+			this.panel8.TabIndex = 5;
+			// 
+			// tableLayoutPanel3
+			// 
+			this.tableLayoutPanel3.ColumnCount = 7;
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+			this.tableLayoutPanel3.Controls.Add(this.Transaction_ID, 1, 0);
+			this.tableLayoutPanel3.Controls.Add(this.Check_Name, 2, 0);
+			this.tableLayoutPanel3.Controls.Add(this.Check_Date, 3, 0);
+			this.tableLayoutPanel3.Controls.Add(this.lblStatus, 6, 0);
+			this.tableLayoutPanel3.Controls.Add(this.Check_Number, 4, 0);
+			this.tableLayoutPanel3.Controls.Add(this.Check_Amount, 5, 0);
+			this.tableLayoutPanel3.Controls.Add(this.SelectCheckBox, 0, 0);
+			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel3.Location = new System.Drawing.Point(5, 5);
+			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+			this.tableLayoutPanel3.RowCount = 1;
+			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel3.Size = new System.Drawing.Size(1045, 25);
+			this.tableLayoutPanel3.TabIndex = 5;
+			// 
+			// Transaction_ID
+			// 
+			this.Transaction_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Transaction_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Transaction_ID.ForeColor = System.Drawing.Color.White;
+			this.Transaction_ID.Location = new System.Drawing.Point(152, 0);
+			this.Transaction_ID.Name = "Transaction_ID";
+			this.Transaction_ID.Size = new System.Drawing.Size(143, 25);
+			this.Transaction_ID.TabIndex = 1;
+			this.Transaction_ID.Text = "Transaction ID";
+			this.Transaction_ID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Name
+			// 
+			this.Check_Name.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Check_Name.ForeColor = System.Drawing.Color.White;
+			this.Check_Name.Location = new System.Drawing.Point(301, 0);
+			this.Check_Name.Name = "Check_Name";
+			this.Check_Name.Size = new System.Drawing.Size(143, 25);
+			this.Check_Name.TabIndex = 2;
+			this.Check_Name.Text = "Check Name";
+			this.Check_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Date
+			// 
+			this.Check_Date.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Check_Date.ForeColor = System.Drawing.Color.White;
+			this.Check_Date.Location = new System.Drawing.Point(450, 0);
+			this.Check_Date.Name = "Check_Date";
+			this.Check_Date.Size = new System.Drawing.Size(143, 25);
+			this.Check_Date.TabIndex = 3;
+			this.Check_Date.Text = "Check Date";
+			this.Check_Date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// lblStatus
+			// 
+			this.lblStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblStatus.ForeColor = System.Drawing.Color.White;
+			this.lblStatus.Location = new System.Drawing.Point(897, 0);
+			this.lblStatus.Name = "lblStatus";
+			this.lblStatus.Size = new System.Drawing.Size(145, 25);
+			this.lblStatus.TabIndex = 4;
+			this.lblStatus.Text = "Status";
+			this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Number
+			// 
+			this.Check_Number.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Check_Number.ForeColor = System.Drawing.Color.White;
+			this.Check_Number.Location = new System.Drawing.Point(599, 0);
+			this.Check_Number.Name = "Check_Number";
+			this.Check_Number.Size = new System.Drawing.Size(143, 25);
+			this.Check_Number.TabIndex = 5;
+			this.Check_Number.Text = "Check Number";
+			this.Check_Number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Check_Amount
+			// 
+			this.Check_Amount.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Check_Amount.ForeColor = System.Drawing.Color.White;
+			this.Check_Amount.Location = new System.Drawing.Point(748, 0);
+			this.Check_Amount.Name = "Check_Amount";
+			this.Check_Amount.Size = new System.Drawing.Size(143, 25);
+			this.Check_Amount.TabIndex = 6;
+			this.Check_Amount.Text = "Check Amount";
+			this.Check_Amount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// SelectCheckBox
+			// 
+			this.SelectCheckBox.AutoSize = true;
+			this.SelectCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.SelectCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.SelectCheckBox.ForeColor = System.Drawing.Color.White;
+			this.SelectCheckBox.Location = new System.Drawing.Point(3, 3);
+			this.SelectCheckBox.Name = "SelectCheckBox";
+			this.SelectCheckBox.Size = new System.Drawing.Size(143, 19);
+			this.SelectCheckBox.TabIndex = 7;
+			this.SelectCheckBox.Text = "Select All";
+			this.SelectCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.SelectCheckBox.UseVisualStyleBackColor = true;
+			// 
+			// panel9
+			// 
+			this.panel9.Controls.Add(this.paginationControl1);
+			this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.panel9.Location = new System.Drawing.Point(5, 630);
+			this.panel9.Name = "panel9";
+			this.panel9.Padding = new System.Windows.Forms.Padding(5);
+			this.panel9.Size = new System.Drawing.Size(1055, 47);
+			this.panel9.TabIndex = 7;
+			// 
+			// paginationControl1
+			// 
+			this.paginationControl1.Dock = System.Windows.Forms.DockStyle.Right;
+			this.paginationControl1.ItemsPerPage = 10;
+			this.paginationControl1.Location = new System.Drawing.Point(722, 5);
+			this.paginationControl1.Name = "paginationControl1";
+			this.paginationControl1.Size = new System.Drawing.Size(328, 37);
+			this.paginationControl1.TabIndex = 1;
+			this.paginationControl1.TotalPages = 0;
 			// 
 			// panel7
 			// 
@@ -269,184 +447,6 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Create Deposit";
 			// 
-			// panel2
-			// 
-			this.panel2.AutoScroll = true;
-			this.panel2.Controls.Add(this.Cust_Row_Panel);
-			this.panel2.Controls.Add(this.panel8);
-			this.panel2.Controls.Add(this.panel9);
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel2.Location = new System.Drawing.Point(0, 118);
-			this.panel2.Name = "panel2";
-			this.panel2.Padding = new System.Windows.Forms.Padding(5);
-			this.panel2.Size = new System.Drawing.Size(1065, 682);
-			this.panel2.TabIndex = 40;
-			// 
-			// Cust_Row_Panel
-			// 
-			this.Cust_Row_Panel.Controls.Add(this.CustRowDataPanel);
-			this.Cust_Row_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Cust_Row_Panel.Location = new System.Drawing.Point(5, 40);
-			this.Cust_Row_Panel.Name = "Cust_Row_Panel";
-			this.Cust_Row_Panel.Padding = new System.Windows.Forms.Padding(5);
-			this.Cust_Row_Panel.Size = new System.Drawing.Size(1055, 590);
-			this.Cust_Row_Panel.TabIndex = 6;
-			// 
-			// CustRowDataPanel
-			// 
-			this.CustRowDataPanel.AutoScroll = true;
-			this.CustRowDataPanel.ColumnCount = 1;
-			this.CustRowDataPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.CustRowDataPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.CustRowDataPanel.Location = new System.Drawing.Point(5, 5);
-			this.CustRowDataPanel.Name = "CustRowDataPanel";
-			this.CustRowDataPanel.RowCount = 1;
-			this.CustRowDataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.CustRowDataPanel.Size = new System.Drawing.Size(1045, 580);
-			this.CustRowDataPanel.TabIndex = 0;
-			// 
-			// panel9
-			// 
-			this.panel9.Controls.Add(this.paginationControl1);
-			this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panel9.Location = new System.Drawing.Point(5, 630);
-			this.panel9.Name = "panel9";
-			this.panel9.Padding = new System.Windows.Forms.Padding(5);
-			this.panel9.Size = new System.Drawing.Size(1055, 47);
-			this.panel9.TabIndex = 7;
-			// 
-			// paginationControl1
-			// 
-			this.paginationControl1.Dock = System.Windows.Forms.DockStyle.Right;
-			this.paginationControl1.ItemsPerPage = 10;
-			this.paginationControl1.Location = new System.Drawing.Point(722, 5);
-			this.paginationControl1.Name = "paginationControl1";
-			this.paginationControl1.Size = new System.Drawing.Size(328, 37);
-			this.paginationControl1.TabIndex = 1;
-			this.paginationControl1.TotalPages = 0;
-			// 
-			// tableLayoutPanel3
-			// 
-			this.tableLayoutPanel3.ColumnCount = 7;
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-			this.tableLayoutPanel3.Controls.Add(this.Transaction_ID, 1, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Check_Name, 2, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Check_Date, 3, 0);
-			this.tableLayoutPanel3.Controls.Add(this.lblStatus, 6, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Check_Number, 4, 0);
-			this.tableLayoutPanel3.Controls.Add(this.Check_Amount, 5, 0);
-			this.tableLayoutPanel3.Controls.Add(this.SelectCheckBox, 0, 0);
-			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel3.Location = new System.Drawing.Point(5, 5);
-			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-			this.tableLayoutPanel3.RowCount = 1;
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel3.Size = new System.Drawing.Size(1045, 25);
-			this.tableLayoutPanel3.TabIndex = 5;
-			// 
-			// Check_Amount
-			// 
-			this.Check_Amount.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Check_Amount.ForeColor = System.Drawing.Color.White;
-			this.Check_Amount.Location = new System.Drawing.Point(748, 0);
-			this.Check_Amount.Name = "Check_Amount";
-			this.Check_Amount.Size = new System.Drawing.Size(143, 25);
-			this.Check_Amount.TabIndex = 6;
-			this.Check_Amount.Text = "Check Amount";
-			this.Check_Amount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Check_Number
-			// 
-			this.Check_Number.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Check_Number.ForeColor = System.Drawing.Color.White;
-			this.Check_Number.Location = new System.Drawing.Point(599, 0);
-			this.Check_Number.Name = "Check_Number";
-			this.Check_Number.Size = new System.Drawing.Size(143, 25);
-			this.Check_Number.TabIndex = 5;
-			this.Check_Number.Text = "Check Number";
-			this.Check_Number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// lblStatus
-			// 
-			this.lblStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStatus.ForeColor = System.Drawing.Color.White;
-			this.lblStatus.Location = new System.Drawing.Point(897, 0);
-			this.lblStatus.Name = "lblStatus";
-			this.lblStatus.Size = new System.Drawing.Size(145, 25);
-			this.lblStatus.TabIndex = 4;
-			this.lblStatus.Text = "Status";
-			this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Check_Date
-			// 
-			this.Check_Date.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Check_Date.ForeColor = System.Drawing.Color.White;
-			this.Check_Date.Location = new System.Drawing.Point(450, 0);
-			this.Check_Date.Name = "Check_Date";
-			this.Check_Date.Size = new System.Drawing.Size(143, 25);
-			this.Check_Date.TabIndex = 3;
-			this.Check_Date.Text = "Check Date";
-			this.Check_Date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Check_Name
-			// 
-			this.Check_Name.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Check_Name.ForeColor = System.Drawing.Color.White;
-			this.Check_Name.Location = new System.Drawing.Point(301, 0);
-			this.Check_Name.Name = "Check_Name";
-			this.Check_Name.Size = new System.Drawing.Size(143, 25);
-			this.Check_Name.TabIndex = 2;
-			this.Check_Name.Text = "Check Name";
-			this.Check_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// Transaction_ID
-			// 
-			this.Transaction_ID.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Transaction_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Transaction_ID.ForeColor = System.Drawing.Color.White;
-			this.Transaction_ID.Location = new System.Drawing.Point(152, 0);
-			this.Transaction_ID.Name = "Transaction_ID";
-			this.Transaction_ID.Size = new System.Drawing.Size(143, 25);
-			this.Transaction_ID.TabIndex = 1;
-			this.Transaction_ID.Text = "Transaction ID";
-			this.Transaction_ID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// panel8
-			// 
-			this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-			this.panel8.Controls.Add(this.tableLayoutPanel3);
-			this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel8.Location = new System.Drawing.Point(5, 5);
-			this.panel8.Name = "panel8";
-			this.panel8.Padding = new System.Windows.Forms.Padding(5);
-			this.panel8.Size = new System.Drawing.Size(1055, 35);
-			this.panel8.TabIndex = 5;
-			// 
-			// SelectCheckBox
-			// 
-			this.SelectCheckBox.AutoSize = true;
-			this.SelectCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.SelectCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.SelectCheckBox.ForeColor = System.Drawing.Color.White;
-			this.SelectCheckBox.Location = new System.Drawing.Point(3, 3);
-			this.SelectCheckBox.Name = "SelectCheckBox";
-			this.SelectCheckBox.Size = new System.Drawing.Size(143, 19);
-			this.SelectCheckBox.TabIndex = 7;
-			this.SelectCheckBox.Text = "Select All";
-			this.SelectCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.SelectCheckBox.UseVisualStyleBackColor = true;
-			// 
 			// CreateDeposit
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,6 +457,12 @@
 			this.Name = "CreateDeposit";
 			this.Text = "CreateDeposit";
 			this.panel1.ResumeLayout(false);
+			this.panel2.ResumeLayout(false);
+			this.Cust_Row_Panel.ResumeLayout(false);
+			this.panel8.ResumeLayout(false);
+			this.tableLayoutPanel3.ResumeLayout(false);
+			this.tableLayoutPanel3.PerformLayout();
+			this.panel9.ResumeLayout(false);
 			this.panel7.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.panel5.ResumeLayout(false);
@@ -466,12 +472,6 @@
 			this.panel3.PerformLayout();
 			this.gradientPanel1.ResumeLayout(false);
 			this.gradientPanel1.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.Cust_Row_Panel.ResumeLayout(false);
-			this.panel9.ResumeLayout(false);
-			this.tableLayoutPanel3.ResumeLayout(false);
-			this.tableLayoutPanel3.PerformLayout();
-			this.panel8.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
