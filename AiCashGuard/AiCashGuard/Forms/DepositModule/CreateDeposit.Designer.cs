@@ -81,8 +81,7 @@
 			this.BackPanel.Name = "BackPanel";
 			this.BackPanel.Size = new System.Drawing.Size(1182, 891);
 			this.BackPanel.TabIndex = 0;
-			this.BackPanel.Controls.SetChildIndex(this.panel6, 0);
-			this.BackPanel.Controls.SetChildIndex(this.panel7, 0);
+			this.BackPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.BackPanel_Paint);
 			// 
 			// panel7
 			// 

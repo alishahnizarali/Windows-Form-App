@@ -1,5 +1,5 @@
-﻿using AiCashGuard.Forms.CheckModule;
-using AiCashGuard.Forms.DepositModule;
+﻿using AiCashGuard.Forms.DepositModule;
+using AiCashGuard.Forms.TransactionModule;
 using System;
 using System.Windows.Forms;
 
@@ -12,7 +12,7 @@ namespace AiCashGuard
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new CreateDeposit());
+			Application.Run(new DepositList());
 		}
 	}
 }

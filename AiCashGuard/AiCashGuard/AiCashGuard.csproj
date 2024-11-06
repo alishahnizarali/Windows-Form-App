@@ -365,6 +365,7 @@
     <Compile Include="Model\Internal\Customer\EditCustomerModel.cs" />
     <Compile Include="Model\Internal\Customer\SearchCustomerListModel.cs" />
     <Compile Include="Model\Internal\Deposit\CreateDepositModel.cs" />
+    <Compile Include="Model\Internal\Deposit\DepositListModel.cs" />
     <Compile Include="Model\Internal\Report\TransactionNumberModel.cs" />
     <Compile Include="Model\Internal\Transaction\AddTransactionModel.cs" />
     <Compile Include="Model\Internal\Transaction\BulkScanModel.cs" />

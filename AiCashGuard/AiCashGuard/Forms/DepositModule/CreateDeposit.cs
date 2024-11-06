@@ -120,5 +120,10 @@ namespace AiCashGuard.Forms.DepositModule
 		{
 
 		}
+
+		private void BackPanel_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
 	}
 }
