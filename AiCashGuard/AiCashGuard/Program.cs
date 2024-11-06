@@ -1,4 +1,5 @@
 ﻿using AiCashGuard.Forms.CheckModule;
+using AiCashGuard.Forms.DepositModule;
 using System;
 using System.Windows.Forms;
 
@@ -11,7 +12,7 @@ namespace AiCashGuard
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new CheckDetailBulkPopup());
+			Application.Run(new CreateDeposit());
 		}
 	}
 }

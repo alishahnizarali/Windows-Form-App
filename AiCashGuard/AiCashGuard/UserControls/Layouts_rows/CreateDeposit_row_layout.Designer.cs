@@ -31,12 +31,12 @@
 			this.CheckRow = new System.Windows.Forms.Panel();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.Check_Transit = new System.Windows.Forms.Label();
-			this.Check_Default = new System.Windows.Forms.Label();
-			this.Check_Phone = new System.Windows.Forms.Label();
-			this.Check_Action = new System.Windows.Forms.Label();
-			this.Check_Address = new System.Windows.Forms.Label();
-			this.Check_Business = new System.Windows.Forms.Label();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.Check_Amount = new System.Windows.Forms.Label();
+			this.Check_Date = new System.Windows.Forms.Label();
+			this.Check_Status = new System.Windows.Forms.Label();
+			this.Check_Number = new System.Windows.Forms.Label();
+			this.Check_Name = new System.Windows.Forms.Label();
+			this.IsSelected = new System.Windows.Forms.CheckBox();
 			this.CheckRow.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
@@ -45,11 +45,11 @@
 			// 
 			this.CheckRow.BackColor = System.Drawing.Color.White;
 			this.CheckRow.Controls.Add(this.tableLayoutPanel1);
-			this.CheckRow.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckRow.Dock = System.Windows.Forms.DockStyle.Top;
 			this.CheckRow.Location = new System.Drawing.Point(0, 0);
 			this.CheckRow.Name = "CheckRow";
 			this.CheckRow.Padding = new System.Windows.Forms.Padding(5);
-			this.CheckRow.Size = new System.Drawing.Size(767, 150);
+			this.CheckRow.Size = new System.Drawing.Size(767, 51);
 			this.CheckRow.TabIndex = 5;
 			// 
 			// tableLayoutPanel1
@@ -63,18 +63,18 @@
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
 			this.tableLayoutPanel1.Controls.Add(this.Check_Transit, 1, 0);
-			this.tableLayoutPanel1.Controls.Add(this.Check_Default, 5, 0);
-			this.tableLayoutPanel1.Controls.Add(this.Check_Phone, 3, 0);
-			this.tableLayoutPanel1.Controls.Add(this.Check_Action, 6, 0);
-			this.tableLayoutPanel1.Controls.Add(this.Check_Address, 4, 0);
-			this.tableLayoutPanel1.Controls.Add(this.Check_Business, 2, 0);
-			this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Check_Amount, 5, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Check_Date, 3, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Check_Status, 6, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Check_Number, 4, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Check_Name, 2, 0);
+			this.tableLayoutPanel1.Controls.Add(this.IsSelected, 0, 0);
 			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 5);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
 			this.tableLayoutPanel1.RowCount = 1;
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(757, 140);
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(757, 41);
 			this.tableLayoutPanel1.TabIndex = 5;
 			// 
 			// Check_Transit
@@ -82,79 +82,81 @@
 			this.Check_Transit.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Check_Transit.Location = new System.Drawing.Point(111, 0);
 			this.Check_Transit.Name = "Check_Transit";
-			this.Check_Transit.Size = new System.Drawing.Size(102, 140);
+			this.Check_Transit.Size = new System.Drawing.Size(102, 41);
 			this.Check_Transit.TabIndex = 1;
 			this.Check_Transit.Text = "Transaction ID";
 			this.Check_Transit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// Check_Default
+			// Check_Amount
 			// 
-			this.Check_Default.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Default.Location = new System.Drawing.Point(543, 0);
-			this.Check_Default.Name = "Check_Default";
-			this.Check_Default.Size = new System.Drawing.Size(102, 140);
-			this.Check_Default.TabIndex = 2;
-			this.Check_Default.Text = "Check Amount";
-			this.Check_Default.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.Check_Amount.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Amount.Location = new System.Drawing.Point(543, 0);
+			this.Check_Amount.Name = "Check_Amount";
+			this.Check_Amount.Size = new System.Drawing.Size(102, 41);
+			this.Check_Amount.TabIndex = 2;
+			this.Check_Amount.Text = "Check Amount";
+			this.Check_Amount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// Check_Phone
+			// Check_Date
 			// 
-			this.Check_Phone.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Phone.Location = new System.Drawing.Point(327, 0);
-			this.Check_Phone.Name = "Check_Phone";
-			this.Check_Phone.Size = new System.Drawing.Size(102, 140);
-			this.Check_Phone.TabIndex = 3;
-			this.Check_Phone.Text = "Check Date";
-			this.Check_Phone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.Check_Date.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Date.Location = new System.Drawing.Point(327, 0);
+			this.Check_Date.Name = "Check_Date";
+			this.Check_Date.Size = new System.Drawing.Size(102, 41);
+			this.Check_Date.TabIndex = 3;
+			this.Check_Date.Text = "Check Date";
+			this.Check_Date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// Check_Action
+			// Check_Status
 			// 
-			this.Check_Action.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Action.Location = new System.Drawing.Point(651, 0);
-			this.Check_Action.Name = "Check_Action";
-			this.Check_Action.Size = new System.Drawing.Size(103, 140);
-			this.Check_Action.TabIndex = 4;
-			this.Check_Action.Text = "Status";
-			this.Check_Action.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.Check_Status.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Status.Location = new System.Drawing.Point(651, 0);
+			this.Check_Status.Name = "Check_Status";
+			this.Check_Status.Size = new System.Drawing.Size(103, 41);
+			this.Check_Status.TabIndex = 4;
+			this.Check_Status.Text = "Status";
+			this.Check_Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// Check_Address
+			// Check_Number
 			// 
-			this.Check_Address.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Address.Location = new System.Drawing.Point(435, 0);
-			this.Check_Address.Name = "Check_Address";
-			this.Check_Address.Size = new System.Drawing.Size(102, 140);
-			this.Check_Address.TabIndex = 6;
-			this.Check_Address.Text = "Check Number";
-			this.Check_Address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.Check_Number.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Number.Location = new System.Drawing.Point(435, 0);
+			this.Check_Number.Name = "Check_Number";
+			this.Check_Number.Size = new System.Drawing.Size(102, 41);
+			this.Check_Number.TabIndex = 6;
+			this.Check_Number.Text = "Check Number";
+			this.Check_Number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// Check_Business
+			// Check_Name
 			// 
-			this.Check_Business.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Check_Business.Location = new System.Drawing.Point(219, 0);
-			this.Check_Business.Name = "Check_Business";
-			this.Check_Business.Size = new System.Drawing.Size(102, 140);
-			this.Check_Business.TabIndex = 5;
-			this.Check_Business.Text = "Check Name";
-			this.Check_Business.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.Check_Name.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Check_Name.Location = new System.Drawing.Point(219, 0);
+			this.Check_Name.Name = "Check_Name";
+			this.Check_Name.Size = new System.Drawing.Size(102, 41);
+			this.Check_Name.TabIndex = 5;
+			this.Check_Name.Text = "Check Name";
+			this.Check_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// checkBox1
+			// IsSelected
 			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.checkBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.checkBox1.Location = new System.Drawing.Point(3, 3);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(102, 134);
-			this.checkBox1.TabIndex = 7;
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.IsSelected.AutoSize = true;
+			this.IsSelected.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.IsSelected.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.IsSelected.Location = new System.Drawing.Point(3, 3);
+			this.IsSelected.Name = "IsSelected";
+			this.IsSelected.Size = new System.Drawing.Size(102, 35);
+			this.IsSelected.TabIndex = 7;
+			this.IsSelected.UseVisualStyleBackColor = true;
+			this.IsSelected.Click += new System.EventHandler(this.IsSelected_Click);
 			// 
 			// CreateDeposit_row_layout
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
 			this.Controls.Add(this.CheckRow);
 			this.Name = "CreateDeposit_row_layout";
-			this.Size = new System.Drawing.Size(767, 150);
+			this.Size = new System.Drawing.Size(767, 60);
 			this.CheckRow.ResumeLayout(false);
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel1.PerformLayout();
@@ -167,11 +169,11 @@
 		private System.Windows.Forms.Panel CheckRow;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		private System.Windows.Forms.Label Check_Transit;
-		private System.Windows.Forms.Label Check_Default;
-		private System.Windows.Forms.Label Check_Phone;
-		private System.Windows.Forms.Label Check_Action;
-		private System.Windows.Forms.Label Check_Address;
-		private System.Windows.Forms.Label Check_Business;
-		private System.Windows.Forms.CheckBox checkBox1;
+		private System.Windows.Forms.Label Check_Date;
+		private System.Windows.Forms.Label Check_Status;
+		private System.Windows.Forms.Label Check_Number;
+		private System.Windows.Forms.Label Check_Name;
+		public System.Windows.Forms.CheckBox IsSelected;
+		public System.Windows.Forms.Label Check_Amount;
 	}
 }

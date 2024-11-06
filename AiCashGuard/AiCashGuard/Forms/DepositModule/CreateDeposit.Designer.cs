@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateDeposit));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.Cust_Row_Panel = new System.Windows.Forms.Panel();
@@ -41,42 +42,41 @@
 			this.Check_Number = new System.Windows.Forms.Label();
 			this.Check_Amount = new System.Windows.Forms.Label();
 			this.SelectCheckBox = new System.Windows.Forms.CheckBox();
-			this.panel9 = new System.Windows.Forms.Panel();
-			this.paginationControl1 = new AiCashGuard.UserControls.PaginationControl();
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
 			this.panel5 = new System.Windows.Forms.Panel();
-			this.phoneSearch = new System.Windows.Forms.TextBox();
+			this.TotalAmount = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			this.label3 = new System.Windows.Forms.Label();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.TotalTransactions = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			this.label4 = new System.Windows.Forms.Label();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.depositDateTimePicker = new System.Windows.Forms.DateTimePicker();
 			this.label2 = new System.Windows.Forms.Label();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.idSearch = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.gradientPanel1 = new AiCashGuard.UserControls.GradientPanel();
-			this.Btn_Cancel = new System.Windows.Forms.Button();
-			this.Btn_Save = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
+			this.panel6 = new System.Windows.Forms.Panel();
+			this.roundedPanel2 = new AiCashGuard.UserControls.RoundedPanel();
+			this.button2 = new System.Windows.Forms.Button();
+			this.label8 = new System.Windows.Forms.Label();
+			this.button8 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.Cust_Row_Panel.SuspendLayout();
 			this.panel8.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
-			this.panel9.SuspendLayout();
 			this.panel7.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.panel5.SuspendLayout();
-			this.panel4.SuspendLayout();
 			this.panel3.SuspendLayout();
-			this.gradientPanel1.SuspendLayout();
+			this.panel4.SuspendLayout();
+			this.panel6.SuspendLayout();
+			this.roundedPanel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.panel2);
 			this.panel1.Controls.Add(this.panel7);
-			this.panel1.Controls.Add(this.gradientPanel1);
+			this.panel1.Controls.Add(this.panel6);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Name = "panel1";
@@ -88,12 +88,11 @@
 			this.panel2.AutoScroll = true;
 			this.panel2.Controls.Add(this.Cust_Row_Panel);
 			this.panel2.Controls.Add(this.panel8);
-			this.panel2.Controls.Add(this.panel9);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel2.Location = new System.Drawing.Point(0, 118);
+			this.panel2.Location = new System.Drawing.Point(0, 122);
 			this.panel2.Name = "panel2";
 			this.panel2.Padding = new System.Windows.Forms.Padding(5);
-			this.panel2.Size = new System.Drawing.Size(1065, 682);
+			this.panel2.Size = new System.Drawing.Size(1065, 678);
 			this.panel2.TabIndex = 40;
 			// 
 			// Cust_Row_Panel
@@ -103,7 +102,7 @@
 			this.Cust_Row_Panel.Location = new System.Drawing.Point(5, 40);
 			this.Cust_Row_Panel.Name = "Cust_Row_Panel";
 			this.Cust_Row_Panel.Padding = new System.Windows.Forms.Padding(5);
-			this.Cust_Row_Panel.Size = new System.Drawing.Size(1055, 590);
+			this.Cust_Row_Panel.Size = new System.Drawing.Size(1055, 633);
 			this.Cust_Row_Panel.TabIndex = 6;
 			// 
 			// CustRowDataPanel
@@ -116,8 +115,9 @@
 			this.CustRowDataPanel.Name = "CustRowDataPanel";
 			this.CustRowDataPanel.RowCount = 1;
 			this.CustRowDataPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.CustRowDataPanel.Size = new System.Drawing.Size(1045, 580);
+			this.CustRowDataPanel.Size = new System.Drawing.Size(1045, 623);
 			this.CustRowDataPanel.TabIndex = 0;
+			this.CustRowDataPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CustRowDataPanel_Paint);
 			// 
 			// panel8
 			// 
@@ -240,33 +240,14 @@
 			this.SelectCheckBox.Text = "Select All";
 			this.SelectCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.SelectCheckBox.UseVisualStyleBackColor = true;
-			// 
-			// panel9
-			// 
-			this.panel9.Controls.Add(this.paginationControl1);
-			this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panel9.Location = new System.Drawing.Point(5, 630);
-			this.panel9.Name = "panel9";
-			this.panel9.Padding = new System.Windows.Forms.Padding(5);
-			this.panel9.Size = new System.Drawing.Size(1055, 47);
-			this.panel9.TabIndex = 7;
-			// 
-			// paginationControl1
-			// 
-			this.paginationControl1.Dock = System.Windows.Forms.DockStyle.Right;
-			this.paginationControl1.ItemsPerPage = 10;
-			this.paginationControl1.Location = new System.Drawing.Point(722, 5);
-			this.paginationControl1.Name = "paginationControl1";
-			this.paginationControl1.Size = new System.Drawing.Size(328, 37);
-			this.paginationControl1.TabIndex = 1;
-			this.paginationControl1.TotalPages = 0;
+			this.SelectCheckBox.Click += new System.EventHandler(this.SelectCheckBox_Click);
 			// 
 			// panel7
 			// 
 			this.panel7.AutoScroll = true;
 			this.panel7.Controls.Add(this.tableLayoutPanel2);
 			this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel7.Location = new System.Drawing.Point(0, 67);
+			this.panel7.Location = new System.Drawing.Point(0, 71);
 			this.panel7.Name = "panel7";
 			this.panel7.Padding = new System.Windows.Forms.Padding(5);
 			this.panel7.Size = new System.Drawing.Size(1065, 51);
@@ -276,12 +257,12 @@
 			// 
 			this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
 			this.tableLayoutPanel2.ColumnCount = 3;
-			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-			this.tableLayoutPanel2.Controls.Add(this.panel5, 2, 0);
-			this.tableLayoutPanel2.Controls.Add(this.panel4, 1, 0);
+			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+			this.tableLayoutPanel2.Controls.Add(this.panel5, 1, 0);
 			this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
+			this.tableLayoutPanel2.Controls.Add(this.panel4, 2, 0);
 			this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel2.Location = new System.Drawing.Point(5, 5);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -289,26 +270,34 @@
 			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel2.Size = new System.Drawing.Size(1055, 41);
 			this.tableLayoutPanel2.TabIndex = 36;
+			this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
 			// 
 			// panel5
 			// 
-			this.panel5.Controls.Add(this.phoneSearch);
+			this.panel5.Controls.Add(this.TotalAmount);
 			this.panel5.Controls.Add(this.label3);
 			this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel5.Location = new System.Drawing.Point(705, 3);
+			this.panel5.Location = new System.Drawing.Point(354, 3);
 			this.panel5.Name = "panel5";
 			this.panel5.Padding = new System.Windows.Forms.Padding(5);
-			this.panel5.Size = new System.Drawing.Size(347, 35);
+			this.panel5.Size = new System.Drawing.Size(345, 35);
 			this.panel5.TabIndex = 31;
 			// 
-			// phoneSearch
+			// TotalAmount
 			// 
-			this.phoneSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.phoneSearch.Location = new System.Drawing.Point(102, 5);
-			this.phoneSearch.Multiline = true;
-			this.phoneSearch.Name = "phoneSearch";
-			this.phoneSearch.Size = new System.Drawing.Size(240, 25);
-			this.phoneSearch.TabIndex = 24;
+			this.TotalAmount.Depth = 0;
+			this.TotalAmount.Enabled = false;
+			this.TotalAmount.Hint = "";
+			this.TotalAmount.Location = new System.Drawing.Point(104, 5);
+			this.TotalAmount.MouseState = MaterialSkin.MouseState.HOVER;
+			this.TotalAmount.Name = "TotalAmount";
+			this.TotalAmount.PasswordChar = '\0';
+			this.TotalAmount.SelectedText = "";
+			this.TotalAmount.SelectionLength = 0;
+			this.TotalAmount.SelectionStart = 0;
+			this.TotalAmount.Size = new System.Drawing.Size(233, 23);
+			this.TotalAmount.TabIndex = 25;
+			this.TotalAmount.UseSystemPasswordChar = false;
 			// 
 			// label3
 			// 
@@ -322,40 +311,9 @@
 			this.label3.Text = "Total Amount";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// panel4
-			// 
-			this.panel4.Controls.Add(this.depositDateTimePicker);
-			this.panel4.Controls.Add(this.label2);
-			this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel4.Location = new System.Drawing.Point(354, 3);
-			this.panel4.Name = "panel4";
-			this.panel4.Padding = new System.Windows.Forms.Padding(5);
-			this.panel4.Size = new System.Drawing.Size(345, 35);
-			this.panel4.TabIndex = 30;
-			// 
-			// depositDateTimePicker
-			// 
-			this.depositDateTimePicker.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.depositDateTimePicker.Location = new System.Drawing.Point(102, 10);
-			this.depositDateTimePicker.Name = "depositDateTimePicker";
-			this.depositDateTimePicker.Size = new System.Drawing.Size(238, 20);
-			this.depositDateTimePicker.TabIndex = 40;
-			// 
-			// label2
-			// 
-			this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.White;
-			this.label2.Location = new System.Drawing.Point(5, 5);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(97, 25);
-			this.label2.TabIndex = 23;
-			this.label2.Text = "Date";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
 			// panel3
 			// 
-			this.panel3.Controls.Add(this.idSearch);
+			this.panel3.Controls.Add(this.TotalTransactions);
 			this.panel3.Controls.Add(this.label4);
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel3.Location = new System.Drawing.Point(3, 3);
@@ -364,14 +322,21 @@
 			this.panel3.Size = new System.Drawing.Size(345, 35);
 			this.panel3.TabIndex = 29;
 			// 
-			// idSearch
+			// TotalTransactions
 			// 
-			this.idSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.idSearch.Location = new System.Drawing.Point(178, 5);
-			this.idSearch.Multiline = true;
-			this.idSearch.Name = "idSearch";
-			this.idSearch.Size = new System.Drawing.Size(162, 25);
-			this.idSearch.TabIndex = 24;
+			this.TotalTransactions.Depth = 0;
+			this.TotalTransactions.Enabled = false;
+			this.TotalTransactions.Hint = "";
+			this.TotalTransactions.Location = new System.Drawing.Point(184, 5);
+			this.TotalTransactions.MouseState = MaterialSkin.MouseState.HOVER;
+			this.TotalTransactions.Name = "TotalTransactions";
+			this.TotalTransactions.PasswordChar = '\0';
+			this.TotalTransactions.SelectedText = "";
+			this.TotalTransactions.SelectionLength = 0;
+			this.TotalTransactions.SelectionStart = 0;
+			this.TotalTransactions.Size = new System.Drawing.Size(153, 23);
+			this.TotalTransactions.TabIndex = 24;
+			this.TotalTransactions.UseSystemPasswordChar = false;
 			// 
 			// label4
 			// 
@@ -387,65 +352,106 @@
 			this.label4.Text = "No of Transaction Selected";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// gradientPanel1
+			// panel4
 			// 
-			this.gradientPanel1.Controls.Add(this.Btn_Cancel);
-			this.gradientPanel1.Controls.Add(this.Btn_Save);
-			this.gradientPanel1.Controls.Add(this.label1);
-			this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.gradientPanel1.LeftColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(86)))), ((int)(((byte)(198)))));
-			this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-			this.gradientPanel1.Name = "gradientPanel1";
-			this.gradientPanel1.RightColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(86)))), ((int)(((byte)(198)))));
-			this.gradientPanel1.Size = new System.Drawing.Size(1065, 67);
-			this.gradientPanel1.TabIndex = 1;
+			this.panel4.Controls.Add(this.depositDateTimePicker);
+			this.panel4.Controls.Add(this.label2);
+			this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel4.Location = new System.Drawing.Point(705, 3);
+			this.panel4.Name = "panel4";
+			this.panel4.Padding = new System.Windows.Forms.Padding(5);
+			this.panel4.Size = new System.Drawing.Size(347, 35);
+			this.panel4.TabIndex = 30;
 			// 
-			// Btn_Cancel
+			// depositDateTimePicker
 			// 
-			this.Btn_Cancel.AutoSize = true;
-			this.Btn_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-			this.Btn_Cancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-			this.Btn_Cancel.FlatAppearance.BorderSize = 0;
-			this.Btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Btn_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Btn_Cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
-			this.Btn_Cancel.Location = new System.Drawing.Point(813, 16);
-			this.Btn_Cancel.Margin = new System.Windows.Forms.Padding(0);
-			this.Btn_Cancel.Name = "Btn_Cancel";
-			this.Btn_Cancel.Size = new System.Drawing.Size(94, 35);
-			this.Btn_Cancel.TabIndex = 2;
-			this.Btn_Cancel.Text = "Cancel";
-			this.Btn_Cancel.UseVisualStyleBackColor = false;
-			this.Btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
+			this.depositDateTimePicker.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.depositDateTimePicker.Location = new System.Drawing.Point(102, 10);
+			this.depositDateTimePicker.Name = "depositDateTimePicker";
+			this.depositDateTimePicker.Size = new System.Drawing.Size(240, 20);
+			this.depositDateTimePicker.TabIndex = 40;
 			// 
-			// Btn_Save
+			// label2
 			// 
-			this.Btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-			this.Btn_Save.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(217)))), ((int)(((byte)(226)))));
-			this.Btn_Save.FlatAppearance.BorderSize = 0;
-			this.Btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Btn_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Btn_Save.ForeColor = System.Drawing.Color.White;
-			this.Btn_Save.Location = new System.Drawing.Point(917, 16);
-			this.Btn_Save.Margin = new System.Windows.Forms.Padding(0);
-			this.Btn_Save.Name = "Btn_Save";
-			this.Btn_Save.Size = new System.Drawing.Size(138, 35);
-			this.Btn_Save.TabIndex = 1;
-			this.Btn_Save.Text = "Create Deposit";
-			this.Btn_Save.UseVisualStyleBackColor = false;
+			this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.White;
+			this.label2.Location = new System.Drawing.Point(5, 5);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(97, 25);
+			this.label2.TabIndex = 23;
+			this.label2.Text = "Date";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// label1
+			// panel6
 			// 
-			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(13, 14);
-			this.label1.Name = "label1";
-			this.label1.Padding = new System.Windows.Forms.Padding(5);
-			this.label1.Size = new System.Drawing.Size(165, 35);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Create Deposit";
+			this.panel6.Controls.Add(this.roundedPanel2);
+			this.panel6.Controls.Add(this.label8);
+			this.panel6.Controls.Add(this.button8);
+			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel6.Location = new System.Drawing.Point(0, 0);
+			this.panel6.Name = "panel6";
+			this.panel6.Padding = new System.Windows.Forms.Padding(10);
+			this.panel6.Size = new System.Drawing.Size(1065, 71);
+			this.panel6.TabIndex = 41;
+			// 
+			// roundedPanel2
+			// 
+			this.roundedPanel2.Controls.Add(this.button2);
+			this.roundedPanel2.CornerRadius = 20;
+			this.roundedPanel2.Dock = System.Windows.Forms.DockStyle.Right;
+			this.roundedPanel2.Location = new System.Drawing.Point(890, 10);
+			this.roundedPanel2.Name = "roundedPanel2";
+			this.roundedPanel2.Size = new System.Drawing.Size(165, 51);
+			this.roundedPanel2.TabIndex = 36;
+			// 
+			// button2
+			// 
+			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(145)))), ((int)(((byte)(241)))));
+			this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.button2.FlatAppearance.BorderColor = System.Drawing.Color.MediumBlue;
+			this.button2.FlatAppearance.BorderSize = 0;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button2.ForeColor = System.Drawing.Color.White;
+			this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+			this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.button2.Location = new System.Drawing.Point(0, 0);
+			this.button2.Name = "button2";
+			this.button2.Padding = new System.Windows.Forms.Padding(10);
+			this.button2.Size = new System.Drawing.Size(165, 51);
+			this.button2.TabIndex = 15;
+			this.button2.Text = "Create Deposit";
+			this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.button2.UseVisualStyleBackColor = false;
+			// 
+			// label8
+			// 
+			this.label8.Dock = System.Windows.Forms.DockStyle.Left;
+			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.Location = new System.Drawing.Point(59, 10);
+			this.label8.Name = "label8";
+			this.label8.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+			this.label8.Size = new System.Drawing.Size(125, 51);
+			this.label8.TabIndex = 29;
+			this.label8.Text = "Create Deposit";
+			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// button8
+			// 
+			this.button8.AutoSize = true;
+			this.button8.BackColor = System.Drawing.Color.Transparent;
+			this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+			this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button8.Dock = System.Windows.Forms.DockStyle.Left;
+			this.button8.FlatAppearance.BorderSize = 0;
+			this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button8.Location = new System.Drawing.Point(10, 10);
+			this.button8.Name = "button8";
+			this.button8.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
+			this.button8.Size = new System.Drawing.Size(49, 51);
+			this.button8.TabIndex = 35;
+			this.button8.UseVisualStyleBackColor = false;
 			// 
 			// CreateDeposit
 			// 
@@ -463,16 +469,15 @@
 			this.panel8.ResumeLayout(false);
 			this.tableLayoutPanel3.ResumeLayout(false);
 			this.tableLayoutPanel3.PerformLayout();
-			this.panel9.ResumeLayout(false);
 			this.panel7.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.panel5.ResumeLayout(false);
-			this.panel5.PerformLayout();
-			this.panel4.ResumeLayout(false);
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
-			this.gradientPanel1.ResumeLayout(false);
-			this.gradientPanel1.PerformLayout();
+			this.panel4.ResumeLayout(false);
+			this.panel6.ResumeLayout(false);
+			this.panel6.PerformLayout();
+			this.roundedPanel2.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -480,26 +485,18 @@
 		#endregion
 
 		private System.Windows.Forms.Panel panel1;
-		private UserControls.GradientPanel gradientPanel1;
-		private System.Windows.Forms.Button Btn_Cancel;
-		private System.Windows.Forms.Button Btn_Save;
-		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel panel7;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
 		private System.Windows.Forms.Panel panel5;
-		private System.Windows.Forms.TextBox phoneSearch;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Panel panel3;
-		private System.Windows.Forms.TextBox idSearch;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.DateTimePicker depositDateTimePicker;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel Cust_Row_Panel;
 		private System.Windows.Forms.TableLayoutPanel CustRowDataPanel;
-		private System.Windows.Forms.Panel panel9;
-		private UserControls.PaginationControl paginationControl1;
 		private System.Windows.Forms.Panel panel8;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
 		private System.Windows.Forms.Label Transaction_ID;
@@ -509,5 +506,12 @@
 		private System.Windows.Forms.Label Check_Number;
 		private System.Windows.Forms.Label Check_Amount;
 		private System.Windows.Forms.CheckBox SelectCheckBox;
+		private System.Windows.Forms.Panel panel6;
+		private UserControls.RoundedPanel roundedPanel2;
+		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Button button8;
+		private MaterialSkin.Controls.MaterialSingleLineTextField TotalAmount;
+		private MaterialSkin.Controls.MaterialSingleLineTextField TotalTransactions;
 	}
 }

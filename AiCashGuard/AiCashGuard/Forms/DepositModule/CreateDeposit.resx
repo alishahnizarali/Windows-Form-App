@@ -117,10 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="gradientPanel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAFJJREFUSEtjGAVDC/z///8+CEO51AdAw8EAyqU+gJo/agFuADV/kFsA1A9KiuQC
+        wkkYpAiilixAWR6BGjKainADqPmjFuAGQLNpW1yPAhoABgYAur7uEUEpMlMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="button8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAaVJREFUWEftmLFOAkEQQLey9hP8Br4Av4BPU79AE620UBuFykpbC6hsDjDaQFSC
+        YOc4b+XIAVvc7uX2rrhJXggwuXnZ2YXsmO24T6TdHclRdyjJw1ikTLTGs9Y61ZoHq/K7cZ3Ifk+FHt9E
+        RjORyVLk86dcqPHyoZKvItTGYaXzH3yA/WDifkAM+lobhw05bKuUSkEOFytFf1lKV2IVPL2LsM8Nm48+
+        u5KqgP19l8ixoa8xNnpepurCL4KpUxtTcGrEfGjEfCksNvr6lfbVQjo3C+f3oRQSQ6p1MZe9k5m0L7+d
+        OaEEi2WlWudz+96VF0qQWNlS4C0WQwq8xGJJgZcYpw+pIuQ9vV5ih3ryXMV86Nwunc/exktsOMu0Ul9r
+        00qIJectBjHkgsSgbLlgMcjK1eYvKQU5pPKetrwUFiuLRsyXRswXK8blsm4X3p5ewk1Xr+NjvZa7kqqA
+        cQVjCzuoY5DhSqoC2rge5LFqg6k7MSZ9dbADlTTWg7sK5ZDaGdwRVk5tWUr6HGvUydiJrcRK7Uhlg/4q
+        Z9gjWSb8IiBkB3UbYcwf/Kbbt+s7xGEAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>
