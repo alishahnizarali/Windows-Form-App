@@ -1,19 +1,20 @@
-﻿using AiCashGuard.Model.Internal.Deposit;
+﻿using AiCashGuard.Constants;
+using AiCashGuard.Model.Internal.Deposit;
 using AiCashGuard.UserControls.Layouts_rows;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace AiCashGuard.Forms.DepositModule
 {
-	public partial class CreateDeposit : Form
+	public partial class CreateDeposit : BaseForm
 	{
 		private List<CreateDepositModel> allDeposit = new List<CreateDepositModel>();
 
 		public CreateDeposit()
 		{
 			InitializeComponent();
+			BaseTableLayoutPanel.Controls.Add(this.BackPanel, 0, 1);
 			allDeposit = new List<CreateDepositModel>
 			{
 				new CreateDepositModel { CheckNumber = "North Karachi",CheckDate = "#30003", CheckAmount = "100", Status = 1,CheckName="Name" , TransactionId = 2},
@@ -113,6 +114,11 @@ namespace AiCashGuard.Forms.DepositModule
 				TotalTransactions.Text = count.ToString();
 				TotalAmount.Text = total_amount.ToString();
 			}
+		}
+
+		private void panel6_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }
