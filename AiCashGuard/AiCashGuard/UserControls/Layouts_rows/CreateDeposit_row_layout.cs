@@ -37,5 +37,10 @@ namespace AiCashGuard.UserControls.Layouts_rows
 		
 			this.obj.UpdateCheckboxCount();
 		}
+
+		private void Check_Transit_Click(object sender, System.EventArgs e)
+		{
+
+		}
 	}
 }

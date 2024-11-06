@@ -86,6 +86,7 @@
 			this.Check_Transit.TabIndex = 1;
 			this.Check_Transit.Text = "Transaction ID";
 			this.Check_Transit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.Check_Transit.Click += new System.EventHandler(this.Check_Transit_Click);
 			// 
 			// Check_Amount
 			// 
