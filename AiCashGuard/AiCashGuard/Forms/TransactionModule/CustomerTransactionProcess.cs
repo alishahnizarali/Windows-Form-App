@@ -15,7 +15,9 @@ using AiCashGuard.Model.Internal.Customer;
 using System.Threading.Tasks;
 namespace AiCashGuard.Forms.TransactionModule
 {
-    public partial class CustomerTransactionProcess : BaseForm
+
+
+	public partial class CustomerTransactionProcess : BaseForm
     {
 		//Moiz-Comment
 		//private static ScannerController scanner;
@@ -46,9 +48,33 @@ namespace AiCashGuard.Forms.TransactionModule
             {
                 Step_Label.Text = "Step # 1 / 3";
             }
-        }
 
-        private async void CustomerTransactionProcess_Load(object sender, EventArgs e)
+
+            List<string> history = new List<string>() { "One" ,"Two" ,"Three" };
+            DisplayHistory(history);
+
+
+        }
+		private void DisplayHistory(List<string> history)
+		{
+			tableLayoutPanel1.Controls.Clear();
+			tableLayoutPanel1.RowCount = 0;
+			tableLayoutPanel1.RowStyles.Clear();
+			foreach (var item in history)
+			{
+				var CustomerRow = new Label();
+				CustomerRow.Text = item;
+				CustomerRow.Margin = new Padding(0);
+				CustomerRow.Dock = DockStyle.Top;
+				tableLayoutPanel1.RowCount++;
+				tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+				tableLayoutPanel1.Controls.Add(CustomerRow, 0, tableLayoutPanel1.RowCount - 1);
+			}
+			tableLayoutPanel1.Padding = new Padding(0);
+			tableLayoutPanel1.Margin = new Padding(0);
+		}
+
+		private async void CustomerTransactionProcess_Load(object sender, EventArgs e)
         {
             try
             {
@@ -368,6 +394,16 @@ namespace AiCashGuard.Forms.TransactionModule
         }
 
 		private void Next_Btn_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label9_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
 		{
 
 		}

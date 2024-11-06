@@ -59,7 +59,7 @@ namespace AiCashGuard.Forms
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.idSearch = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.roundedPanel2 = new RoundedPanel();
+			this.roundedPanel2 = new AiCashGuard.UserControls.RoundedPanel();
 			this.button2 = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.button8 = new System.Windows.Forms.Button();
@@ -67,13 +67,13 @@ namespace AiCashGuard.Forms
 			this.DataPanel = new System.Windows.Forms.Panel();
 			this.CustomerDataPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.HeaderPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.Hist_Customer_ID = new System.Windows.Forms.Label();
-            this.Hist_Customer_Name = new System.Windows.Forms.Label();
-            this.Hist_Customer_Phone = new System.Windows.Forms.Label();
-            this.Hist_Customer_Address = new System.Windows.Forms.Label();
-            this.Hist_Customer_Action = new System.Windows.Forms.Label();
-            this.Footer = new System.Windows.Forms.Panel();
+			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+			this.Hist_Customer_ID = new System.Windows.Forms.Label();
+			this.Hist_Customer_Name = new System.Windows.Forms.Label();
+			this.Hist_Customer_Phone = new System.Windows.Forms.Label();
+			this.Hist_Customer_Address = new System.Windows.Forms.Label();
+			this.Hist_Customer_Action = new System.Windows.Forms.Label();
+			this.Footer = new System.Windows.Forms.Panel();
 			this.PaginationControl = new AiCashGuard.UserControls.PaginationControl();
 			this.customerListPanel.SuspendLayout();
 			this.CustDataPanel.SuspendLayout();
@@ -85,13 +85,13 @@ namespace AiCashGuard.Forms
 			this.panel7.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.panel5.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel4.SuspendLayout();
+			this.panel4.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.roundedPanel2.SuspendLayout();
 			this.BackPanel.SuspendLayout();
 			this.DataPanel.SuspendLayout();
 			this.HeaderPanel.SuspendLayout();
+			this.tableLayoutPanel1.SuspendLayout();
 			this.Footer.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -202,10 +202,10 @@ namespace AiCashGuard.Forms
 			this.Customer_FirstName.TabIndex = 1;
 			this.Customer_FirstName.Text = "Customer FirstName";
 			this.Customer_FirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Customer_LastName
-            // 
-            this.Customer_LastName.Dock = System.Windows.Forms.DockStyle.Fill;
+			// 
+			// Customer_LastName
+			// 
+			this.Customer_LastName.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Customer_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Customer_LastName.ForeColor = System.Drawing.Color.White;
 			this.Customer_LastName.Location = new System.Drawing.Point(329, 0);
@@ -238,22 +238,10 @@ namespace AiCashGuard.Forms
 			this.label4.TabIndex = 4;
 			this.label4.Text = "Action";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Customer_Flag
-            // 
-            this.Customer_Flag.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.Customer_Flag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Customer_Flag.ForeColor = System.Drawing.Color.White;
-			this.Customer_Flag.Location = new System.Drawing.Point(818, 0);
-			this.Customer_Flag.Name = "Customer_Flag";
-			this.Customer_Flag.Size = new System.Drawing.Size(157, 17);
-			this.Customer_Flag.TabIndex = 6;
-			this.Customer_Flag.Text = "Is Default";
-			this.Customer_Flag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Customer_Address
-            // 
-            this.Customer_Address.Dock = System.Windows.Forms.DockStyle.Fill;
+			// 
+			// Customer_Address
+			// 
+			this.Customer_Address.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.Customer_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Customer_Address.ForeColor = System.Drawing.Color.White;
 			this.Customer_Address.Location = new System.Drawing.Point(655, 0);
@@ -262,6 +250,18 @@ namespace AiCashGuard.Forms
 			this.Customer_Address.TabIndex = 5;
 			this.Customer_Address.Text = "Address";
 			this.Customer_Address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Customer_Flag
+			// 
+			this.Customer_Flag.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Customer_Flag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Customer_Flag.ForeColor = System.Drawing.Color.White;
+			this.Customer_Flag.Location = new System.Drawing.Point(818, 0);
+			this.Customer_Flag.Name = "Customer_Flag";
+			this.Customer_Flag.Size = new System.Drawing.Size(157, 17);
+			this.Customer_Flag.TabIndex = 6;
+			this.Customer_Flag.Text = "Is Default";
+			this.Customer_Flag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// panel9
 			// 
@@ -344,11 +344,11 @@ namespace AiCashGuard.Forms
 			this.filterBtn.TabIndex = 32;
 			this.filterBtn.Text = "Filter";
 			this.filterBtn.UseVisualStyleBackColor = false;
-            this.filterBtn.Click += new System.EventHandler(this.filterBtn_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.phoneSearch);
+			this.filterBtn.Click += new System.EventHandler(this.filterBtn_Click);
+			// 
+			// panel5
+			// 
+			this.panel5.Controls.Add(this.phoneSearch);
 			this.panel5.Controls.Add(this.label3);
 			this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel5.Location = new System.Drawing.Point(507, 3);
@@ -484,6 +484,7 @@ namespace AiCashGuard.Forms
 			this.label5.TabIndex = 29;
 			this.label5.Text = "Customer List";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.label5.Click += new System.EventHandler(this.label5_Click);
 			// 
 			// button8
 			// 
@@ -534,97 +535,98 @@ namespace AiCashGuard.Forms
 			// HeaderPanel
 			// 
 			this.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.HeaderPanel.Controls.Add(this.tableLayoutPanel1);
-            this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+			this.HeaderPanel.Controls.Add(this.tableLayoutPanel1);
+			this.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
 			this.HeaderPanel.Location = new System.Drawing.Point(10, 10);
 			this.HeaderPanel.Name = "HeaderPanel";
 			this.HeaderPanel.Padding = new System.Windows.Forms.Padding(5);
 			this.HeaderPanel.Size = new System.Drawing.Size(1152, 21);
 			this.HeaderPanel.TabIndex = 1;
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_ID, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_Name, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_Phone, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_Address, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_Action, 4, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 5);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1142, 11);
-            this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // Hist_Customer_ID
-            // 
-            this.Hist_Customer_ID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Hist_Customer_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hist_Customer_ID.ForeColor = System.Drawing.Color.White;
-            this.Hist_Customer_ID.Location = new System.Drawing.Point(3, 0);
-            this.Hist_Customer_ID.Name = "Customer_ID";
-            this.Hist_Customer_ID.Size = new System.Drawing.Size(222, 11);
-            this.Hist_Customer_ID.TabIndex = 0;
-            this.Hist_Customer_ID.Text = "ID Number";
-            this.Hist_Customer_ID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Hist_Customer_Name
-            // 
-            this.Hist_Customer_Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Hist_Customer_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hist_Customer_Name.ForeColor = System.Drawing.Color.White;
-            this.Hist_Customer_Name.Location = new System.Drawing.Point(231, 0);
-            this.Hist_Customer_Name.Name = "Hist_Customer_Name";
-            this.Hist_Customer_Name.Size = new System.Drawing.Size(222, 11);
-            this.Hist_Customer_Name.TabIndex = 1;
-            this.Hist_Customer_Name.Text = "Customer";
-            this.Hist_Customer_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Hist_Customer_Phone
-            // 
-            this.Hist_Customer_Phone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Hist_Customer_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hist_Customer_Phone.ForeColor = System.Drawing.Color.White;
-            this.Hist_Customer_Phone.Location = new System.Drawing.Point(459, 0);
-            this.Hist_Customer_Phone.Name = "Hist_Customer_Phone";
-            this.Hist_Customer_Phone.Size = new System.Drawing.Size(222, 11);
-            this.Hist_Customer_Phone.TabIndex = 2;
-            this.Hist_Customer_Phone.Text = "Phone";
-            this.Hist_Customer_Phone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Hist_Customer_Address
-            // 
-            this.Hist_Customer_Address.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Hist_Customer_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hist_Customer_Address.ForeColor = System.Drawing.Color.White;
-            this.Hist_Customer_Address.Location = new System.Drawing.Point(687, 0);
-            this.Hist_Customer_Address.Name = "Hist_Customer_Address";
-            this.Hist_Customer_Address.Size = new System.Drawing.Size(222, 11);
-            this.Hist_Customer_Address.TabIndex = 3;
-            this.Hist_Customer_Address.Text = "Address";
-            this.Hist_Customer_Address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Hist_Customer_Action
-            // 
-            this.Hist_Customer_Action.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Hist_Customer_Action.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hist_Customer_Action.ForeColor = System.Drawing.Color.White;
-            this.Hist_Customer_Action.Location = new System.Drawing.Point(915, 0);
-            this.Hist_Customer_Action.Name = "Hist_Customer_Action";
-            this.Hist_Customer_Action.Size = new System.Drawing.Size(224, 11);
-            this.Hist_Customer_Action.TabIndex = 4;
-            this.Hist_Customer_Action.Text = "Action";
-            this.Hist_Customer_Action.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Footer
-            // 
-            this.Footer.Controls.Add(this.PaginationControl);
+			// 
+			// tableLayoutPanel1
+			// 
+			this.tableLayoutPanel1.ColumnCount = 5;
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_ID, 0, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_Name, 1, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_Phone, 2, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_Address, 3, 0);
+			this.tableLayoutPanel1.Controls.Add(this.Hist_Customer_Action, 4, 0);
+			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 5);
+			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.tableLayoutPanel1.RowCount = 1;
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(1142, 11);
+			this.tableLayoutPanel1.TabIndex = 5;
+			// 
+			// Hist_Customer_ID
+			// 
+			this.Hist_Customer_ID.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Hist_Customer_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Hist_Customer_ID.ForeColor = System.Drawing.Color.White;
+			this.Hist_Customer_ID.Location = new System.Drawing.Point(3, 0);
+			this.Hist_Customer_ID.Name = "Hist_Customer_ID";
+			this.Hist_Customer_ID.Size = new System.Drawing.Size(222, 11);
+			this.Hist_Customer_ID.TabIndex = 0;
+			this.Hist_Customer_ID.Text = "ID Number";
+			this.Hist_Customer_ID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Hist_Customer_Name
+			// 
+			this.Hist_Customer_Name.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Hist_Customer_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Hist_Customer_Name.ForeColor = System.Drawing.Color.White;
+			this.Hist_Customer_Name.Location = new System.Drawing.Point(231, 0);
+			this.Hist_Customer_Name.Name = "Hist_Customer_Name";
+			this.Hist_Customer_Name.Size = new System.Drawing.Size(222, 11);
+			this.Hist_Customer_Name.TabIndex = 1;
+			this.Hist_Customer_Name.Text = "Customer";
+			this.Hist_Customer_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Hist_Customer_Phone
+			// 
+			this.Hist_Customer_Phone.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Hist_Customer_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Hist_Customer_Phone.ForeColor = System.Drawing.Color.White;
+			this.Hist_Customer_Phone.Location = new System.Drawing.Point(459, 0);
+			this.Hist_Customer_Phone.Name = "Hist_Customer_Phone";
+			this.Hist_Customer_Phone.Size = new System.Drawing.Size(222, 11);
+			this.Hist_Customer_Phone.TabIndex = 2;
+			this.Hist_Customer_Phone.Text = "Phone";
+			this.Hist_Customer_Phone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Hist_Customer_Address
+			// 
+			this.Hist_Customer_Address.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Hist_Customer_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Hist_Customer_Address.ForeColor = System.Drawing.Color.White;
+			this.Hist_Customer_Address.Location = new System.Drawing.Point(687, 0);
+			this.Hist_Customer_Address.Name = "Hist_Customer_Address";
+			this.Hist_Customer_Address.Size = new System.Drawing.Size(222, 11);
+			this.Hist_Customer_Address.TabIndex = 3;
+			this.Hist_Customer_Address.Text = "Address";
+			this.Hist_Customer_Address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Hist_Customer_Action
+			// 
+			this.Hist_Customer_Action.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Hist_Customer_Action.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Hist_Customer_Action.ForeColor = System.Drawing.Color.White;
+			this.Hist_Customer_Action.Location = new System.Drawing.Point(915, 0);
+			this.Hist_Customer_Action.Name = "Hist_Customer_Action";
+			this.Hist_Customer_Action.Size = new System.Drawing.Size(224, 11);
+			this.Hist_Customer_Action.TabIndex = 4;
+			this.Hist_Customer_Action.Text = "Action";
+			this.Hist_Customer_Action.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// Footer
+			// 
+			this.Footer.Controls.Add(this.PaginationControl);
 			this.Footer.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.Footer.Location = new System.Drawing.Point(10, 753);
 			this.Footer.Name = "Footer";
@@ -658,8 +660,7 @@ namespace AiCashGuard.Forms
 			this.tableLayoutPanel3.ResumeLayout(false);
 			this.panel9.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel6.PerformLayout();
+			this.panel6.PerformLayout();
 			this.panel7.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.panel5.ResumeLayout(false);
@@ -672,6 +673,7 @@ namespace AiCashGuard.Forms
 			this.BackPanel.ResumeLayout(false);
 			this.DataPanel.ResumeLayout(false);
 			this.HeaderPanel.ResumeLayout(false);
+			this.tableLayoutPanel1.ResumeLayout(false);
 			this.Footer.ResumeLayout(false);
 			this.ResumeLayout(false);
 
